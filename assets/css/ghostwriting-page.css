@@ -1,0 +1,477 @@
+﻿body.ghostwriting-page {
+    background: #e9fdff;
+}
+
+body.ghostwriting-page .banner-color.home-hero-sec {
+    position: relative;
+    overflow: hidden;
+    background: #061e38;
+    background-image: none;
+    padding: 100px 0 70px; /* extra top padding to clear fixed header + top-bar */
+}
+
+body.ghostwriting-page .home-hero-sec .hero-video-wrap {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+body.ghostwriting-page .home-hero-sec .hero-video-wrap video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.58;
+}
+
+body.ghostwriting-page .banner-color.home-hero-sec .overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.26) 45%, rgba(255, 255, 255, 0.08) 100%);
+}
+
+body.ghostwriting-page .home-hero-sec .container,
+body.ghostwriting-page .home-hero-sec .banner-content,
+body.ghostwriting-page .home-hero-sec .banner-contents,
+body.ghostwriting-page .home-hero-sec .banner-form {
+    position: relative;
+    z-index: 2;
+}
+
+body.ghostwriting-page .home-hero-sec .banner-content h1 {
+    color: #fff;
+    font-size: 54px;
+    line-height: 62px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+body.ghostwriting-page .home-hero-sec .banner-content h1 p {
+    color: #50bac2;
+    margin: 0;
+    padding: 0;
+    font-size: 62px;
+    line-height: 70px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+body.ghostwriting-page .home-hero-sec .banner-content h1 span {
+    color: #fff;
+}
+
+body.ghostwriting-page .home-hero-sec .banner-contents p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 29px;
+    padding: 10px 0 18px;
+}
+
+body.ghostwriting-page .home-hero-sec .banner-form {
+    background: #061e3850;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
+}
+
+body.ghostwriting-page .home-hero-sec .banner-form input,
+body.ghostwriting-page .home-hero-sec .banner-form select,
+body.ghostwriting-page .home-hero-sec .banner-form textarea {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.18) !important;
+    color: #fff;
+}
+
+body.ghostwriting-page .home-hero-sec .banner-form input::placeholder,
+body.ghostwriting-page .home-hero-sec .banner-form select:invalid,
+body.ghostwriting-page .home-hero-sec .banner-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.ghostwriting-page .home-hero-sec .banner-form select {
+    width: 100%;
+    height: 40px;
+    margin-top: 13px;
+    padding: 1px 40px 1px 12px;
+    border-radius: 3px;
+    appearance: none;
+    background-image:
+        linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.9) 50%),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.9) 50%, transparent 50%);
+    background-position: calc(100% - 20px) 17px, calc(100% - 14px) 17px;
+    background-size: 6px 6px, 6px 6px;
+    background-repeat: no-repeat;
+}
+
+body.ghostwriting-page .home-hero-sec .banner-form select option {
+    background: #061e38;
+    color: #fff;
+}
+
+body.ghostwriting-page .cover-hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 26px;
+}
+
+body.ghostwriting-page .cover-hero-stat {
+    min-height: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 18px 12px;
+    background: transparent;
+    border: none;
+    border-radius: 18px;
+}
+
+body.ghostwriting-page .cover-hero-stat-number {
+    color: #fff;
+    font-size: 38px;
+    line-height: 44px;
+    font-weight: 700;
+}
+
+body.ghostwriting-page .cover-hero-stat-label {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+/* ===== Flat 3-book showcase slider ===== */
+body.ghostwriting-page .cover-showcase-section {
+    padding: 85px 0;
+    background: #e9fdff;
+}
+
+body.ghostwriting-page .cover-showcase-copy {
+    padding-right: 30px;
+}
+
+body.ghostwriting-page .cover-showcase-copy h2 {
+    color: #061e38;
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+body.ghostwriting-page .cover-showcase-copy p {
+    color: #061e38;
+    font-size: 17px;
+    line-height: 29px;
+}
+
+body.ghostwriting-page .coverBookSwiper {
+    overflow: hidden;
+    width: 100%;
+}
+
+body.ghostwriting-page .cover-book-track {
+    display: flex;
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+body.ghostwriting-page .cover-book-slide {
+    min-width: calc(100% / 3);
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+body.ghostwriting-page .cover-book-slide img {
+    width: 100%;
+    aspect-ratio: 0.72 / 1;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 16px 34px rgba(6, 30, 56, 0.18);
+    display: block;
+}
+
+/* ---- Alternating section backgrounds ---- */
+body.ghostwriting-page .about-split-section {
+    padding: 85px 0;
+    background: #061e38; /* dark sections (2nd, 4th, etc.) */
+}
+
+body.ghostwriting-page .about-split-section.alt {
+    background: #e9fdff; /* light sections (1st, 3rd, etc.) */
+}
+
+/* Light section (.alt) text: dark */
+body.ghostwriting-page .about-split-section.alt .about-copy h2,
+body.ghostwriting-page .about-vision-mission .call-sec h2,
+body.ghostwriting-page .cover-showcase-copy h2 {
+    color: #061e38;
+    font-size: 46px;
+    line-height: 56px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+body.ghostwriting-page .about-split-section.alt .about-copy p,
+body.ghostwriting-page .cover-showcase-copy p {
+    color: #061e38;
+    font-size: 17px;
+    line-height: 29px;
+    margin-bottom: 0;
+}
+
+/* Dark section (non-alt) text: light */
+body.ghostwriting-page .about-split-section:not(.alt) .about-copy h2 {
+    color: #e9fdff;
+    font-size: 46px;
+    line-height: 56px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+body.ghostwriting-page .about-split-section:not(.alt) .about-copy p {
+    color: rgba(233, 253, 255, 0.85);
+    font-size: 17px;
+    line-height: 29px;
+    margin-bottom: 0;
+}
+
+body.ghostwriting-page .about-image-frame img {
+    width: 100%;
+    aspect-ratio: 1 / 0.78;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 18px 45px rgba(6, 30, 56, 0.16);
+}
+
+body.ghostwriting-page .about-cta-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 26px;
+}
+
+body.ghostwriting-page .about-cta-row button {
+    min-width: 170px;
+}
+
+body.ghostwriting-page .cover-showcase-section,
+body.ghostwriting-page .about-vision-mission {
+    padding: 85px 0;
+    background: #061e38;
+}
+
+body.ghostwriting-page .cover-showcase-slider {
+    position: relative;
+    padding: 0 54px;
+}
+
+body.ghostwriting-page .coverBookSwiper {
+    overflow: hidden;
+}
+
+body.ghostwriting-page .coverBookSwiper .swiper-slide {
+    height: auto;
+}
+
+body.ghostwriting-page .coverBookSwiper img {
+    width: 100%;
+    aspect-ratio: 0.72 / 1;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 16px 34px rgba(6, 30, 56, 0.18);
+}
+
+body.ghostwriting-page .cover-book-button {
+    position: absolute;
+    top: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: 2px solid #50bac2;
+    background: #50bac2;
+    color: #fff;
+    z-index: 3;
+}
+
+body.ghostwriting-page .cover-book-button.prev {
+    left: 0;
+}
+
+body.ghostwriting-page .cover-book-button.next {
+    right: 0;
+}
+
+body.ghostwriting-page .cover-step-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 18px;
+}
+
+body.ghostwriting-page .about-mission-card {
+    height: 100%;
+    min-height: 330px;
+    text-align: center;
+    background: rgba(80, 186, 194, 0.12);
+    border: 1px solid rgba(80, 186, 194, 0.25);
+    padding: 30px 18px;
+    border-radius: 8px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
+}
+
+body.ghostwriting-page .cover-step-icon svg {
+    width: 82px;
+    height: 82px;
+    margin-bottom: 16px;
+}
+
+body.ghostwriting-page .cover-step-icon path {
+    fill: #50bac2 !important;
+    stroke: none !important;
+}
+
+body.ghostwriting-page .about-mission-card h3 {
+    color: #e9fdff;
+    font-size: 21px;
+    line-height: 29px;
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+
+body.ghostwriting-page .about-mission-card p {
+    color: rgba(233, 253, 255, 0.8);
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0;
+}
+
+body.ghostwriting-page .faq-section,
+body.ghostwriting-page section[style*="background: #11184f"] {
+    background: #061e38 !important;
+}
+
+@media screen and (max-width: 1199px) {
+    body.ghostwriting-page .cover-step-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body.ghostwriting-page .home-hero-sec .banner-content h1 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    body.ghostwriting-page .home-hero-sec .banner-content h1 p {
+        font-size: 46px;
+        line-height: 54px;
+    }
+
+    body.ghostwriting-page .cover-hero-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    body.ghostwriting-page .about-copy h2,
+    body.ghostwriting-page .about-vision-mission .call-sec h2,
+    body.ghostwriting-page .cover-showcase-copy h2 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    body.ghostwriting-page .about-image-frame {
+        margin-top: 34px;
+    }
+
+    body.ghostwriting-page .about-split-section.alt .about-image-frame {
+        margin-top: 0;
+        margin-bottom: 34px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body.ghostwriting-page .banner-color.home-hero-sec {
+        padding: 90px 0 48px;
+    }
+
+    body.ghostwriting-page .cover-step-grid {
+        grid-template-columns: 1fr;
+    }
+
+    body.ghostwriting-page .cover-showcase-slider {
+        padding: 0 42px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body.ghostwriting-page .home-hero-sec .banner-content h1 {
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    body.ghostwriting-page .home-hero-sec .banner-content h1 p {
+        font-size: 38px;
+        line-height: 45px;
+    }
+
+    body.ghostwriting-page .cover-hero-stats {
+        grid-template-columns: 1fr;
+    }
+
+    body.ghostwriting-page .about-split-section,
+    body.ghostwriting-page .cover-showcase-section,
+    body.ghostwriting-page .about-vision-mission {
+        padding: 52px 0;
+    }
+
+    body.ghostwriting-page .about-split-section.alt .about-copy h2,
+    body.ghostwriting-page .about-split-section:not(.alt) .about-copy h2,
+    body.ghostwriting-page .about-vision-mission .call-sec h2,
+    body.ghostwriting-page .cover-showcase-copy h2 {
+        font-size: 31px;
+        line-height: 39px;
+    }
+}
+
+/* ---- Cover showcase section (dark bg) heading/text ---- */
+body.ghostwriting-page .cover-showcase-section .cover-showcase-copy h2 {
+    color: #e9fdff;
+}
+
+body.ghostwriting-page .cover-showcase-section .cover-showcase-copy p {
+    color: rgba(233, 253, 255, 0.85);
+}
+
+/* call-sec h2 in dark about-vision-mission sections */
+body.ghostwriting-page .about-vision-mission .call-sec h2 {
+    color: #e9fdff !important;
+}
+
+/* dark section image styling */
+body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.4);
+}
+
+/* 991px breakpoint for new selectors */
+@media screen and (max-width: 991px) {
+    body.ghostwriting-page .about-split-section.alt .about-copy h2,
+    body.ghostwriting-page .about-split-section:not(.alt) .about-copy h2,
+    body.ghostwriting-page .about-vision-mission .call-sec h2,
+    body.ghostwriting-page .cover-showcase-copy h2 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame {
+        margin-top: 34px;
+    }
+}

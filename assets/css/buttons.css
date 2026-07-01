@@ -1,0 +1,68 @@
+/* ==========================================================
+   UNIFIED PAGE BUTTONS all pages (excludes header buttons)
+   Load after style.css
+   ========================================================== */
+
+button:not(header button):not(.accordion button):not(.close):not(.slick-arrow):not(.genre-tab-button):not(.cover-book-button),
+a.serve-button,
+section.services-sec a.serve-button,
+section.services-sec a.serve-button.light,
+section.services-sec a.serve-button.dark,
+.contact_us_sec .contact-content .buttons a.first-btn,
+.contact_us_sec .contact-content .buttons a.second-btn,
+.contact-content .buttons a,
+.services-buttons .call-btn button,
+.services-buttons .schedule-btn button,
+.call-btn:not(header .call-btn) button,
+.schedule-btn:not(header .schedule-btn) button,
+.schedule-btn2 button,
+.schedule-btn-blue button,
+.livechat-btn button,
+.form-col form button,
+.banner-form button {
+  background-color: #50bac2 !important;
+  border: 2px solid #50bac2 !important;
+  color: #fff !important;
+  box-sizing: border-box;
+  transform: translateY(0) scale(1);
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease, border-color 0.22s ease;
+}
+
+button:not(header button):not(.accordion button):not(.close):not(.slick-arrow):not(.genre-tab-button):not(.cover-book-button):hover,
+a.serve-button:hover,
+section.services-sec a.serve-button:hover,
+section.services-sec a.serve-button.light:hover,
+section.services-sec a.serve-button.dark:hover,
+.contact_us_sec .contact-content .buttons a.first-btn:hover,
+.contact_us_sec .contact-content .buttons a.second-btn:hover,
+.contact-content .buttons a:hover,
+.services-buttons .call-btn button:hover,
+.services-buttons .schedule-btn button:hover,
+.call-btn:not(header .call-btn) button:hover,
+.schedule-btn:not(header .schedule-btn) button:hover,
+.schedule-btn2 button:hover,
+.schedule-btn-blue button:hover,
+.livechat-btn button:hover,
+.form-col form button:hover,
+.banner-form button:hover {
+  background-color: #50bac2 !important;
+  border: 2px solid #50bac2 !important;
+  color: #fff !important;
+  transform: translateY(-3px) scale(1.035);
+  box-shadow: 0 14px 26px rgba(6, 30, 56, 0.24);
+}
+
+body.ghostwriting-page section.story-writer.story-writer-dark-buttons .story-writer-content .services-buttons .call-btn button,
+body.ghostwriting-page section.story-writer.story-writer-dark-buttons .story-writer-content .services-buttons .schedule-btn button {
+  background-color: #11184f !important;
+  border: 2px solid #11184f !important;
+  color: #fff !important;
+}
+
+body.ghostwriting-page section.story-writer.story-writer-dark-buttons .story-writer-content .services-buttons .call-btn button:hover,
+body.ghostwriting-page section.story-writer.story-writer-dark-buttons .story-writer-content .services-buttons .schedule-btn button:hover {
+  background-color: #11184f !important;
+  border: 2px solid #11184f !important;
+  color: #fff !important;
+}
