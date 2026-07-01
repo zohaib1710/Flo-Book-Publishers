@@ -2629,7 +2629,7 @@ section.banner-color img.display-none {
   }
 
   .resp-box {
-    background: #efc9c1 !important;
+    background: #50bac220 !important;
     /* height: 60vh !important; */
     /* display: flex;
     align-items: center; */
@@ -2791,7 +2791,7 @@ section.banner-color img.display-none {
   }
 
   .services-sec {
-    background: #0B1F3A;
+    /* background: #0B1F3A; */
     padding: 0;
   }
 
