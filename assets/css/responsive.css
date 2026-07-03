@@ -1533,3 +1533,1342 @@
     transform: scale(0.75);
   }
 }
+
+@media screen and (max-width: 768px) {
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) {
+    overflow-x: hidden;
+    padding-bottom: 0;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .top-bar {
+    padding: 0;
+    min-height: 8px;
+    display: flex;
+    align-items: center;
+    background: #061e38;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .top-bar .container-fluid {
+    min-height: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .top-bar-ticker {
+    min-height: 8px;
+    width: 100%;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header {
+    top: 8px !important;
+    padding: 10px 0 12px !important;
+    background: #e9fdff !important;
+    border-bottom: 4px solid #061e38;
+    box-shadow: 0 10px 24px rgba(6, 30, 56, 0.08) !important;
+    min-height: 92px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .main-header {
+    padding: 0 16px !important;
+    position: relative;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .container-fluid {
+    padding: 0 !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .row {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0;
+    min-height: 66px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .col-md-2.text-center,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .col-md-5.text-center,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .col-md-5.text-right {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 0;
+    text-align: left !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .col-md-2.text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 74px;
+    position: relative;
+    z-index: 2;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .logo,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) a.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .logo img,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) a.logo img,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .main-header .logo img {
+    width: auto !important;
+    max-width: 170px;
+    max-height: 60px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .menu-Bar {
+    position: absolute !important;
+    top: 50% !important;
+    right: 16px;
+    left: auto;
+    transform: translateY(-50%);
+    z-index: 10002;
+    width: 44px;
+    height: 44px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .menu-Bar span,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header.is-scrolled .menu-Bar span {
+    background: #50bac2 !important;
+    width: 28px;
+    height: 3px;
+    border-radius: 999px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .menuWrap,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .menuWrap.btn-resp {
+    display: none;
+    width: 100%;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .menuWrap.open,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .menuWrap.btn-resp.open {
+    display: block !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .menuWrap {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: calc(100% + 8px);
+    width: auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: calc(100vh - 150px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #061e38;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 22px;
+    padding: 12px;
+    box-shadow: 0 20px 42px rgba(5, 18, 34, 0.3);
+    z-index: 10001;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .menuWrap.btn-resp,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .btn-a,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .btn-a1,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .col-md-5.text-right {
+    display: none !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .menuWrap .menu {
+    display: flex !important;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    width: 100%;
+    height: auto !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header ul.menu > li {
+    width: 100%;
+    margin: 0 !important;
+    height: auto !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header ul.menu > li > a,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header.is-scrolled ul.menu > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 50px;
+    width: 100%;
+    padding: 12px 18px !important;
+    border-radius: 14px;
+    font-size: 16px !important;
+    line-height: 1.35;
+    text-align: left !important;
+    color: #12284a !important;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header ul.menu > li.active > a {
+    background: #50bac2;
+    color: #061e38 !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .dropdown > a {
+    justify-content: space-between;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .dropdown > a::after {
+    content: "+";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    margin-left: 10px;
+    color: #061e38;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .dropdown-menu {
+    position: static;
+    min-width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    display: none;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    border-radius: 18px;
+    background: rgba(80, 186, 194, 0.12);
+    border: 1px solid rgba(80, 186, 194, 0.2);
+    box-shadow: none;
+    overflow: visible;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .dropdown:hover .dropdown-menu,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .dropdown:focus-within .dropdown-menu,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .dropdown.open .dropdown-menu {
+    display: grid;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .dropdown-item,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .dropdown-menu .dropdown-item,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .dropdown-menu a.dropdown-item {
+    min-height: 36px;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 7px 11px;
+    font-size: 10.5px !important;
+    line-height: 1.2 !important;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.14);
+    color: #f4fbfc !important;
+    font-weight: 500;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    letter-spacing: 0 !important;
+    white-space: nowrap;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .dropdown-item svg {
+    width: 14px !important;
+    height: 14px !important;
+    flex: 0 0 14px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .sidebar {
+    display: none !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .hero-logo-sec,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .cover-hero-logo-wrap.hero-logo-sec {
+    padding: 18px 0 !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact-sec-new,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-sec,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact_us_sec {
+    padding-top: 42px !important;
+    padding-bottom: 42px !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact-sec-new .container,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact_us_sec .container,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-sec .container-fluid,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .py-5 .container-fluid,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) footer .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact-sec-new .row,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact_us_sec .row,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-sec .row,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .py-5 .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact-sec-new .row > div,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact_us_sec .row > div {
+    text-align: center;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact-sec-new img,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact_us_sec img {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact-sec-new .cheap-publishing,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact-sec-new .banner-contents {
+    text-align: center;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact-sec-new h3,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact-content h3 {
+    font-size: 20px !important;
+    line-height: 1.45 !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new .cheap-publishing {
+    max-width: 250px;
+    margin-bottom: 16px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new .banner-contents {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new h3 {
+    color: #061e38 !important;
+    font-size: 18px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 12px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new h2,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact-content h2,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .reviews-content h2 {
+    font-size: 28px !important;
+    line-height: 1.25 !important;
+    color: #061e38 !important;
+    margin-bottom: 18px !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new p,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact-content p,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .reviews-content p {
+    font-size: 15px !important;
+    line-height: 1.75 !important;
+    color: #061e38 !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new .row.mt-4 {
+    justify-content: center;
+    row-gap: 14px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new .phone-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 108px;
+    padding: 18px 16px;
+    border-radius: 20px;
+    background: rgba(80, 186, 194, 0.12);
+    border: 1px solid rgba(80, 186, 194, 0.28);
+    text-align: left;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new .phone-icon svg {
+    flex: 0 0 48px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new .phone-icon h6 {
+    margin-bottom: 4px;
+    color: #50bac2 !important;
+    font-size: 17px !important;
+    line-height: 1.25 !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new .phone-icon p {
+    margin-bottom: 0;
+    color: #061e38 !important;
+    font-size: 18px !important;
+    line-height: 1.35 !important;
+    font-weight: 700;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new .col-8.col-lg-8,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new .col-4.col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 15px !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new .schedule-btn2,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new .call-btn {
+    text-align: center;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new .schedule-btn2 button,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new .call-btn button {
+    width: min(100%, 320px);
+    min-height: 54px;
+    margin: 0 auto;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider {
+    margin: 22px 0 0;
+    padding: 10px 0 10px;
+    overflow: hidden;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .slick-list {
+    padding: 0 16px 10px !important;
+    overflow: hidden;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .slick-track {
+    display: flex;
+    align-items: stretch;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .slick-slide {
+    height: auto;
+    padding: 0 6px;
+    box-sizing: border-box;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .slick-slide > div {
+    height: 100%;
+    width: 100%;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .testimonial-item {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100% !important;
+    height: 340px;
+    min-height: 340px;
+    max-height: 340px;
+    margin: 16px 0 10px !important;
+    padding: 24px 20px 22px !important;
+    border-radius: 28px;
+    background: linear-gradient(180deg, #ffffff 0%, #f4fcfd 100%) !important;
+    border: 1px solid rgba(80, 186, 194, 0.24);
+    box-shadow: 0 16px 36px rgba(6, 30, 56, 0.12);
+    transform: none !important;
+    text-align: left;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .testimonial-item::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 4px;
+    margin-bottom: 16px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #50bac2 0%, #061e38 100%);
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .testimonial-item p {
+    flex: 1 1 auto;
+    max-height: 175px;
+    margin: 16px 0 18px;
+    padding-right: 8px;
+    font-size: 14px !important;
+    line-height: 1.75 !important;
+    letter-spacing: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: #23415f;
+    font-weight: 500;
+    scrollbar-width: thin;
+    scrollbar-color: #50bac2 #d8f3f5;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .testimonial-item p::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .testimonial-item p::-webkit-scrollbar-track {
+    background: #d8f3f5;
+    border-radius: 999px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .testimonial-item p::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #50bac2 0%, #061e38 100%);
+    border-radius: 999px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .testimonial-item img.quote-icon {
+    width: 44px;
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .testimonial-item img.stars {
+    width: 96px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .testimonial-item h5 {
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: 19px !important;
+    line-height: 1.25 !important;
+    color: #061e38 !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .testimonial-item span {
+    display: block;
+    font-size: 12px !important;
+    line-height: 1.45 !important;
+    color: #50bac2 !important;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .testimonial-item.slick-current.slick-active.slick-center,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .slick-center .testimonial-item {
+    transform: none !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact_us_sec .contact-content {
+    padding-bottom: 22px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact-content .buttons a {
+    justify-content: center;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .form-col {
+    margin-top: 8px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .form-col h4 {
+    font-size: 26px !important;
+    line-height: 1.25 !important;
+    text-align: center;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .form-col form input,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .form-col form textarea {
+    font-size: 16px !important;
+    min-height: 48px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .form-col form textarea {
+    min-height: 120px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .form-col form .col-md-6,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .form-col form .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .form-col form button {
+    width: 100%;
+    min-height: 52px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-sec {
+    padding: 40px 0 24px !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-sec .col-md-10,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-sec .col-md-2,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-sec .col-md-3,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-sec .col-lg-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-links {
+    text-align: center;
+    margin-bottom: 22px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-links h4 {
+    margin-bottom: 14px;
+    font-size: 22px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-links ul {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-links ul li {
+    margin-bottom: 10px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-links ul li a {
+    font-size: 15px !important;
+    line-height: 1.6;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+    padding-top: 8px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-logos br {
+    display: none;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-logos a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 74px;
+    margin: 0;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-logos img {
+    display: block;
+    max-width: none !important;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-logos a:nth-child(1) img,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-logos a:nth-child(2) img {
+    width: 250px !important;
+    height: 48px !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-logos a:nth-child(3) {
+    min-height: 82px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-logos a:nth-child(3) img {
+    width: 250px !important;
+    height: 66px !important;
+    transform: scale(1.08);
+    transform-origin: center;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .py-5 {
+    padding-top: 34px !important;
+    padding-bottom: 26px !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .last-footer {
+    text-align: center;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .last-footer img {
+    width: min(100%, 130px) !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .last-footer p,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .last-footer p a {
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    word-break: break-word;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .last-footer a i {
+    font-size: 24px;
+    margin: 0 8px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .last-copy p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter {
+    padding: 0 !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-dialog {
+    width: calc(100% - 16px) !important;
+    max-width: none;
+    min-height: calc(100% - 16px);
+    margin: 8px auto !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-modal {
+    max-height: calc(100vh - 16px);
+    overflow: hidden;
+    border-radius: 28px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-shell {
+    max-height: calc(100vh - 16px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-main {
+    grid-template-columns: 1fr !important;
+    gap: 0;
+    padding: 58px 14px 14px !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-left,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-stats {
+    display: none !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-right {
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-close {
+    top: 10px;
+    right: 10px;
+    width: 48px;
+    height: 48px;
+    font-size: 28px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-form-card {
+    padding: 22px 16px 18px !important;
+    border-radius: 24px;
+    box-shadow: none;
+    margin: 0;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-form-title {
+    font-size: 26px !important;
+    line-height: 1.2;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    row-gap: 12px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-step span {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-field input,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-field select,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-field textarea {
+    width: 100%;
+    min-width: 0;
+    font-size: 16px !important;
+    min-height: 48px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-field textarea {
+    min-height: 120px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-submit {
+    width: 100%;
+    min-height: 52px;
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .col-md-2.text-center {
+    min-height: 64px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .logo img,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) a.logo img,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .main-header .logo img {
+    max-width: 156px;
+    max-height: 56px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .menu-Bar {
+    top: 50% !important;
+    right: 14px;
+    width: 42px;
+    height: 42px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .menuWrap {
+    left: 8px;
+    right: 8px;
+    max-height: calc(100vh - 138px);
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact-sec-new h2,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .contact-content h2,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .reviews-content h2 {
+    font-size: 24px !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new h3 {
+    font-size: 16px !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new .phone-icon {
+    flex-direction: column;
+    text-align: center;
+    min-height: 0;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) section.contact-sec-new .phone-icon svg {
+    flex-basis: auto;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .slick-list {
+    padding: 0 12px 10px !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .slick-slide {
+    padding: 0 5px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .testimonial-item {
+    height: 324px;
+    min-height: 324px;
+    max-height: 324px;
+    margin: 14px 0 8px !important;
+    padding: 22px 18px 20px !important;
+    border-radius: 20px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .testimonial-item p {
+    max-height: 164px;
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-logos img {
+    max-width: none !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-logos a:nth-child(1) img,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-logos a:nth-child(2) img {
+    width: 230px !important;
+    height: 44px !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .footer-logos a:nth-child(3) img {
+    width: 230px !important;
+    height: 58px !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-dialog {
+    width: calc(100% - 10px) !important;
+    min-height: calc(100% - 10px);
+    margin: 5px auto !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-modal,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-shell {
+    max-height: calc(100vh - 10px);
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-main {
+    padding: 5px 10px 10px !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-form-card {
+    padding: 20px 14px 16px !important;
+    border-radius: 20px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-form-title {
+    font-size: 23px !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) #exampleModalCenter .popup-redesign-steps {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) {
+    padding-bottom: 0;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .main-header {
+    padding: 0 10px !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .menu-Bar {
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    top: 50% !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .logo img,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) a.logo img,
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .main-header .logo img {
+    max-width: 142px;
+    max-height: 52px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .col-md-2.text-center {
+    min-height: 60px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) header .menuWrap {
+    left: 6px;
+    right: 6px;
+    max-height: calc(100vh - 128px);
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .slick-list {
+    padding: 0 8px 8px !important;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .slick-slide {
+    padding: 0 4px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .testimonial-item {
+    height: 308px;
+    min-height: 308px;
+    max-height: 308px;
+    margin: 12px 0 8px !important;
+    padding: 20px 16px 18px !important;
+    border-radius: 24px;
+  }
+
+  body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .testimonial-item p {
+    max-height: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body:not(.home-page),
+  body.home-page.contact-page,
+  body.home-page.legal-page,
+  body.header-home-clone {
+    overflow-x: hidden;
+  }
+
+  body:not(.home-page) header,
+  body.home-page.contact-page header,
+  body.home-page.legal-page header,
+  body.header-home-clone header {
+    top: 8px !important;
+    padding: 10px 0 12px !important;
+    background: #e9fdff !important;
+    border-top: 0 !important;
+    border-bottom: 4px solid #061e38 !important;
+    box-shadow: 0 10px 24px rgba(6, 30, 56, 0.08) !important;
+    min-height: 92px !important;
+  }
+
+  body:not(.home-page) .main-header,
+  body.home-page.contact-page .main-header,
+  body.home-page.legal-page .main-header,
+  body.header-home-clone .main-header {
+    padding: 0 16px !important;
+    position: relative !important;
+  }
+
+  body:not(.home-page) header .container-fluid,
+  body.home-page.contact-page header .container-fluid,
+  body.home-page.legal-page header .container-fluid,
+  body.header-home-clone header .container-fluid {
+    padding: 0 !important;
+  }
+
+  body:not(.home-page) header .row,
+  body.home-page.contact-page header .row,
+  body.home-page.legal-page header .row,
+  body.header-home-clone header .row {
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    row-gap: 0 !important;
+    min-height: 66px !important;
+  }
+
+  body:not(.home-page) header .col-md-2.text-center,
+  body:not(.home-page) header .col-md-5.text-center,
+  body:not(.home-page) header .col-md-5.text-right,
+  body.home-page.contact-page header .col-md-2.text-center,
+  body.home-page.contact-page header .col-md-5.text-center,
+  body.home-page.contact-page header .col-md-5.text-right,
+  body.home-page.legal-page header .col-md-2.text-center,
+  body.home-page.legal-page header .col-md-5.text-center,
+  body.home-page.legal-page header .col-md-5.text-right,
+  body.header-home-clone header .col-md-2.text-center,
+  body.header-home-clone header .col-md-5.text-center,
+  body.header-home-clone header .col-md-5.text-right {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    padding: 0 !important;
+    text-align: left !important;
+  }
+
+  body:not(.home-page) header .col-md-2.text-center,
+  body.home-page.contact-page header .col-md-2.text-center,
+  body.home-page.legal-page header .col-md-2.text-center,
+  body.header-home-clone header .col-md-2.text-center {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 74px !important;
+    position: relative !important;
+    z-index: 2 !important;
+  }
+
+  body:not(.home-page) header .logo,
+  body:not(.home-page) a.logo,
+  body.home-page.contact-page header .logo,
+  body.home-page.contact-page a.logo,
+  body.home-page.legal-page header .logo,
+  body.home-page.legal-page a.logo,
+  body.header-home-clone header .logo,
+  body.header-home-clone a.logo {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  body:not(.home-page) header .logo img,
+  body:not(.home-page) a.logo img,
+  body:not(.home-page) .main-header .logo img,
+  body.home-page.contact-page header .logo img,
+  body.home-page.contact-page a.logo img,
+  body.home-page.contact-page .main-header .logo img,
+  body.home-page.legal-page header .logo img,
+  body.home-page.legal-page a.logo img,
+  body.home-page.legal-page .main-header .logo img,
+  body.header-home-clone header .logo img,
+  body.header-home-clone a.logo img,
+  body.header-home-clone .main-header .logo img {
+    width: auto !important;
+    max-width: 170px !important;
+    max-height: 60px !important;
+    padding-top: 0 !important;
+  }
+
+  body:not(.home-page) .menu-Bar,
+  body.home-page.contact-page .menu-Bar,
+  body.home-page.legal-page .menu-Bar,
+  body.header-home-clone .menu-Bar {
+    position: absolute !important;
+    top: 50% !important;
+    right: 16px !important;
+    left: auto !important;
+    margin: 0 !important;
+    transform: translateY(-50%) !important;
+    z-index: 10002 !important;
+    width: 44px !important;
+    height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 12px !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  body:not(.home-page) header .menu-Bar span,
+  body:not(.home-page) header.is-scrolled .menu-Bar span,
+  body.home-page.contact-page header .menu-Bar span,
+  body.home-page.contact-page header.is-scrolled .menu-Bar span,
+  body.home-page.legal-page header .menu-Bar span,
+  body.home-page.legal-page header.is-scrolled .menu-Bar span,
+  body.header-home-clone header .menu-Bar span,
+  body.header-home-clone header.is-scrolled .menu-Bar span {
+    background: #50bac2 !important;
+    width: 28px !important;
+    height: 3px !important;
+    border-radius: 999px !important;
+  }
+
+  body:not(.home-page) .menuWrap,
+  body:not(.home-page) .menuWrap.btn-resp,
+  body.home-page.contact-page .menuWrap,
+  body.home-page.contact-page .menuWrap.btn-resp,
+  body.home-page.legal-page .menuWrap,
+  body.home-page.legal-page .menuWrap.btn-resp,
+  body.header-home-clone .menuWrap,
+  body.header-home-clone .menuWrap.btn-resp {
+    width: 100% !important;
+  }
+
+  body:not(.home-page) .menuWrap:not(.open),
+  body:not(.home-page) .menuWrap.btn-resp,
+  body.home-page.contact-page .menuWrap:not(.open),
+  body.home-page.contact-page .menuWrap.btn-resp,
+  body.home-page.legal-page .menuWrap:not(.open),
+  body.home-page.legal-page .menuWrap.btn-resp,
+  body.header-home-clone .menuWrap:not(.open),
+  body.header-home-clone .menuWrap.btn-resp,
+  body:not(.home-page) header .btn-a,
+  body:not(.home-page) header .btn-a1,
+  body:not(.home-page) header .col-md-5.text-right,
+  body.home-page.contact-page header .btn-a,
+  body.home-page.contact-page header .btn-a1,
+  body.home-page.contact-page header .col-md-5.text-right,
+  body.home-page.legal-page header .btn-a,
+  body.home-page.legal-page header .btn-a1,
+  body.home-page.legal-page header .col-md-5.text-right,
+  body.header-home-clone header .btn-a,
+  body.header-home-clone header .btn-a1,
+  body.header-home-clone header .col-md-5.text-right {
+    display: none !important;
+  }
+
+  body:not(.home-page) .menuWrap.open,
+  body.home-page.contact-page .menuWrap.open,
+  body.home-page.legal-page .menuWrap.open,
+  body.header-home-clone .menuWrap.open {
+    display: block !important;
+  }
+
+  body:not(.home-page) header .menuWrap,
+  body.home-page.contact-page header .menuWrap,
+  body.home-page.legal-page header .menuWrap,
+  body.header-home-clone header .menuWrap {
+    position: absolute !important;
+    left: 10px !important;
+    right: 10px !important;
+    top: calc(100% + 8px) !important;
+    bottom: auto !important;
+    width: auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: calc(100vh - 150px) !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    background: #061e38 !important;
+    border: 1px solid rgba(255, 255, 255, 0.14) !important;
+    border-radius: 22px !important;
+    padding: 12px !important;
+    box-shadow: 0 20px 42px rgba(5, 18, 34, 0.3) !important;
+    z-index: 10001 !important;
+    margin-top: 0 !important;
+  }
+
+  body:not(.home-page) header .menuWrap .menu,
+  body.home-page.contact-page header .menuWrap .menu,
+  body.home-page.legal-page header .menuWrap .menu,
+  body.header-home-clone header .menuWrap .menu {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  body:not(.home-page) header ul.menu > li,
+  body.home-page.contact-page header ul.menu > li,
+  body.home-page.legal-page header ul.menu > li,
+  body.header-home-clone header ul.menu > li {
+    width: 100% !important;
+    margin: 0 !important;
+    height: auto !important;
+  }
+
+  body:not(.home-page) header ul.menu > li > a,
+  body:not(.home-page) header.is-scrolled ul.menu > li > a,
+  body.home-page.contact-page header ul.menu > li > a,
+  body.home-page.contact-page header.is-scrolled ul.menu > li > a,
+  body.home-page.legal-page header ul.menu > li > a,
+  body.home-page.legal-page header.is-scrolled ul.menu > li > a,
+  body.header-home-clone header ul.menu > li > a,
+  body.header-home-clone header.is-scrolled ul.menu > li > a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    min-height: 50px !important;
+    width: 100% !important;
+    padding: 12px 18px !important;
+    border-radius: 14px !important;
+    font-size: 16px !important;
+    line-height: 1.35 !important;
+    text-align: left !important;
+    color: #12284a !important;
+    background: rgba(255, 255, 255, 0.96) !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5) !important;
+    font-weight: 600 !important;
+  }
+
+  body:not(.home-page) header ul.menu > li.active > a,
+  body.home-page.contact-page header ul.menu > li.active > a,
+  body.home-page.legal-page header ul.menu > li.active > a,
+  body.header-home-clone header ul.menu > li.active > a {
+    background: #50bac2 !important;
+    color: #061e38 !important;
+  }
+
+  body:not(.home-page) .dropdown-menu,
+  body.home-page.contact-page .dropdown-menu,
+  body.home-page.legal-page .dropdown-menu,
+  body.header-home-clone .dropdown-menu {
+    background: rgba(80, 186, 194, 0.12) !important;
+    border: 1px solid rgba(80, 186, 194, 0.2) !important;
+  }
+
+  body:not(.home-page) .dropdown-item,
+  body:not(.home-page) .dropdown-menu .dropdown-item,
+  body:not(.home-page) .dropdown-menu a.dropdown-item,
+  body.home-page.contact-page .dropdown-item,
+  body.home-page.contact-page .dropdown-menu .dropdown-item,
+  body.home-page.contact-page .dropdown-menu a.dropdown-item,
+  body.home-page.legal-page .dropdown-item,
+  body.home-page.legal-page .dropdown-menu .dropdown-item,
+  body.home-page.legal-page .dropdown-menu a.dropdown-item,
+  body.header-home-clone .dropdown-item,
+  body.header-home-clone .dropdown-menu .dropdown-item,
+  body.header-home-clone .dropdown-menu a.dropdown-item {
+    min-height: 36px !important;
+    gap: 8px !important;
+    padding: 7px 11px !important;
+    font-size: 17.5px !important;
+    line-height: 1.2 !important;
+    border-radius: 12px !important;
+    background: rgba(255, 255, 255, 0.14) !important;
+    color: #f4fbfc !important;
+    font-weight: 500 !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+    letter-spacing: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  body:not(.home-page) .dropdown-item svg,
+  body.home-page.contact-page .dropdown-item svg,
+  body.home-page.legal-page .dropdown-item svg,
+  body.header-home-clone .dropdown-item svg {
+    width: 14px !important;
+    height: 14px !important;
+    flex: 0 0 14px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body:not(.home-page) header .col-md-2.text-center,
+  body.home-page.contact-page header .col-md-2.text-center,
+  body.home-page.legal-page header .col-md-2.text-center,
+  body.header-home-clone header .col-md-2.text-center {
+    min-height: 64px !important;
+  }
+
+  body:not(.home-page) header .logo img,
+  body:not(.home-page) a.logo img,
+  body:not(.home-page) .main-header .logo img,
+  body.home-page.contact-page header .logo img,
+  body.home-page.contact-page a.logo img,
+  body.home-page.contact-page .main-header .logo img,
+  body.home-page.legal-page header .logo img,
+  body.home-page.legal-page a.logo img,
+  body.home-page.legal-page .main-header .logo img,
+  body.header-home-clone header .logo img,
+  body.header-home-clone a.logo img,
+  body.header-home-clone .main-header .logo img {
+    max-width: 156px !important;
+    max-height: 56px !important;
+  }
+
+  body:not(.home-page) .menu-Bar,
+  body.home-page.contact-page .menu-Bar,
+  body.home-page.legal-page .menu-Bar,
+  body.header-home-clone .menu-Bar {
+    top: 70% !important;
+    right: 14px !important;
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  body:not(.home-page) header .menuWrap,
+  body.home-page.contact-page header .menuWrap,
+  body.home-page.legal-page header .menuWrap,
+  body.header-home-clone header .menuWrap {
+    left: 8px !important;
+    right: 8px !important;
+    max-height: calc(100vh - 138px) !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body:not(.home-page) .main-header,
+  body.home-page.contact-page .main-header,
+  body.home-page.legal-page .main-header,
+  body.header-home-clone .main-header {
+    padding: 0 10px !important;
+  }
+
+  body:not(.home-page) .menu-Bar,
+  body.home-page.contact-page .menu-Bar,
+  body.home-page.legal-page .menu-Bar,
+  body.header-home-clone .menu-Bar {
+    right: 10px !important;
+    width: 40px !important;
+    height: 40px !important;
+    top: 50% !important;
+  }
+
+  body:not(.home-page) header .logo img,
+  body:not(.home-page) a.logo img,
+  body:not(.home-page) .main-header .logo img,
+  body.home-page.contact-page header .logo img,
+  body.home-page.contact-page a.logo img,
+  body.home-page.contact-page .main-header .logo img,
+  body.home-page.legal-page header .logo img,
+  body.home-page.legal-page a.logo img,
+  body.home-page.legal-page .main-header .logo img,
+  body.header-home-clone header .logo img,
+  body.header-home-clone a.logo img,
+  body.header-home-clone .main-header .logo img {
+    max-width: 142px !important;
+    max-height: 52px !important;
+  }
+
+  body:not(.home-page) header .col-md-2.text-center,
+  body.home-page.contact-page header .col-md-2.text-center,
+  body.home-page.legal-page header .col-md-2.text-center,
+  body.header-home-clone header .col-md-2.text-center {
+    min-height: 60px !important;
+  }
+
+  body:not(.home-page) header .menuWrap,
+  body.home-page.contact-page header .menuWrap,
+  body.home-page.legal-page header .menuWrap,
+  body.header-home-clone header .menuWrap {
+    left: 6px !important;
+    right: 6px !important;
+    max-height: calc(100vh - 128px) !important;
+  }
+}

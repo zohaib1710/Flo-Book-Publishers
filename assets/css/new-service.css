@@ -1036,6 +1036,7 @@ section.offer-ny-section p a,
     display: flex;
     gap: 20px;
     flex-direction: column;
+    align-items: center;
   }
   .choose-content h2 {
     font-size: 36px;
@@ -1138,7 +1139,7 @@ section.offer-ny-section p a,
         font-size: 30px;
     }
       .support-sevice {
-        background: #c7432d;
+        background: #061e38;
         height: 137px;
         margin-top: -140px;
     }
