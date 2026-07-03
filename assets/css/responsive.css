@@ -2878,3 +2878,86 @@
     max-height: calc(100vh - 128px) !important;
   }
 }
+
+@media screen and (max-width: 768px) {
+  body.about-page .about-copy {
+    margin-left: 0 !important;
+  }
+
+  body.about-page .about-cta-row {
+    display: flex !important;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+  }
+
+  body.about-page .about-cta-row .schedule-btn2,
+  body.about-page .about-cta-row .call-btn,
+  body.about-page .about-cta-row .call-btn a {
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  body.about-page .about-cta-row .schedule-btn2 button,
+  body.about-page .about-cta-row .call-btn button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 52px;
+    height: 52px;
+    padding: 0 18px;
+  }
+
+  body.about-page .about-struggle-section .about-hero-button-row {
+    row-gap: 12px;
+    justify-content: center;
+  }
+
+  body.about-page .about-struggle-section .about-hero-button-row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  body.about-page .about-struggle-section .about-hero-button-row .schedule-btn,
+  body.about-page .about-struggle-section .about-hero-button-row .call-btn,
+  body.about-page .about-struggle-section .about-hero-button-row .livechat-btn,
+  body.about-page .about-struggle-section .about-hero-button-row .livechat-btn a {
+    display: block;
+    width: 100%;
+    margin-top: 0 !important;
+  }
+
+  body.about-page .about-struggle-section .about-hero-button-row .schedule-btn button,
+  body.about-page .about-struggle-section .about-hero-button-row .call-btn button,
+  body.about-page .about-struggle-section .about-hero-button-row .livechat-btn button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 52px !important;
+    height: 52px !important;
+    padding: 0 18px !important;
+  }
+
+  body.about-page .contact_us_sec .form-col form .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  body.about-page .contact_us_sec .form-col form .col-md-6 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  body.about-page .contact_us_sec .form-col form input,
+  body.about-page .contact_us_sec .form-col form textarea {
+    width: 100% !important;
+  }
+}
