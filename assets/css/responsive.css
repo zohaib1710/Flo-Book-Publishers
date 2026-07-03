@@ -1953,6 +1953,8 @@
 
   body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .slick-slide {
     height: auto;
+    width: 100% !important;
+    max-width: 100% !important;
     padding: 0 6px;
     box-sizing: border-box;
   }
@@ -2353,6 +2355,8 @@
   }
 
   body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .slick-slide {
+    width: 100% !important;
+    max-width: 100% !important;
     padding: 0 5px;
   }
 
@@ -2360,7 +2364,7 @@
     height: 324px;
     min-height: 324px;
     max-height: 324px;
-    margin: 14px 0 8px !important;
+    margin: 14px 8px !important;
     padding: 22px 18px 20px !important;
     border-radius: 20px;
   }
@@ -2453,6 +2457,8 @@
   }
 
   body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .slick-slide {
+    width: 100% !important;
+    max-width: 100% !important;
     padding: 0 4px;
   }
 

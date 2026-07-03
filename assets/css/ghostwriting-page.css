@@ -424,7 +424,7 @@ body.ghostwriting-page section[style*="background: #11184f"] {
     }
 
     body.ghostwriting-page .cover-hero-stats {
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
     }
 
     body.ghostwriting-page .about-split-section,
