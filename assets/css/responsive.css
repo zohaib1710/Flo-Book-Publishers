@@ -1585,36 +1585,39 @@
 
   body.home-page .menu-Bar {
     right: 10px;
-    width: 40px;
-    height: 40px;
-    top: 50% !important;
+    width: 38px;
+    height: 38px;
+    /* top: 48% !important; */
   }
 
   body.home-page .banner-content h1 {
-    font-size: 23px !important;
+    font-size: 22px !important;
     line-height: 1.12 !important;
   }
 
   body.home-page .banner-content h1 p {
-    font-size: 28px !important;
+    font-size: 25px !important;
     line-height: 0.98 !important;
-    letter-spacing: 0.015em;
-    margin: 4px 0 6px !important;
+    letter-spacing: 0.01em;
+    margin: 3px 0 5px !important;
   }
 
   body.home-page .testimonial-slider .slick-list {
-    padding: 0 8px 8px !important;
+    padding: 0 10px 8px !important;
   }
 
   body.home-page .testimonial-slider .slick-slide {
-    padding: 0 4px;
+    width: calc(100vw - 32px) !important;
+    max-width: calc(100vw - 32px) !important;
+    min-width: calc(100vw - 32px) !important;
+    padding: 0 2px;
   }
 
   body.home-page .testimonial-slider .testimonial-item {
     height: 308px;
     min-height: 308px;
     max-height: 308px;
-    margin: 12px 0 8px !important;
+    margin: 12px 8px !important;
     padding: 20px 16px 18px !important;
     border-radius: 24px;
   }
@@ -2681,26 +2684,52 @@
   }
 
   body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .slick-list {
-    padding: 0 8px 8px !important;
+    padding: 0 10px 8px !important;
   }
 
   body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .slick-slide {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 4px;
+    width: calc(100vw - 32px) !important;
+    max-width: calc(100vw - 32px) !important;
+    min-width: calc(100vw - 32px) !important;
+    padding: 0 2px;
   }
 
   body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .testimonial-item {
     height: 308px;
     min-height: 308px;
     max-height: 308px;
-    margin: 12px 0 8px !important;
+    margin: 12px 8px !important;
     padding: 20px 16px 18px !important;
     border-radius: 24px;
   }
 
   body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .testimonial-slider .testimonial-item p {
     max-height: 150px;
+  }
+
+  body.ghostwriting-page .home-hero-sec .banner-content h1,
+  body.ghostwriting-page .home-hero-sec .banner-content h1 span,
+  body.ghostwriting-page .home-hero-sec .banner-content h1 p,
+  body.ghostwriting-page .home-hero-sec .banner-content h1 p span {
+    font-size: 38px !important;
+    line-height: 1.12 !important;
+    letter-spacing: 0 !important;
+  }
+
+  body.ghostwriting-page .home-hero-sec .banner-content h1 p {
+    font-size: 24px !important;
+    line-height: 1.04 !important;
+    margin: 3px 0 5px !important;
+  }
+
+  body.about-page .about-hero-card h1 {
+    font-size: 24px !important;
+    line-height: 1.12 !important;
+  }
+
+  body.about-page .about-hero-card p {
+    font-size: 14px !important;
+    line-height: 1.72 !important;
   }
 }
 
@@ -3069,9 +3098,9 @@
   body.home-page.legal-page .menu-Bar,
   body.header-home-clone .menu-Bar {
     right: 10px !important;
-    width: 40px !important;
-    height: 40px !important;
-    top: 50% !important;
+    width: 38px !important;
+    height: 38px !important;
+    /* top: 48% !important; */
   }
 
   body:not(.home-page) header .logo img,
@@ -3420,13 +3449,13 @@
 
 @media screen and (max-width: 360px) {
   body.reviews-page .testimonial-slider .slick-list {
-    padding: 0 6px 8px !important;
+    padding: 0 10px 8px !important;
   }
 
   body.reviews-page .testimonial-slider .slick-slide {
-    width: calc(100vw - 24px) !important;
-    max-width: calc(100vw - 24px) !important;
-    min-width: calc(100vw - 24px) !important;
+    width: calc(100vw - 32px) !important;
+    max-width: calc(100vw - 32px) !important;
+    min-width: calc(100vw - 32px) !important;
     padding: 0 !important;
   }
 
@@ -3434,7 +3463,7 @@
     height: 308px;
     min-height: 308px;
     max-height: 308px;
-    margin: 12px 0 8px !important;
+    margin: 12px 8px !important;
     padding: 20px 16px 18px !important;
     border-radius: 24px;
   }
