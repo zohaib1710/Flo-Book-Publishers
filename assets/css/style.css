@@ -4254,7 +4254,7 @@ section.new-faqs-sec .accordion button .icon {
 
   .home-hero-sec .banner-content h1 span {
     /* font-size: 47px !important; */
-    /* letter-spacing: 13px; */
+    letter-spacing: 1px;
   }
 
   .home-hero-sec .banner-content p {
