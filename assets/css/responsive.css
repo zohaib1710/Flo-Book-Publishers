@@ -1333,6 +1333,16 @@
 }
 
 @media screen and (max-width: 480px) {
+  body.ghostwriting-page .banner-color.home-hero-sec {
+    padding-top: 102px !important;
+    padding-bottom: 28px !important;
+  }
+
+  body.about-page .about-hero-sec {
+    padding-top: 102px !important;
+    padding-bottom: 28px !important;
+  }
+
   body.home-page .banner-color.home-hero-sec {
     padding-top: 102px !important;
     padding-bottom: 28px !important;
@@ -1894,6 +1904,112 @@
 
   body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .sidebar {
     display: none !important;
+  }
+
+  body.ghostwriting-page .banner-color.home-hero-sec {
+    margin-top: 40px;
+    padding-top: 112px !important;
+    padding-bottom: 34px !important;
+    background: #e9fdff !important;
+  }
+
+  body.ghostwriting-page .home-hero-sec .hero-video-wrap {
+    display: none !important;
+  }
+
+  body.ghostwriting-page .banner-color.home-hero-sec .overlay {
+    background: #e9fdff !important;
+    opacity: 1 !important;
+  }
+
+  body.ghostwriting-page .home-hero-sec .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  body.ghostwriting-page .home-hero-sec .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  body.ghostwriting-page .home-hero-sec .row.pad-top.pad-btm-70 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    row-gap: 26px;
+  }
+
+  body.ghostwriting-page .home-hero-sec .banner-content,
+  body.ghostwriting-page .home-hero-sec .banner-contents {
+    text-align: center;
+  }
+
+  body.ghostwriting-page .home-hero-sec .banner-content h1,
+  body.ghostwriting-page .home-hero-sec .banner-content h1 span,
+  body.ghostwriting-page .home-hero-sec .banner-content h1 p,
+  body.ghostwriting-page .home-hero-sec .banner-content h1 p span,
+  body.ghostwriting-page .home-hero-sec .banner-contents p {
+    color: #061e38 !important;
+  }
+
+  body.ghostwriting-page .home-hero-sec .cover-hero-stats {
+    margin-top: 18px;
+  }
+
+  body.ghostwriting-page .home-hero-sec .cover-hero-stat {
+    background: rgba(255, 255, 255, 0.72) !important;
+    border: 1px solid rgba(80, 186, 194, 0.22) !important;
+    box-shadow: 0 12px 28px rgba(6, 30, 56, 0.08);
+  }
+
+  body.ghostwriting-page .home-hero-sec .cover-hero-stat-number,
+  body.ghostwriting-page .home-hero-sec .cover-hero-stat-label {
+    color: #061e38 !important;
+  }
+
+  body.about-page .about-hero-sec {
+    margin-top: 40px;
+    padding-top: 112px !important;
+    padding-bottom: 34px !important;
+    background: #e9fdff !important;
+  }
+
+  body.about-page .about-hero-sec .hero-video-wrap {
+    display: none !important;
+  }
+
+  body.about-page .about-hero-sec .overlay {
+    background: #e9fdff !important;
+    opacity: 1 !important;
+  }
+
+  body.about-page .about-hero-sec .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  body.about-page .about-hero-card {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+  }
+
+  body.about-page .about-hero-card h1,
+  body.about-page .about-hero-card p,
+  body.about-page .about-counter-number,
+  body.about-page .about-counter-label {
+    color: #061e38 !important;
+  }
+
+  body.about-page .about-counter-grid {
+    margin-top: 18px;
+  }
+
+  body.about-page .about-counter-item {
+    background: rgba(255, 255, 255, 0.72) !important;
+    border: 1px solid rgba(80, 186, 194, 0.22) !important;
+    box-shadow: 0 12px 28px rgba(6, 30, 56, 0.08);
   }
 
   body:is(.about-page, .ghostwriting-page, .portfolio-page, .reviews-page) .hero-logo-sec,
