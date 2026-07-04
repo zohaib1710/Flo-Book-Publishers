@@ -1374,10 +1374,14 @@
 
   body.home-page .banner-content h1 {
     font-size: 26px !important;
+    line-height: 1.14 !important;
   }
 
   body.home-page .banner-content h1 p {
-    font-size: 36px !important;
+    font-size: 31px !important;
+    line-height: 0.98 !important;
+    letter-spacing: 0.02em;
+    margin: 4px 0 6px !important;
   }
 
   body.home-page .global-section .gradient-section h2,
@@ -1588,10 +1592,14 @@
 
   body.home-page .banner-content h1 {
     font-size: 23px !important;
+    line-height: 1.12 !important;
   }
 
   body.home-page .banner-content h1 p {
-    font-size: 32px !important;
+    font-size: 28px !important;
+    line-height: 0.98 !important;
+    letter-spacing: 0.015em;
+    margin: 4px 0 6px !important;
   }
 
   body.home-page .testimonial-slider .slick-list {
