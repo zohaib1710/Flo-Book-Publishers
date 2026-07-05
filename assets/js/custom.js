@@ -3,11 +3,6 @@ $(document).ready(function () {
   window.openFloLiveChat = function () {
     if (window.LiveChatWidget && typeof window.LiveChatWidget.call === "function") {
       window.LiveChatWidget.call("maximize");
-      return;
-    }
-
-    if (typeof window.zE === "function") {
-      window.zE("webWidget", "open");
     }
   };
 
@@ -21,6 +16,7 @@ $(document).ready(function () {
     var inlineAction = (trigger.getAttribute("onclick") || "").toLowerCase();
     var isChatTrigger =
       text.indexOf("chat") !== -1 ||
+      inlineAction.indexOf("livechatwidget") !== -1 ||
       inlineAction.indexOf("webwidget") !== -1 ||
       inlineAction.indexOf("setbuttonurl") !== -1 ||
       trigger.closest(".livechat-btn");
