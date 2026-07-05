@@ -17,7 +17,6 @@ $(document).ready(function () {
     var isChatTrigger =
       text.indexOf("chat") !== -1 ||
       inlineAction.indexOf("livechatwidget") !== -1 ||
-      inlineAction.indexOf("webwidget") !== -1 ||
       inlineAction.indexOf("setbuttonurl") !== -1 ||
       trigger.closest(".livechat-btn");
 

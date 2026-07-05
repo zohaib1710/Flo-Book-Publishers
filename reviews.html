@@ -122,6 +122,77 @@ body {
  font-size: 45px !important;
 }
 
+@media (min-width:769px) {
+ body.reviews-page .mt-50.wow.fadeInUpBig {
+ padding: 0 34px 20px 96px;
+ overflow: hidden;
+ }
+
+ body.reviews-page .testimonial-slider {
+ display: grid;
+ grid-template-columns: repeat(3, minmax(0, 1fr));
+ gap: 28px;
+ padding: 30px 0 52px;
+ margin: 0 auto;
+ overflow: visible;
+ }
+
+ body.reviews-page .testimonial {
+ width: 100% !important;
+ min-height: 336px;
+ margin: 0 !important;
+ padding: 24px 26px 22px;
+ border-radius: 16px;
+ border: 1px solid rgba(255, 255, 255, 0.12);
+ box-shadow: 0 18px 34px rgba(6, 30, 56, 0.08);
+ }
+
+ body.reviews-page .testimonial .main-div {
+ min-height: 86px;
+ align-items: center;
+ margin-bottom: 18px;
+ }
+
+ body.reviews-page .testimonial .main-div h3 {
+ line-height: 1.25;
+ }
+
+ body.reviews-page .testimonial .stars img {
+ width: 132px !important;
+ height: auto !important;
+ }
+
+ body.reviews-page .testimonial p {
+ height: 124px;
+ line-height: 1.7;
+ text-align: left;
+ padding-right: 12px;
+ }
+
+ body.reviews-page .testimonial-slider.slick-slider,
+ body.reviews-page .testimonial-slider.slick-initialized {
+ display: grid !important;
+ }
+
+ body.reviews-page .testimonial-slider.slick-slider .slick-list,
+ body.reviews-page .testimonial-slider.slick-slider .slick-track {
+ display: contents !important;
+ transform: none !important;
+ width: auto !important;
+ }
+
+ body.reviews-page .testimonial-slider.slick-slider .slick-slide {
+ float: none !important;
+ width: auto !important;
+ height: auto !important;
+ display: block !important;
+ }
+
+ body.reviews-page .testimonial-slider.slick-slider .slick-slide > div {
+ height: 100%;
+ }
+}
+
 @media (max-width:480px) {
  .mt-50 {
  margin: 30px 0px 0px 0px !important;
@@ -150,7 +221,7 @@ body {
  </div>
 </div> -->
 <div class="sidebar">
- <button class="item" type="button" onclick="if(window.LiveChatWidget&&window.LiveChatWidget.call){LiveChatWidget.call('maximize')}else if(window.zE){zE('webWidget','open');}">
+ <button class="item" type="button" onclick="if(window.LiveChatWidget&&window.LiveChatWidget.call){LiveChatWidget.call('maximize')}">
  <span class="icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
  <span class="text">Live Chat</span>
  </button>
@@ -1193,23 +1264,47 @@ button.close {
 
  <script>
  $(document).ready(function() {
- $('.testimonial-slider').slick({
- speed: 8000,
+ var $testimonialSlider = $('.testimonial-slider');
+
+ if (!$testimonialSlider.length) {
+ return;
+ }
+
+ if (window.matchMedia('(min-width: 769px)').matches) {
+ if ($testimonialSlider.hasClass('slick-initialized')) {
+ $testimonialSlider.slick('unslick');
+ }
+ return;
+ }
+
+ if ($testimonialSlider.hasClass('slick-initialized')) {
+ $testimonialSlider.slick('unslick');
+ }
+
+ $testimonialSlider.slick({
+ arrows: false,
+ dots: false,
+ centerMode: true,
+ centerPadding: '0px',
+ slidesToShow: 2,
+ slidesToScroll: 1,
+ infinite: true,
  autoplay: true,
  autoplaySpeed: 0,
- centerMode: true,
+ speed: 8000,
  cssEase: 'linear',
- slidesToShow: 5,
- slidesToScroll: 1,
- variableWidth: true,
- infinite: true,
- initialSlide: 1,
- rows: 2,
- accessibility: false,
- draggable: false,
  pauseOnHover: true,
+ responsive: [
+ {
+ breakpoint: 525,
+ settings: {
  arrows: false,
- buttons: false
+ centerMode: true,
+ centerPadding: '0px',
+ slidesToShow: 1
+ }
+ }
+ ]
  });
  });
  </script>

@@ -3297,7 +3297,7 @@
   }
 
   body.reviews-page .testimonial-slider .slick-list {
-    padding: 0 10px 10px !important;
+    padding: 0 16px 10px !important;
     overflow: hidden;
   }
 
@@ -3307,11 +3307,8 @@
   }
 
   body.reviews-page .testimonial-slider .slick-slide {
-    width: calc(100vw - 44px) !important;
-    max-width: calc(100vw - 44px) !important;
-    min-width: calc(100vw - 44px) !important;
     height: auto !important;
-    padding: 0 !important;
+    padding: 0 6px !important;
     box-sizing: border-box;
   }
 
@@ -3334,27 +3331,40 @@
     background: linear-gradient(180deg, #ffffff 0%, #f4fcfd 100%) !important;
     border: 1px solid rgba(80, 186, 194, 0.24);
     box-shadow: 0 16px 36px rgba(6, 30, 56, 0.12);
+    transform: none !important;
     text-align: left;
+  }
+
+  body.reviews-page .testimonial-slider .testimonial::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 4px;
+    margin-bottom: 16px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #50bac2 0%, #061e38 100%);
   }
 
   body.reviews-page .testimonial-slider .testimonial .main-div {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding-bottom: 12px;
-    margin-bottom: 14px;
-    border-bottom: 1px solid rgba(6, 30, 56, 0.12);
+    order: 4;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 4px;
+    border-bottom: 0;
   }
 
   body.reviews-page .testimonial-slider .testimonial .main-div .image h4 {
-    width: 44px !important;
-    height: 44px !important;
-    margin: 0;
-    padding: 12px 0;
-    font-size: 16px;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    opacity: 0;
+    font-size: 0;
     line-height: 1;
-    background: #50bac2;
-    color: #061e38;
   }
 
   body.reviews-page .testimonial-slider .testimonial .main-div h3 {
@@ -3365,6 +3375,7 @@
   }
 
   body.reviews-page .testimonial-slider .testimonial .stars {
+    order: 3;
     margin-bottom: 8px !important;
   }
 
@@ -3380,18 +3391,24 @@
   }
 
   body.reviews-page .testimonial-slider .testimonial .another h3 {
-    margin-bottom: 10px;
-    font-size: 16px !important;
-    line-height: 1.35 !important;
+    order: 1;
+    margin: 0 0 10px;
+    font-size: 12px !important;
+    line-height: 1.45 !important;
     color: #50bac2 !important;
     text-decoration: none;
     font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 
   body.reviews-page .testimonial-slider .testimonial p {
+    order: 2;
     flex: 1 1 auto;
-    max-height: 150px;
-    margin: 0;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: 175px;
+    margin: 0 0 18px;
     padding-right: 8px;
     font-size: 14px !important;
     line-height: 1.75 !important;
@@ -3421,21 +3438,18 @@
 
 @media screen and (max-width: 480px) {
   body.reviews-page .testimonial-slider .slick-list {
-    padding: 0 8px 10px !important;
+    padding: 0 12px 10px !important;
   }
 
   body.reviews-page .testimonial-slider .slick-slide {
-    width: calc(100vw - 32px) !important;
-    max-width: calc(100vw - 32px) !important;
-    min-width: calc(100vw - 32px) !important;
-    padding: 0 !important;
+    padding: 0 4px !important;
   }
 
   body.reviews-page .testimonial-slider .testimonial {
     height: 324px;
     min-height: 324px;
     max-height: 324px;
-    margin: 14px 8px !important;
+    margin: 14px !important;
     padding: 22px 18px 20px !important;
     border-radius: 20px;
   }
@@ -3449,21 +3463,18 @@
 
 @media screen and (max-width: 360px) {
   body.reviews-page .testimonial-slider .slick-list {
-    padding: 0 10px 8px !important;
+    padding: 0 12px 8px !important;
   }
 
   body.reviews-page .testimonial-slider .slick-slide {
-    width: calc(100vw - 32px) !important;
-    max-width: calc(100vw - 32px) !important;
-    min-width: calc(100vw - 32px) !important;
-    padding: 0 !important;
+    padding: 0 2px !important;
   }
 
   body.reviews-page .testimonial-slider .testimonial {
     height: 308px;
     min-height: 308px;
     max-height: 308px;
-    margin: 12px 8px !important;
+    margin: 12px !important;
     padding: 20px 16px 18px !important;
     border-radius: 24px;
   }
