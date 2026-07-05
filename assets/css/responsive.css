@@ -572,6 +572,16 @@
     border-radius: 24px;
   }
 
+  body.home-page .services-sec .icon-box-odd:has(a[href="audio-book-services.html"]),
+  body.home-page .services-sec .icon-box-odd:has(a[href="illustration-design-services.html"]) {
+    background: transparent !important;
+  }
+
+  body.home-page .services-sec .icon-box:has(a[href="book-marketing-services.html"]),
+  body.home-page .services-sec .icon-box:has(a[href="author-website-services.html"]) {
+    background: #50bac220 !important;
+  }
+
   body.home-page .services-sec .icon-box h6,
   body.home-page .services-sec .icon-box-odd h6 {
     font-size: 22px;
