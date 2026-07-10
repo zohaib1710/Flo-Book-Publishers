@@ -5384,6 +5384,7 @@ section.locations-sec {
 
   #exampleModalCenter .popup-redesign-recaptcha {
     min-height: 42px;
+    display: none;
   }
 
   #exampleModalCenter .popup-redesign-recaptcha .g-recaptcha {
@@ -5567,6 +5568,7 @@ section.locations-sec {
 
   #exampleModalCenter .popup-redesign-recaptcha {
     min-height: 46px;
+    display: none;
   }
 
   #exampleModalCenter .popup-redesign-recaptcha .g-recaptcha {
@@ -6209,4 +6211,54 @@ ul.subMenu li.active a {
 
 .flo-formspree-message.is-error {
   color: #b00020;
+}
+
+.sms-consent-field {
+  margin: 12px 0 16px;
+  color: #23415f;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.sms-consent-field label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.sms-consent-field input[type="checkbox"] {
+  flex: 0 0 16px;
+  width: 16px !important;
+  min-width: 16px;
+  height: 16px !important;
+  margin: 3px 0 0 !important;
+  appearance: auto;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+
+.sms-consent-field span {
+  display: block;
+}
+
+.sms-consent-field a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.banner-form .sms-consent-field,
+#exampleModalCenter .sms-consent-field {
+  color: #23415f;
+}
+
+.home-hero-sec .banner-form .sms-consent-field {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.home-hero-sec .banner-form .sms-consent-field input[type="checkbox"] {
+  background: #fff;
 }
