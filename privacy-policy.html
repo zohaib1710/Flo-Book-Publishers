@@ -8,9 +8,10 @@
  <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preload" as="font" href="assets/fonts/rubik-latin.woff2" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/critical.css">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
 
@@ -37,21 +38,16 @@
  content="Safeguard your personal information with our privacy policy. FLO Book Publishers is committed to protecting your data and ensuring a secure experience." />
  <title>Privacy Policy - Safeguarding Your Personal Information</title>
  <link rel="canonical" href="privacy-policy.html" />
- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@100;300;400;500;600;700&amp;display=swap" media="print" onload="this.media='all'">
+<link rel="preload" href="assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/css/bootstrap.min.css"></noscript>
 
-
-
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/swiper.min.css">
-<link rel="stylesheet" href="assets/css/slick-slider.css">
-
-<link rel="stylesheet" href="assets/css/layout.css" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="assets/css/style.css" >
-<link rel="stylesheet" href="assets/css/header.css" >
-<link rel="stylesheet" href="assets/css/buttons.css" >
+<link rel="preload" href="assets/css/layout.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/css/layout.css"></noscript>
+<link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
+<link rel="preload" href="assets/css/header.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/css/header.css"></noscript>
+<link rel="preload" href="assets/css/buttons.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/css/buttons.css"></noscript>
 
 <link rel="icon" href="assets/images/favicon.png" type="image/png">
-<link rel="shortcut icon" href="assets/images/favicon.png" type="image/png"></head>
+<link rel="shortcut icon" href="assets/images/favicon.png" type="image/png"><link rel="preload" href="assets/css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="assets/css/responsive.css"></noscript>
+</head>
 <style>
 .terms-heading h4 {
  font-size: 20px;
@@ -272,8 +268,6 @@ body.home-page.legal-page .terms-sec {
  }
 }
 </style>
-
-<link rel="stylesheet" href="assets/css/responsive.css">
 <body class="home-page legal-page">
 <div class="sidebar">
  <button class="item" type="button" onclick="if(window.LiveChatWidget&&window.LiveChatWidget.call){LiveChatWidget.call('maximize')}">
@@ -330,7 +324,7 @@ body.home-page.legal-page .terms-sec {
  <div class="col-md-5 text-center">
  <div class="menuWrap">
  <ul class="menu">
- <li class="active"><a href="/">Home</a></li>
+ <li class="active"><a href="index.html">Home</a></li>
  <li><a href="about-us.html">About Us</a></li>
 
  <li class="dropdown align-right">
@@ -339,11 +333,11 @@ body.home-page.legal-page .terms-sec {
 
  <div class="dropdown-menu">
 
- <a class="dropdown-item" href="/ghostwriting-services.html">
+ <a class="dropdown-item" href="ghostwriting-services.html">
  <svg fill="#50bac2" width="35px" height="35px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.643,13.072,17.414,2.3a1.027,1.027,0,0,1,1.452,0L20.7,4.134a1.027,1.027,0,0,1,0,1.452L9.928,16.357,5,18ZM21,20H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"/></svg>
  Ghostwriting Services
  </a>
- <a class="dropdown-item" href="/book-editing-services/index.html">
+ <a class="dropdown-item" href="book-editing-services/index.html">
  <svg fill="#50bac2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="35px" viewBox="0 0 92 92" enable-background="new 0 0 92 92" xml:space="preserve">
  <path id="XMLID_1259_" d="M86.1,9.2L79,1.9C78.4,1.3,77.6,1,76.8,1h0c-0.8,0-1.6,0.3-2.1,0.9L32.8,44.4c-0.3,0.3-0.5,0.6-0.7,1
  l-4.7,11.9c-0.4,1.1-0.2,2.4,0.7,3.2c0.6,0.6,1.3,0.9,2.1,0.9c0.4,0,0.7-0.1,1.1-0.2l11.8-4.7c0.4-0.2,0.7-0.4,1-0.7l41.9-42.5
@@ -352,27 +346,27 @@ body.home-page.legal-page .terms-sec {
  </svg>
  Book Editing Services
  </a>
- <a class="dropdown-item" href="/book-cover-design-services.html">
+ <a class="dropdown-item" href="book-cover-design-services.html">
  <svg fill="#50bac2" width="35px" height="35px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" id="GUIDE" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M776.557,119.544c0.357-21.353-7.375-41.042-21.771-55.438c-7.812-7.81-20.475-7.81-28.285,0.001s-7.811,20.474,0,28.284c6.663,6.662,10.236,16.067,10.063,26.484c-0.166,9.938-3.928,19.534-10.063,25.669c-12.725,12.725-139.57,124.086-238.635,210.734L463.586,331c72.32-82.747,162.068-185.064,197.172-223.914l7.986,7.987c7.811,7.811,20.475,7.812,28.284,0.002c7.812-7.81,7.813-20.473,0.003-28.284L674.35,64.108c-3.75-3.751-8.838-5.859-14.142-5.859h-0.001c-5.305,0-10.391,2.107-14.142,5.857c-12.171,12.17-86.618,96.725-153.792,173.381c-18.065-27.343-42.194-50.865-70.895-68.921c-41.949-26.391-90.855-39.772-145.362-39.772c-11.991,0-23.854,0.756-35.257,2.249c-10.953,1.434-18.669,11.474-17.236,22.427c1.434,10.952,11.473,18.668,22.426,17.235c9.689-1.268,19.805-1.911,30.066-1.911c82.994,0,152.612,37.208,188.714,100.146c-33.688,38.495-62.632,71.651-76.59,87.649c-24.918,3.395-43.511,13.592-56.621,31.078c-12.189,16.257-17.532,35.673-23.188,56.229c-6.82,24.786-13.872,50.416-33.983,70.526c-5.721,5.72-7.432,14.322-4.336,21.796s10.389,12.347,18.478,12.347c53.825,0,96.486-11.473,126.799-34.099c27.317-20.391,43.6-49.341,47.45-84.105c51.533-45.007,273.565-239.051,292.047-257.533C768.281,159.333,776.217,139.911,776.557,119.544z"/><path d="M178.311,189.959c2.913,0,5.872-0.64,8.671-1.989c1.795-0.866,3.639-1.717,5.479-2.528c10.105-4.461,14.681-16.269,10.22-26.374c-4.461-10.104-16.268-14.68-26.374-10.22c-2.247,0.992-4.5,2.032-6.697,3.091c-9.949,4.797-14.126,16.752-9.33,26.701C163.728,185.79,170.871,189.959,178.311,189.959z"/><path d="M322.839,570.789c-11.035-0.108-20.099,8.729-20.224,19.773c-0.863,76.887-12.47,111.188-78.964,111.188c-37.276,0-76.396-27.269-107.328-74.813C82.216,574.51,63.432,506.443,63.432,435.274c0-92.393,27.9-169.269,78.561-216.465c8.082-7.529,8.53-20.185,1.001-28.267s-20.185-8.53-28.267-1.001c-29.841,27.801-52.93,63.923-68.627,107.363c-15.042,41.626-22.668,88.181-22.668,138.37c0,78.821,21.083,154.636,59.363,213.476c38.451,59.104,89.792,93.001,140.856,93.001c48.841,0,82.882-17.187,101.175-51.082c15.706-29.104,17.416-66.701,17.786-99.657C342.736,579.967,333.884,570.912,322.839,570.789z"/><path d="M421.257,274.597c0-36.74-29.891-66.631-66.631-66.631c-36.741,0-66.633,29.891-66.633,66.631c0,36.741,29.892,66.633,66.633,66.633C391.366,341.229,421.257,311.338,421.257,274.597z M327.993,274.597c0-14.685,11.947-26.631,26.633-26.631c14.685,0,26.631,11.946,26.631,26.631c0,14.686-11.946,26.633-26.631,26.633C339.94,301.229,327.993,289.282,327.993,274.597z"/><path d="M195.826,365.177c36.741,0,66.632-29.891,66.632-66.631c0-36.741-29.891-66.632-66.632-66.632s-66.632,29.891-66.632,66.632C129.194,335.286,159.085,365.177,195.826,365.177z M195.826,271.914c14.685,0,26.632,11.947,26.632,26.632s-11.947,26.631-26.632,26.631s-26.632-11.946-26.632-26.631S181.142,271.914,195.826,271.914z"/><path d="M211.417,451.638c0-36.741-29.891-66.633-66.632-66.633s-66.632,29.892-66.632,66.633c0,36.74,29.891,66.631,66.632,66.631S211.417,488.378,211.417,451.638z M144.785,478.269c-14.685,0-26.632-11.946-26.632-26.631c0-14.686,11.947-26.633,26.632-26.633s26.632,11.947,26.632,26.633C171.417,466.322,159.47,478.269,144.785,478.269z"/><path d="M214.792,674.175c36.741,0,66.633-29.891,66.633-66.631s-29.892-66.631-66.633-66.631c-36.74,0-66.631,29.891-66.631,66.631S178.052,674.175,214.792,674.175z M214.792,580.913c14.686,0,26.633,11.946,26.633,26.631s-11.947,26.631-26.633,26.631c-14.684,0-26.631-11.946-26.631-26.631S200.108,580.913,214.792,580.913z"/></g></svg>
  Book Cover Design Services
  </a>
- <a class="dropdown-item" href="/ebook-publishing-services.html">
+ <a class="dropdown-item" href="ebook-publishing-services.html">
  <svg fill="#50bac2" height="35px" width="35px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.774 90.774" xml:space="preserve"><g><path style="fill:#50bac2;" d="M65.128,61.381H25.646v-3.579h39.478v3.579H65.128z M64.756,68.871H25.274v3.579h39.482C64.756,72.45,64.756,68.871,64.756,68.871z M28.509,31.601H26.77l5.683-16.062h1.943h1.943l5.683,16.062h-1.782h-1.779l-1.088-3.267h-6.091l-1.052,3.267C30.231,31.601,28.509,31.601,28.509,31.601z M32.213,25.571h4.262l-2.133-6.453L32.213,25.571z M65.497,15.643H44.471v3.579h21.026V15.643z M65.497,26.118H44.471v3.579h21.026V26.118z M65.497,36.59H26.018v3.579h39.478V36.59z M65.497,47.065H26.018v3.579h39.478V47.065z M76.308,0v90.774H14.466V0H76.308z M70.94,8.929H19.834v69.19H70.94V8.929z M48.372,88.09v-2.684V82.12h-5.973v3.285v2.684H48.372z"/></g></svg>
  Book Publishing Services
  </a>
- <a class="dropdown-item" href="/audio-book-services.html">
+ <a class="dropdown-item" href="audio-book-services.html">
  <svg fill="50bac2" width="35px" height="35px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.98423 12.9162C2.97585 12.8329 2.96625 12.7272 2.95688 12.6018C2.93272 12.2782 2.90995 11.8208 2.9141 11.2737C2.92233 10.1862 3.03699 8.71096 3.47849 7.21665C3.92001 5.72226 4.70463 4.15592 6.08896 2.96159C7.48926 1.75349 9.41802 1 12 1C14.582 1 16.5107 1.75349 17.911 2.96159C19.2954 4.15592 20.08 5.72226 20.5215 7.21665C20.963 8.71096 21.0777 10.1862 21.0859 11.2737C21.0901 11.8208 21.0673 12.2782 21.0431 12.6018C21.0338 12.7272 21.0242 12.8329 21.0158 12.9162L21.0208 12.9189C22.0321 13.466 23 14.435 23 16V19C23 20.565 22.0321 21.534 21.0208 22.0811C20.0373 22.6131 18.8886 22.8291 18.1158 22.9223C16.9041 23.0682 16 22.0814 16 21V14C16 12.9186 16.9041 11.9318 18.1158 12.0777C18.3918 12.111 18.7158 12.1599 19.0631 12.2334C19.0777 11.9785 19.0888 11.6575 19.086 11.2888C19.0786 10.3138 18.9745 9.03904 18.6035 7.78334C18.2325 6.52774 17.6109 5.34408 16.6046 4.47591C15.6143 3.62151 14.168 3 12 3C9.83199 3 8.38575 3.62151 7.39543 4.47591C6.38913 5.34408 5.7675 6.52774 5.39652 7.78334C5.02552 9.03904 4.92143 10.3138 4.91404 11.2888C4.91125 11.6575 4.92229 11.9785 4.93689 12.2334C5.28418 12.1599 5.60817 12.111 5.88422 12.0777C7.09594 11.9318 8 12.9186 8 14V21C8 22.0814 7.09594 23.0682 5.88422 22.9223C5.11136 22.8291 3.96273 22.6131 2.97917 22.0811C1.96791 21.534 1 20.565 1 19V16C1 14.435 1.96791 13.466 2.97917 12.9189L2.98423 12.9162ZM18 20.9209C18.6625 20.8323 19.4542 20.6546 20.0692 20.3219C20.6953 19.9833 21 19.5754 21 19V16C21 15.4246 20.6953 15.0167 20.0692 14.6781C19.4542 14.3454 18.6625 14.1677 18 14.0791V20.9209ZM6 14.0791C5.33746 14.1677 4.54579 14.3454 3.93076 14.6781C3.30474 15.0167 3 15.4246 3 16L3 19C3 19.5754 3.30474 19.9833 3.93076 20.3219C4.54579 20.6546 5.33746 20.8323 6 20.9209V14.0791Z" fill="#50bac2"/></svg>
  Audiobook Services
  </a>
- <a class="dropdown-item" href="/book-marketing-services.html">
+ <a class="dropdown-item" href="book-marketing-services.html">
  <svg width="35px" height="35px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="none"/><g id="Shopicon"><path d="M13.091,12C8.07,12,4,16.477,4,22c0,4.701,2.952,8.633,6.926,9.703L14,44h12l-2.74-10.961L44,39.647V4l-24,8H13.091z M17.123,40l-2-8h3.754l2,8H17.123z M20,16v12h-6.909C10.284,28,8,25.308,8,22s2.284-6,5.091-6H20z M40,34.174l-16-5.098V14.883L40,9.55V34.174z" fill="#50bac2"/></g></svg>
  Book Marketing Services
  </a>
- <a class="dropdown-item" href="/illustration-design-services.html">
+ <a class="dropdown-item" href="illustration-design-services.html">
  <svg fill="#50bac2" width="35px" height="35px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M167.02 309.34c-40.12 2.58-76.53 17.86-97.19 72.3-2.35 6.21-8 9.98-14.59 9.98-11.11 0-45.46-27.67-55.25-34.35C0 439.62 37.93 512 128 512c75.86 0 128-43.77 128-120.19 0-3.11-.65-6.08-.97-9.13l-88.01-73.34zM457.89 0c-15.16 0-29.37 6.71-40.21 16.45C213.27 199.05 192 203.34 192 257.09c0 13.7 3.25 26.76 8.73 38.7l63.82 53.18c7.21 1.8 14.64 3.03 22.39 3.03 62.11 0 98.11-45.47 211.16-256.46 7.38-14.35 13.9-29.85 13.9-45.99C512 20.64 486 0 457.89 0z"/></svg>
  Illustration Design Services
  </a>
- <a class="dropdown-item" href="/author-website-services.html">
+ <a class="dropdown-item" href="author-website-services.html">
  <svg fill="#50bac2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="35px" viewBox="0 0 256 241" enable-background="new 0 0 256 241" xml:space="preserve"><path d="M254,188V2H2v186h111v29H75v22h106v-22h-38v-29H254z M19,19h217v151H19L19,19z M180.021,70.553 c0,7.395-2.874,14.326-7.987,19.524l-15.467,15.467l0.254-1.31c1.141-6.297,0.423-12.72-2.071-18.594l-0.127-0.254l6.339-6.339 c2.282-2.282,3.508-5.24,3.508-8.452c0-3.212-1.268-6.212-3.508-8.452c-2.282-2.282-5.282-3.508-8.452-3.508 c-3.212,0-6.212,1.268-8.452,3.508l-20.961,20.961c-2.282,2.282-3.508,5.282-3.508,8.452c0,3.212,1.268,6.212,3.508,8.452 c1.521,1.521,3.465,2.62,5.62,3.127l0.718,0.169l-12.002,12.002l-0.296-0.169c-1.859-1.141-3.592-2.493-5.156-4.057 c-5.198-5.24-8.072-12.128-8.072-19.524c0-7.395,2.874-14.326,8.072-19.524l20.961-20.961c5.24-5.198,12.128-8.072,19.524-8.072 c7.353,0,14.284,2.874,19.482,8.072S180.021,63.2,180.021,70.553z M144.101,78.92c5.198,5.198,8.029,12.128,8.029,19.524 c0,7.395-2.874,14.326-8.072,19.524l-20.961,20.961C117.9,144.126,110.97,147,103.574,147c-7.395,0-14.326-2.874-19.524-8.072 c-5.198-5.24-8.072-12.128-8.072-19.524s2.874-14.326,8.072-19.524l15.467-15.467l-0.254,1.31 c-1.141,6.297-0.423,12.72,2.071,18.594l0.127,0.254l-6.339,6.339c-2.282,2.282-3.508,5.282-3.508,8.452 c0,3.212,1.268,6.212,3.508,8.452c2.282,2.282,5.282,3.508,8.452,3.508c3.212,0,6.212-1.268,8.452-3.508l20.961-20.961 c4.649-4.649,4.649-12.213,0-16.861c-1.521-1.521-3.465-2.62-5.62-3.127l-0.718-0.169l12.002-12.002l0.296,0.169 C140.805,76.004,142.537,77.399,144.101,78.92z"/></svg>
  Author Website Services
  </a>
@@ -674,209 +668,9 @@ button.close {
  </div>
  </div>
 </footer>
-
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
- aria-hidden="true" style="z-index: 9999999;">
- <div class="modal-dialog modal-dialog-centered popup-redesign-dialog" role="document">
- <div class="modal-content modaal-div popup-redesign-modal">
- <div class="popup-redesign-shell">
- <button type="button" class="close close-btn popup-redesign-close" data-dismiss="modal" aria-label="Close">
- <span aria-hidden="true">&times;</span>
- </button>
- <div class="popup-redesign-main">
- <div class="popup-redesign-left">
- <a href="#" class="modal-logo popup-redesign-logo">
- <img height="160" width="500" decoding="async" loading="lazy" data-src="assets/images/new-logo.png" alt="FLO Book Publishers">
- </a>
- <img height="360" width="693" decoding="async" loading="lazy" class="popup-redesign-hero-heading" data-src="assets/images/popup-redesign/legacy-heading.png" alt="Your Story. Our Expertise. A Published Legacy.">
- <p class="popup-redesign-copy">We make publishing simple, rewarding and successful for new authors like you.</p>
-
- <div class="popup-redesign-features">
- <div class="popup-redesign-feature">
- <img height="500" width="500" decoding="async" loading="lazy" class="popup-redesign-feature-icon" data-src="assets/images/popup-redesign/guidance-icon.png" alt="Expert Guidance">
- <div>
- <span class="popup-redesign-feature-title">Expert Guidance</span>
- <p>From writing to publishing, we're with you at every step.</p>
- </div>
- </div>
- <div class="popup-redesign-feature">
- <img height="500" width="500" decoding="async" loading="lazy" class="popup-redesign-feature-icon" data-src="assets/images/popup-redesign/reach-icon.png" alt="Global Reach">
- <div>
- <span class="popup-redesign-feature-title">Global Reach</span>
- <p>We help your book reach readers around the world.</p>
- </div>
- </div>
- <div class="popup-redesign-feature">
- <img height="500" width="500" decoding="async" loading="lazy" class="popup-redesign-feature-icon" data-src="assets/images/popup-redesign/success-icon.png" alt="Proven Success">
- <div>
- <span class="popup-redesign-feature-title">Proven Success</span>
- <p>Thousands of authors trust us to turn ideas into published books.</p>
- </div>
- </div>
- </div>
-
- <div class="popup-redesign-stack">
- <img height="338" width="738" decoding="async" loading="lazy" data-src="assets/images/popup-redesign/books-mug-plant.png" alt="Books and mug">
- </div>
- </div>
-
- <div class="popup-redesign-right">
- <div class="popup-redesign-form-card">
- <h2 class="popup-redesign-form-title">Let's Begin Your <span>Publishing Journey</span></h2>
-
- <div class="popup-redesign-divider">
- <div></div>
- <div class="popup-redesign-divider-badge">
- <img height="256" width="256" decoding="async" loading="lazy" data-src="assets/images/popup-redesign/book-icon.png" alt="Book icon">
- </div>
- <div></div>
- </div>
-
- <div class="popup-redesign-steps">
- <div class="popup-redesign-step active">
- <div class="popup-redesign-step-number">1</div>
- <span>Your Details</span>
- </div>
- <div class="popup-redesign-step">
- <div class="popup-redesign-step-number">2</div>
- <span>Book Info</span>
- </div>
- <div class="popup-redesign-step">
- <div class="popup-redesign-step-number">3</div>
- <span>Your Goals</span>
- </div>
- <div class="popup-redesign-step">
- <div class="popup-redesign-step-number">4</div>
- <span>Connect</span>
- </div>
- </div>
-
- <form class="popup-redesign-form flo-formspree-ajax-form" method="post" action="https://formspree.io/f/meewwrad">
- <!-- <input type="hidden" name="form_name" value="Getting Started Form"> -->
- <!-- <input type="hidden" name="client_requested_page_url" value="flobookpublishers.com/privacy-policy"> -->
- <!-- <input type="hidden" name="client_ip" value="116.90.113.78"> -->
- <!-- <input type="hidden" name="client_device" value="Desktop"> -->
- <!-- <input type="hidden" name="published_before" value="Not Provided"> -->
- <!-- <input type="hidden" name="book_type" value="Not Provided"> -->
-
- <div class="popup-redesign-field">
- <i class="fa-regular fa-user"></i>
- <input type="text" placeholder="Your Name" name="name" required>
- </div>
-
- <div class="popup-redesign-field">
- <i class="fa-solid fa-phone"></i>
- <input type="tel" placeholder="Phone Number" name="phone" pattern="\d{10,15}" title="Please enter between 10 and 15 numbers." required>
- </div>
- <div class="popup-redesign-field">
- <i class="fa-regular fa-envelope"></i>
- <input type="email" placeholder="Email" name="email" required>
- </div>
-
- <div class="popup-redesign-field">
- <i class="fa-solid fa-book-open"></i>
- <select name="manuscript_ready" required>
- <option value="" selected disabled>Do you have a manuscript ready?</option>
- <option value="Yes">Yes</option>
- <option value="No">No</option>
- <option value="In Progress">In Progress</option>
- </select>
- </div>
-
- <div class="popup-redesign-field">
- <i class="fa-regular fa-file-lines"></i>
- <select name="published_before" required>
- <option value="" selected disabled>Have you published before?</option>
- <option value="Yes">Yes</option>
- <option value="No">No</option>
- <option value="In Progress">In Progress</option>
- </select>
- </div>
-
- <div class="popup-redesign-field">
- <i class="fa-solid fa-layer-group"></i>
- <select name="book_type" required>
- <option value="" selected disabled>What type of book do you plan on publishing?</option>
- <option value="Fiction">Fiction</option>
- <option value="Non-Fiction">Non-Fiction</option>
- <option value="Academic">Academic</option>
- <option value="Other">Other</option>
- </select>
- </div>
- <div class="popup-redesign-field">
- <i class="fa-solid fa-briefcase"></i>
- <select name="service" required>
- <option value="" selected disabled>Pick Services For Your Book</option>
- <option value="Self Publishing">Self Publishing</option>
- <option value="Proofreading">Proofreading</option>
- <option value="Cover Design">Cover Design</option>
- <option value="Book Marketing">Book Marketing</option>
- <option value="Audiobook">Audiobook</option>
- <option value="Editing">Editing</option>
- <option value="Formatting">Formatting</option>
- <option value="Illustrations">Illustrations</option>
- <option value="Book Printing">Book Printing</option>
- </select>
- </div>
- <div class="sms-consent-field">
- <label>
- <input type="checkbox" name="sms_consent" value="By providing a telephone number and submitting this form, I consent to receive SMS text messages from FLO Book Publishers." required>
- <span>By providing a telephone number and submitting this form, you consent to receive SMS text messages from FLO Book Publishers. Message frequency may vary. Message and data rates may apply. You can reply STOP to opt out of further messaging and HELP for assistance or call <a href="tel:+14077892593">+1 (407) 789-2593</a>. Please see our <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-and-conditions.html">Terms and Conditions</a>.</span>
- </label>
- </div>
-
- <div class="popup-redesign-recaptcha">
- <div class="g-recaptcha" data-sitekey="6LcFs88pAAAAAKEmnNDQYaYlN3LIdIjPS-n4lym-"></div>
- </div>
-
- <button class="popup-redesign-submit" type="submit">
- <span>Submit Your Form</span>
- <span class="popup-redesign-submit-arrow"><i class="fa-solid fa-arrow-right"></i></span>
- </button>
- </form>
- </div>
- </div>
- </div>
-
- <div class="popup-redesign-stats">
- <div class="popup-redesign-stat">
- <img height="256" width="256" decoding="async" loading="lazy" class="popup-redesign-stat-icon" data-src="assets/images/popup-redesign/crowd-icon.png" alt="Happy authors">
- <div>
- <strong>1500+</strong>
- <span>Happy Authors</span>
- </div>
- </div>
- <div class="popup-redesign-stat">
- <img height="256" width="256" decoding="async" loading="lazy" class="popup-redesign-stat-icon" data-src="assets/images/popup-redesign/book-icon.png" alt="Books published">
- <div>
- <strong>2000+</strong>
- <span>Books Published</span>
- </div>
- </div>
- <div class="popup-redesign-stat">
- <img height="256" width="256" decoding="async" loading="lazy" class="popup-redesign-stat-icon" data-src="assets/images/popup-redesign/globe-icon.png" alt="Countries reached">
- <div>
- <strong>25+</strong>
- <span>Countries Reached</span>
- </div>
- </div>
- <div class="popup-redesign-stat">
- <img height="256" width="256" decoding="async" loading="lazy" class="popup-redesign-stat-icon popup-redesign-stat-icon-trophy" data-src="assets/images/popup-redesign/trophy-icon.png" alt="Years of excellence">
- <div>
- <strong>10+</strong>
- <span>Years of Excellence</span>
- </div>
- </div>
- </div>
- </div>
- </div>
- </div>
-</div> 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/custom.js"></script>
-<script src="assets/js/swiper.min.js"></script>
-<script src="assets/js/slick-slider.min.js"></script>
 <!-- Start of LiveChat (www.livechat.com) code -->
 <script>
     window.__lc = window.__lc || {};
@@ -887,41 +681,10 @@ button.close {
 </script>
 <noscript><a href="https://www.livechat.com/chat-with/19778423/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
 <!-- End of LiveChat code -->
-
-<script defer>
- document.addEventListener('DOMContentLoaded', function() {
- let modal = document.getElementById('exampleModalCenter');
- let modalShown = false;
-
- // Check if URL contains "payment"
- let currentUrl = window.location.href;
- let shouldShowModal = !currentUrl.includes("pay");
-
- function showModal() {
- if (!modalShown && shouldShowModal) {
- modalShown = true;
- $(modal).modal('show');
- console.log("Modal displayed after 20 seconds");
- }
- }
-
- // Timer-based trigger (20 seconds after page load)
- setTimeout(function() {
- showModal();
- }, 20000);
-
- // Optionally reset flag when modal closes
- $(modal).on('hidden.bs.modal', function() {
- modalShown = false;
- });
- });
 </body>
 
 
 <!-- Mirrored from flobookpublishers.com/privacy-policy by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 May 2026 19:59:01 GMT -->
 </html>
-
-
-
 
 

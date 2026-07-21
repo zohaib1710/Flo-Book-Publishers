@@ -1,5 +1,5 @@
 .banner-color.home-hero-sec {
-  background-image: url(../images/services-background.png);
+  background-image: url();
   background-size: cover;
   background-position: center;
   padding: 120px 0;
@@ -208,7 +208,7 @@ section.book-writing::before {
   position: absolute;
   top: 0;
   left: 0px;
-  background-image: url(../images/right.png);
+  background-image: url();
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -224,7 +224,7 @@ section.book-writing::after {
   background-position: center;
   background-size: cover;
   top: 0;
-  background-image: url(../images/left.png);
+  background-image: url();
   right: 0px;
   width: 310px;
   height: 100%;
@@ -272,7 +272,7 @@ section.story-writer {
 }
 
 section.offer-ny-section {
-  background-image: url(../images/backgrounds/bg-7.png);
+  background-image: url();
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -395,7 +395,7 @@ section.offer-ny-section {
   margin-bottom: -3px;
 }
 section.twosectionmixed {
-  background-image: url(../images/backgrounds/bg-7.png);
+  background-image: url();
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -630,7 +630,7 @@ section.twosectionmixed {
 }
 
 section.process-result-main {
-  background-image: url(../images/process-bg.png);
+  background-image: url();
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -808,7 +808,7 @@ section.offer-ny-section p a,
 }
 @media screen and (max-width: 1112px) {
   .banner-color.home-hero-sec {
-    background-image: url(../images/services-background.png);
+    background-image: url();
   }
   .service-banner-content h1 > span {
     font-size: 63px;
