@@ -2,6 +2,28 @@ window.__lc = window.__lc || {};
 window.__lc.asyncInit = true;
 
 $(document).ready(function () {
+  var recaptchaAllowedHosts = [
+    "flobookpublishers.com",
+    "www.flobookpublishers.com"
+  ];
+
+  function isProductionRecaptchaHost() {
+    var hostname = window.location.hostname;
+    return recaptchaAllowedHosts.indexOf(hostname) !== -1;
+  }
+
+  function disableRecaptchaForLocalPreview() {
+    if (isProductionRecaptchaHost()) return;
+
+    document.querySelectorAll(".g-recaptcha").forEach(function (widget) {
+      widget.setAttribute("data-flo-recaptcha-disabled", "true");
+      widget.style.display = "none";
+    });
+
+    document.querySelectorAll(".popup-redesign-recaptcha").forEach(function (wrap) {
+      wrap.style.display = "none";
+    });
+  }
 
   function loadDeferredImage(image) {
     if (!image || !image.dataset || !image.dataset.src) return;
@@ -57,6 +79,7 @@ $(document).ready(function () {
   }
 
   function loadRecaptchaScript() {
+    if (!isProductionRecaptchaHost()) return;
     if (window.grecaptcha || document.querySelector("script[data-flo-recaptcha]")) return;
 
     var script = document.createElement("script");
@@ -100,6 +123,8 @@ $(document).ready(function () {
       }, 250);
     }
   }
+
+  disableRecaptchaForLocalPreview();
 
   setupLazyVideos(".flo-hero-video", "0px 0px");
   setupLazyVideos(".flo-lazy-video", "500px 0px");
