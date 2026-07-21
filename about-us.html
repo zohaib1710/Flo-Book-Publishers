@@ -8,6 +8,10 @@
  <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preload" as="image" href="assets/images/posters/about-hero-poster.jpg">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
 
@@ -22,8 +26,7 @@
  j = d.createElement(s),
  dl = l != 'dataLayer' ? '&l=' + l : '';
  j.async = true;
- j.src =
- '../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+ j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
  f.parentNode.insertBefore(j, f);
  })(window, document, 'script', 'dataLayer', 'GTM-55Z5TZWK');
 </script>
@@ -618,7 +621,7 @@ body.about-page .about-split-section.alt + .banner-color + .elevate-section + .b
 <body class="about-page">
   <div id="page-loader" class="page-loader" aria-hidden="true">
  <div class="loader-content">
- <img
+ <img height="256" width="207"
  src="/assets/images/favicon.png"
  alt="Loading"
  class="loader-logo"
@@ -676,7 +679,7 @@ body.about-page .about-split-section.alt + .banner-color + .elevate-section + .b
  <div class="row align-items-center">
  <div class="col-md-2 text-center ">
  <a href="index.html" class="logo" style="margin-top: 10px; margin-bottom: 10px;">
- <img src="assets/images/new-logo.png" alt="FLO Book Publishers">
+ <img height="160" width="500" loading="lazy" decoding="async" src="assets/images/new-logo.png" alt="FLO Book Publishers">
  </a>
  </div>
  <div class="col-md-5 text-center">
@@ -815,9 +818,7 @@ body.about-page .about-split-section.alt + .banner-color + .elevate-section + .b
 
  <section class="about-hero-sec">
  <div class="hero-video-wrap" aria-hidden="true">
- <video autoplay muted loop playsinline>
- <source src="assets/about_hero_video.mp4" type="video/mp4">
- </video>
+ <video autoplay muted loop playsinline class="flo-hero-video"  preload="none"  poster="assets/images/posters/about-hero-poster.jpg"><source data-src="assets/about_hero_video.mp4" type="video/mp4"></video>
  </div>
  <div class="overlay"></div>
  <div class="container">
@@ -868,7 +869,7 @@ body.about-page .about-split-section.alt + .banner-color + .elevate-section + .b
  </div>
  <div class="col-lg-6 col-md-12">
  <div class="about-image-frame">
- <img loading="lazy" src="assets/images/about-1.png" alt="Flo Book Publishing team">
+ <img height="640" width="960" decoding="async" loading="lazy" src="assets/images/about-1.png" alt="Flo Book Publishing team">
  </div>
  </div>
  </div>
@@ -880,7 +881,7 @@ body.about-page .about-split-section.alt + .banner-color + .elevate-section + .b
  <div class="row d-flex align-items-center">
  <div class="col-lg-6 col-md-12">
  <div class="about-image-frame">
- <img loading="lazy" src="assets/images/about-2.png" alt="Flo Book Publishing support">
+ <img height="640" width="960" decoding="async" loading="lazy" src="assets/images/about-2.png" alt="Flo Book Publishing support">
  </div>
  </div>
  <div class="col-lg-6 col-md-12">
@@ -920,7 +921,7 @@ body.about-page .about-split-section.alt + .banner-color + .elevate-section + .b
  </div>
  <div class="col-md-6">
  <div class="float">
- <img src="assets/images/banner1.webp" alt="Affordable book writing services " />
+ <img height="718" width="633" loading="lazy" decoding="async" src="assets/images/banner1.webp" alt="Affordable book writing services " />
  </div>
  </div>
  </div>
@@ -928,7 +929,7 @@ body.about-page .about-split-section.alt + .banner-color + .elevate-section + .b
  <div class="col-md-6"></div>
  <div class="col-md-6">
  <div class="laptop move-nw lazy loaded" style="position: absolute; top: -107px; left: 531px;">
- <img src="assets/images/laptop.png" style="width:50%;" alt="Book Writing Services for You ">
+ <img height="500" width="500" loading="lazy" decoding="async" src="assets/images/laptop.png" style="width:50%;" alt="Book Writing Services for You ">
  </div>
  </div>
  </div>
@@ -948,13 +949,13 @@ body.about-page .about-split-section.alt + .banner-color + .elevate-section + .b
  </div>
  <div class="col-md-8">
  <div class="brands-logo">
- <img src="assets/images/brand1.webp" alt="Scribd" class="mx-3 wow bounceIn"
+ <img height="29" width="113" loading="lazy" decoding="async" src="assets/images/brand1.webp" alt="Scribd" class="mx-3 wow bounceIn"
  style="animation-delay: 0.2s;" />
- <img src="assets/images/brand2.webp" alt="Kobo" class="wow bounceIn"
+ <img height="45" width="84" loading="lazy" decoding="async" src="assets/images/brand2.webp" alt="Kobo" class="wow bounceIn"
  style="animation-delay: 0.6s;" />
- <img src="assets/images/brand4.webp" alt="Google Books" class="wow bounceIn"
+ <img height="59" width="180" loading="lazy" decoding="async" src="assets/images/brand4.webp" alt="Google Books" class="wow bounceIn"
  style="animation-delay: 1s;" />
- <img src="assets/images/brand5.webp" alt="Amazon" class="wow bounceIn"
+ <img height="51" width="164" loading="lazy" decoding="async" src="assets/images/brand5.webp" alt="Amazon" class="wow bounceIn"
  style="animation-delay: 1.4s;" />
  </div>
  </div>
@@ -967,7 +968,7 @@ body.about-page .about-split-section.alt + .banner-color + .elevate-section + .b
  <div class="row pad-top pad-btm-70 d-flex align-items-center">
  <div class="col-md-6">
  <div class="float">
- <img src="assets/images/about.webp" alt="nyc book publishers " />
+ <img height="631" width="642" loading="lazy" decoding="async" src="assets/images/about.webp" alt="nyc book publishers " />
  </div>
  </div>
  <div class="col-md-6">
@@ -986,7 +987,7 @@ body.about-page .about-split-section.alt + .banner-color + .elevate-section + .b
  <div class="row m-0 p-0">
  <div class="col-md-4 m-0 p-0">
  <div class="teblet move-nw lazy loaded">
- <img src="assets/images/tablet.png" alt="new york book publishing " class="wow bounceIn"
+ <img height="500" width="500" loading="lazy" decoding="async" src="assets/images/tablet.png" alt="new york book publishing " class="wow bounceIn"
  style="animation-delay: 0s; visibility: visible; animation-name: bounceIn;">
  </div>
  </div>
@@ -1015,7 +1016,7 @@ body.about-page .about-split-section.alt + .banner-color + .elevate-section + .b
  </div>
  </div>
  <div class="col-lg-4 col-md-12 text-center mb-4">
- <img src="assets/images/abt-1.webp" alt="new york book publishers ">
+ <img height="400" width="450" loading="lazy" decoding="async" src="assets/images/abt-1.webp" alt="new york book publishers ">
  </div>
  <div class="col-lg-3 col-md-12 text-center">
  <div class="col-12 pad-0">
@@ -1039,7 +1040,7 @@ body.about-page .about-split-section.alt + .banner-color + .elevate-section + .b
  <div class="col-md-9"></div>
  <div class="col-md-3">
  <div class="dairy-book-img move-nw lazy loaded">
- <img src="assets/images/diary.svg" alt="Self Book Publishers " class="wow bounceIn"
+ <img loading="lazy" decoding="async" src="assets/images/diary.svg" alt="Self Book Publishers " class="wow bounceIn"
  style="animation-delay: 0.6s; visibility: visible; animation-name: bounceIn;">
  </div>
  </div>
@@ -1079,7 +1080,7 @@ body.about-page .about-split-section.alt + .banner-color + .elevate-section + .b
  <div class="row">
  <div class="col-md-4">
  <div class="read-book-img move-nw lazy loaded">
- <img src="assets/images/read-book.png" alt="Self Book Publishers " class="wow bounceIn"
+ <img height="500" width="500" loading="lazy" decoding="async" src="assets/images/read-book.png" alt="Self Book Publishers " class="wow bounceIn"
  style="animation-delay: 0.6s;" />
  </div>
  </div>
@@ -1133,7 +1134,7 @@ body.about-page .about-split-section.alt + .banner-color + .elevate-section + .b
  <div class="col-md-9"></div>
  <div class="col-md-3">
  <div class="dairy-book-img move-nw lazy loaded">
- <img src="assets/images/diary.svg" alt="online book editing services " class="wow bounceIn"
+ <img loading="lazy" decoding="async" src="assets/images/diary.svg" alt="online book editing services " class="wow bounceIn"
  style="animation-delay: 0.6s;" />
  </div>
  </div>
@@ -1153,18 +1154,14 @@ body.about-page .about-split-section.alt + .banner-color + .elevate-section + .b
  <div class="row">
  <div class="col-lg-6 col-md-12 mb-4">
  <div class="about-mission-card">
- <video autoplay muted loop playsinline>
- <source src="assets/service-animations/gw.mp4" type="video/mp4">
- </video>
+ <video autoplay muted loop playsinline class="flo-lazy-video" preload="none"><source data-src="assets/service-animations/gw.mp4" type="video/mp4"></video>
  <h3>Vision</h3>
  <p>We dream of a world where every story finds its readers. At Flo Book Publishing, we want to connect authors with people who fall in love with their hand-made stories. We aim to celebrate creativity and bring different worlds to the bookshelf. Let&rsquo;s work together to make sure every story gets told.</p>
  </div>
  </div>
  <div class="col-lg-6 col-md-12 mb-4">
  <div class="about-mission-card">
- <video autoplay muted loop playsinline>
- <source src="assets/service-animations/bcd.mp4" type="video/mp4">
- </video>
+ <video autoplay muted loop playsinline class="flo-lazy-video" preload="none"><source data-src="assets/service-animations/bcd.mp4" type="video/mp4"></video>
  <h3>Mission</h3>
  <p>At Flo Book Publishing, we aim to help every author share their story with the world. We&rsquo;re here to guide you through the entire publishing process, making it as simple and rewarding as possible. Your story is important, and we&rsquo;re dedicated to helping you bring it to life.</p>
  </div>
@@ -1247,7 +1244,7 @@ body.about-page .about-split-section.alt + .banner-color + .elevate-section + .b
  <div class="row">
  <div class="col-md-4">
  <div class="read-book-img move-nw lazy loaded">
- <img src="assets/images/read-book.png" alt="famous book publishers " class="wow bounceIn"
+ <img height="500" width="500" loading="lazy" decoding="async" src="assets/images/read-book.png" alt="famous book publishers " class="wow bounceIn"
  style="animation-delay: 0.6s;" />
  </div>
  </div>
@@ -1270,7 +1267,7 @@ body.about-page .about-split-section.alt + .banner-color + .elevate-section + .b
  </div>
  <div class="row" style="align-items: center;">
  <div class="col-lg-4">
- <img loading="lazy" src="assets/images/yes-book.png" class="img-fluid"
+ <img height="532" width="469" decoding="async" loading="lazy" src="assets/images/yes-book.png" class="img-fluid"
  alt="expert Book publish services">
  </div>
  <div class="col-lg-8">
@@ -1399,14 +1396,14 @@ button.close {
 
  <div class="col-md-12 footer-logos">
 <a href="https://www.reviews.io/company-reviews/store/flobookpublishers.com" target="_blank">
- <img src="assets/images/reviews-io.png" alt="Reviews.io" />
+ <img height="60" width="376" loading="lazy" decoding="async" src="assets/images/reviews-io.png" alt="Reviews.io" />
  </a><br><br>
 
  <a href="https://www.trustpilot.com/review/flobookpublishers.com" target="_blank">
- <img src="assets/images/Trustpilot-Logo.png" alt="trustpilot.com" />
+ <img height="376" width="1533" loading="lazy" decoding="async" src="assets/images/Trustpilot-Logo.png" alt="trustpilot.com" />
  </a><br>
 
- <a href="https://www.google.com/search?q=flo+book+publishers&oq=flo+&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg5MgwIAhAuGEMYgAQYigUyDAgDEC4YQxiABBiKBTIGCAQQRRg8MgYIBRBFGD0yBggGEEUYPDIGCAcQRRg90gEIMjQyMWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x88d90180dc86336b:0x2e7ff5ef5206c4a6,3,,,," target="_blank"><img src="assets/images/google2.png"
+ <a href="https://www.google.com/search?q=flo+book+publishers&oq=flo+&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg5MgwIAhAuGEMYgAQYigUyDAgDEC4YQxiABBiKBTIGCAQQRRg8MgYIBRBFGD0yBggGEEUYPDIGCAcQRRg90gEIMjQyMWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x88d90180dc86336b:0x2e7ff5ef5206c4a6,3,,,," target="_blank"><img height="2160" width="3840" loading="lazy" decoding="async" src="assets/images/google2.png"
  alt="Google Reviews" /></a>
  </div>
  </div>
@@ -1421,7 +1418,7 @@ button.close {
  <div class="row d-flex align-items-center">
  <div class="col-md-6">
  <div class="last-footer">
- <img src="assets/images/new-logo.png" style="width:20%;" alt="FLO Book Publishers" />
+ <img height="160" width="500" loading="lazy" decoding="async" src="assets/images/new-logo.png" style="width:20%;" alt="FLO Book Publishers" />
  <p>
  <a href="https://maps.google.com/?q=2630+W+Broward+Blvd+Suit+204+%231134,+Fort+Lauderdale,+FL+33312"> <b>Mailing Address:</b> <br>2630 W Broward Blvd Suit 204 #1134<br>Fort Lauderdale, FL 33312</a>
  </p>
@@ -1470,28 +1467,28 @@ button.close {
  <div class="popup-redesign-main">
  <div class="popup-redesign-left">
  <a href="#" class="modal-logo popup-redesign-logo">
- <img src="assets/images/new-logo.png" alt="FLO Book Publishers">
+ <img height="160" width="500" decoding="async" loading="lazy" data-src="assets/images/new-logo.png" alt="FLO Book Publishers">
  </a>
- <img class="popup-redesign-hero-heading" src="assets/images/popup-redesign/legacy-heading.png" alt="Your Story. Our Expertise. A Published Legacy.">
+ <img height="360" width="693" decoding="async" loading="lazy" class="popup-redesign-hero-heading" data-src="assets/images/popup-redesign/legacy-heading.png" alt="Your Story. Our Expertise. A Published Legacy.">
  <p class="popup-redesign-copy">We make publishing simple, rewarding and successful for new authors like you.</p>
 
  <div class="popup-redesign-features">
  <div class="popup-redesign-feature">
- <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/guidance-icon.png" alt="Expert Guidance">
+ <img height="500" width="500" decoding="async" loading="lazy" class="popup-redesign-feature-icon" data-src="assets/images/popup-redesign/guidance-icon.png" alt="Expert Guidance">
  <div>
  <span class="popup-redesign-feature-title">Expert Guidance</span>
  <p>From writing to publishing, we're with you at every step.</p>
  </div>
  </div>
  <div class="popup-redesign-feature">
- <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/reach-icon.png" alt="Global Reach">
+ <img height="500" width="500" decoding="async" loading="lazy" class="popup-redesign-feature-icon" data-src="assets/images/popup-redesign/reach-icon.png" alt="Global Reach">
  <div>
  <span class="popup-redesign-feature-title">Global Reach</span>
  <p>We help your book reach readers around the world.</p>
  </div>
  </div>
  <div class="popup-redesign-feature">
- <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/success-icon.png" alt="Proven Success">
+ <img height="500" width="500" decoding="async" loading="lazy" class="popup-redesign-feature-icon" data-src="assets/images/popup-redesign/success-icon.png" alt="Proven Success">
  <div>
  <span class="popup-redesign-feature-title">Proven Success</span>
  <p>Thousands of authors trust us to turn ideas into published books.</p>
@@ -1500,7 +1497,7 @@ button.close {
  </div>
 
  <div class="popup-redesign-stack">
- <img src="assets/images/popup-redesign/books-mug-plant.png" alt="Books and mug">
+ <img height="338" width="738" decoding="async" loading="lazy" data-src="assets/images/popup-redesign/books-mug-plant.png" alt="Books and mug">
  </div>
  </div>
 
@@ -1511,7 +1508,7 @@ button.close {
  <div class="popup-redesign-divider">
  <div></div>
  <div class="popup-redesign-divider-badge">
- <img src="assets/images/popup-redesign/book-icon.png" alt="Book icon">
+ <img height="256" width="256" decoding="async" loading="lazy" data-src="assets/images/popup-redesign/book-icon.png" alt="Book icon">
  </div>
  <div></div>
  </div>
@@ -1624,28 +1621,28 @@ button.close {
 
  <div class="popup-redesign-stats">
  <div class="popup-redesign-stat">
- <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/crowd-icon.png" alt="Happy authors">
+ <img height="256" width="256" decoding="async" loading="lazy" class="popup-redesign-stat-icon" data-src="assets/images/popup-redesign/crowd-icon.png" alt="Happy authors">
  <div>
  <strong>1500+</strong>
  <span>Happy Authors</span>
  </div>
  </div>
  <div class="popup-redesign-stat">
- <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/book-icon.png" alt="Books published">
+ <img height="256" width="256" decoding="async" loading="lazy" class="popup-redesign-stat-icon" data-src="assets/images/popup-redesign/book-icon.png" alt="Books published">
  <div>
  <strong>2000+</strong>
  <span>Books Published</span>
  </div>
  </div>
  <div class="popup-redesign-stat">
- <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/globe-icon.png" alt="Countries reached">
+ <img height="256" width="256" decoding="async" loading="lazy" class="popup-redesign-stat-icon" data-src="assets/images/popup-redesign/globe-icon.png" alt="Countries reached">
  <div>
  <strong>25+</strong>
  <span>Countries Reached</span>
  </div>
  </div>
  <div class="popup-redesign-stat">
- <img class="popup-redesign-stat-icon popup-redesign-stat-icon-trophy" src="assets/images/popup-redesign/trophy-icon.png" alt="Years of excellence">
+ <img height="256" width="256" decoding="async" loading="lazy" class="popup-redesign-stat-icon popup-redesign-stat-icon-trophy" data-src="assets/images/popup-redesign/trophy-icon.png" alt="Years of excellence">
  <div>
  <strong>10+</strong>
  <span>Years of Excellence</span>
@@ -1715,8 +1712,6 @@ button.close {
  }
  });
 </script>
-<script src="../www.google.com/recaptcha/api.js" async defer></script>
-
 <!-- Start of LiveChat (www.livechat.com) code -->
 <script>
     window.__lc = window.__lc || {};

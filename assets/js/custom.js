@@ -1,6 +1,142 @@
+window.__lc = window.__lc || {};
+window.__lc.asyncInit = true;
+
 $(document).ready(function () {
 
+  function loadDeferredImage(image) {
+    if (!image || !image.dataset || !image.dataset.src) return;
+
+    image.src = image.dataset.src;
+    image.removeAttribute("data-src");
+  }
+
+  function loadDeferredVideo(video) {
+    if (!video || video.dataset.loaded === "true") return;
+
+    var sources = video.querySelectorAll("source[data-src]");
+    sources.forEach(function (source) {
+      source.src = source.dataset.src;
+      source.removeAttribute("data-src");
+    });
+
+    video.dataset.loaded = "true";
+    video.load();
+
+    var playPromise = video.play && video.play();
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise.catch(function () {});
+    }
+  }
+
+  function setupLazyVideos(selector, rootMargin) {
+    var videos = document.querySelectorAll(selector);
+    if (!videos.length) return;
+
+    if ("IntersectionObserver" in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          loadDeferredVideo(entry.target);
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: rootMargin || "500px 0px", threshold: 0.01 });
+
+      videos.forEach(function (video) {
+        observer.observe(video);
+      });
+    } else {
+      videos.forEach(loadDeferredVideo);
+    }
+  }
+
+  function loadPopupAssets(modal) {
+    if (!modal || modal.dataset.assetsLoaded === "true") return;
+
+    modal.querySelectorAll("img[data-src]").forEach(loadDeferredImage);
+    modal.dataset.assetsLoaded = "true";
+  }
+
+  function loadRecaptchaScript() {
+    if (window.grecaptcha || document.querySelector("script[data-flo-recaptcha]")) return;
+
+    var script = document.createElement("script");
+    script.src = "https://www.google.com/recaptcha/api.js";
+    script.async = true;
+    script.defer = true;
+    script.setAttribute("data-flo-recaptcha", "true");
+    document.head.appendChild(script);
+  }
+
+  function queueIdle(callback, delayMs) {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(callback, { timeout: delayMs || 4000 });
+    } else {
+      setTimeout(callback, delayMs || 3000);
+    }
+  }
+
+  function loadFloLiveChat(openAfterLoad) {
+    if (window.LiveChatWidget && typeof window.LiveChatWidget.init === "function") {
+      window.LiveChatWidget.init();
+    } else if (!document.querySelector("script[data-flo-livechat]")) {
+      var script = document.createElement("script");
+      script.src = "https://cdn.livechatinc.com/tracking.js";
+      script.async = true;
+      script.type = "text/javascript";
+      script.setAttribute("data-flo-livechat", "true");
+      document.head.appendChild(script);
+    }
+
+    if (openAfterLoad) {
+      var attempts = 0;
+      var timer = setInterval(function () {
+        attempts += 1;
+        if (window.LiveChatWidget && typeof window.LiveChatWidget.call === "function") {
+          window.LiveChatWidget.call("maximize");
+          clearInterval(timer);
+        } else if (attempts > 20) {
+          clearInterval(timer);
+        }
+      }, 250);
+    }
+  }
+
+  setupLazyVideos(".flo-hero-video", "0px 0px");
+  setupLazyVideos(".flo-lazy-video", "500px 0px");
+
+  var leadForms = document.querySelectorAll(".flo-formspree-ajax-form");
+  leadForms.forEach(function (form) {
+    form.addEventListener("focusin", loadRecaptchaScript, { once: true });
+    form.addEventListener("pointerenter", loadRecaptchaScript, { once: true });
+  });
+
+  var popupModal = document.getElementById("exampleModalCenter");
+  if (popupModal) {
+    var preparePopup = function () {
+      loadPopupAssets(popupModal);
+      loadRecaptchaScript();
+    };
+
+    popupModal.addEventListener("show.bs.modal", preparePopup);
+    $(popupModal).on("show.bs.modal", preparePopup);
+    document.querySelectorAll('[data-target="#exampleModalCenter"]').forEach(function (trigger) {
+      trigger.addEventListener("pointerenter", preparePopup, { once: true });
+      trigger.addEventListener("focus", preparePopup, { once: true });
+    });
+    queueIdle(function () {
+      loadPopupAssets(popupModal);
+    }, 18000);
+  }
+
+  var liveChatWarmup = function () {
+    loadFloLiveChat(false);
+  };
+  window.addEventListener("scroll", liveChatWarmup, { once: true, passive: true });
+  window.addEventListener("pointermove", liveChatWarmup, { once: true, passive: true });
+  setTimeout(liveChatWarmup, 8000);
+
   window.openFloLiveChat = function () {
+    loadFloLiveChat(true);
     if (window.LiveChatWidget && typeof window.LiveChatWidget.call === "function") {
       window.LiveChatWidget.call("maximize");
     }

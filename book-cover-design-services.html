@@ -8,6 +8,10 @@
  <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preload" as="image" href="assets/images/posters/book-cover-hero-poster.jpg">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
 
@@ -22,8 +26,7 @@
  j = d.createElement(s),
  dl = l != 'dataLayer' ? '&l=' + l : '';
  j.async = true;
- j.src =
- '../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+ j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
  f.parentNode.insertBefore(j, f);
  })(window, document, 'script', 'dataLayer', 'GTM-55Z5TZWK');
 </script>
@@ -61,7 +64,7 @@
 <body class="ghostwriting-page">
  <div id="page-loader" class="page-loader" aria-hidden="true">
  <div class="loader-content">
- <img
+ <img height="256" width="207"
  src="/assets/images/favicon.png"
  alt="Loading"
  class="loader-logo"
@@ -118,7 +121,7 @@
  <div class="row align-items-center">
  <div class="col-md-2 text-center ">
  <a href="index.html" class="logo" style="margin-top: 10px; margin-bottom: 10px;">
- <img src="assets/images/new-logo.png" alt="FLO Book Publishers">
+ <img decoding="async" height="160" width="500" src="assets/images/new-logo.png" alt="FLO Book Publishers">
  </a>
  </div>
  <div class="col-md-5 text-center">
@@ -258,9 +261,7 @@
 <section class="banner-color home-hero-sec">
 
  <div class="hero-video-wrap" aria-hidden="true">
- <video autoplay muted loop playsinline preload="auto">
- <source src="assets/book_cover_design_hero_video.mp4" type="video/mp4">
- </video>
+ <video autoplay muted loop playsinline  class="flo-hero-video" preload="none" poster="assets/images/posters/book-cover-hero-poster.jpg"><source data-src="assets/book_cover_design_hero_video.mp4" type="video/mp4"></video>
  </div>
  <div class="overlay"></div>
  <div class="container">
@@ -305,7 +306,7 @@
  <div class="banner-form ">
 
  <div class="form-logo">
- <img loading="lazy" src="assets/images/new-logo.png" alt="Book Cover Design services">
+ <img decoding="async" height="160" width="500" loading="lazy" src="assets/images/new-logo.png" alt="Book Cover Design services">
  </div>
 
  <div class="form-heading">
@@ -405,10 +406,10 @@
  </div>
 
  <div class="btm-arrow-wrap">
- <img loading="lazy" src="assets/images/book-arrow-2.png" alt="publisher near me">
+ <img decoding="async" height="251" width="219" loading="lazy" src="assets/images/book-arrow-2.png" alt="publisher near me">
  </div>
  <div class="before-after-image right-img">
- <img loading="lazy" src="assets/images/tablet.png" alt="Before and After Books" style="rotate: 20deg;"/>
+ <img decoding="async" height="500" width="500" loading="lazy" src="assets/images/tablet.png" alt="Before and After Books" style="rotate: 20deg;"/>
  </div>
  </div>
  </div>
@@ -417,34 +418,34 @@
  <div class="col-md-12">
  <div class="hero-logos hero-logo-slider">
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/abe.png" alt="Publishing partner logo" />
+ <img decoding="async" height="240" width="360" loading="lazy" src="assets/images/brand-logos/abe.png" alt="Publishing partner logo" />
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/bark.png" alt="Publishing partner logo" />
+ <img decoding="async" height="240" width="360" loading="lazy" src="assets/images/brand-logos/bark.png" alt="Publishing partner logo" />
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/barnes.png" alt="Publishing partner logo" />
+ <img decoding="async" height="683" width="1024" loading="lazy" src="assets/images/brand-logos/barnes.png" alt="Publishing partner logo" />
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/ibook.png" alt="Publishing partner logo" />
+ <img decoding="async" height="348" width="860" loading="lazy" src="assets/images/brand-logos/ibook.png" alt="Publishing partner logo" />
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/ingram.png" alt="Publishing partner logo" />
+ <img decoding="async" height="141" width="480" loading="lazy" src="assets/images/brand-logos/ingram.png" alt="Publishing partner logo" />
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/kindle.png" alt="Publishing partner logo" />
+ <img decoding="async" height="235" width="1061" loading="lazy" src="assets/images/brand-logos/kindle.png" alt="Publishing partner logo" />
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/macmillan.png" alt="Publishing partner logo" />
+ <img decoding="async" height="281" width="500" loading="lazy" src="assets/images/brand-logos/macmillan.png" alt="Publishing partner logo" />
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/prh.png" alt="Publishing partner logo" />
+ <img decoding="async" height="320" width="778" loading="lazy" src="assets/images/brand-logos/prh.png" alt="Publishing partner logo" />
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/scribd.png" alt="Publishing partner logo" />
+ <img decoding="async" height="133" width="600" loading="lazy" src="assets/images/brand-logos/scribd.png" alt="Publishing partner logo" />
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/smash.png" alt="Publishing partner logo" />
+ <img decoding="async" height="546" width="727" loading="lazy" src="assets/images/brand-logos/smash.png" alt="Publishing partner logo" />
  </div>
  </div>
  </div>
@@ -481,7 +482,7 @@
  </div>
  </div>
  <div class="col-md-6">
- <img loading="lazy" src="assets/images/services-images/bcd-1.png"
+ <img decoding="async" height="500" width="500" loading="lazy" src="assets/images/services-images/bcd-1.png"
  alt="book cover design company">
  </div>
  </div>
@@ -491,7 +492,7 @@
  <div class="container-fluid">
  <div class="row" style="align-items: end;">
  <div class="col-md-6">
- <img loading="lazy" src="assets/images/services-images/bcd-2.png"
+ <img decoding="async" height="500" width="500" loading="lazy" src="assets/images/services-images/bcd-2.png"
  alt="professional Book Cover Design">
  </div>
  <div class="col-md-6">
@@ -531,24 +532,24 @@
  </div>
  <div class="writers-box">
  <div class="writers-item">
- <img loading="lazy" src="../assets/images/book-writing-icons.png" style="width: 100px; height: 100px; border-radius: 15px; object-fit: cover;" alt="No AI-Generated Images">
+ <img decoding="async" loading="lazy" src="../assets/images/book-writing-icons.png" style="width: 100px; height: 100px; border-radius: 15px; object-fit: cover;" alt="No AI-Generated Images">
  <h4>No Ai Generated<span> Images </span></h4>
  <p>Every cover we create is crafted by skilled designers. Our artwork is created from scratch, ensuring your cover remains original and free from AI generated visuals or generic template designs.</p>
  </div>
  <div class="writers-item">
- <img loading="lazy" src="../assets/images/book-writing-icons.png" style="width: 100px; height: 100px; border-radius: 15px; object-fit: cover;" alt="Book Covers for All Genres">
+ <img decoding="async" loading="lazy" src="../assets/images/book-writing-icons.png" style="width: 100px; height: 100px; border-radius: 15px; object-fit: cover;" alt="Book Covers for All Genres">
  <h4>Book Covers For All <span> Genres </span></h4>
  <p>From mystery to memoir, fantasy to romance, we create covers for every genre. Our experienced team understands genre expectations, ensuring your cover accurately represents the story within.
  </p>
  </div>
  <div class="writers-item">
- <img loading="lazy" src="../assets/images/book-writing-icons.png" style="width: 100px; height: 100px; border-radius: 15px; object-fit: cover;" alt="Unlimited Revisions">
+ <img decoding="async" loading="lazy" src="../assets/images/book-writing-icons.png" style="width: 100px; height: 100px; border-radius: 15px; object-fit: cover;" alt="Unlimited Revisions">
  <h4>Unlimited <span> Revisions</span></h4>
  <p>We provide unlimited revisions throughout the design journey, helping perfect every detail. Working closely with you allows us to refine the design until it fully matches your vision.
  </p>
  </div>
  <div class="writers-item">
- <img loading="lazy" src="../assets/images/book-writing-icons.png" style="width: 100px; height: 100px; border-radius: 15px; object-fit: cover;" alt="Discounts">
+ <img decoding="async" loading="lazy" src="../assets/images/book-writing-icons.png" style="width: 100px; height: 100px; border-radius: 15px; object-fit: cover;" alt="Discounts">
  <h4>Discounts </h4>
  <p>We are committed to keeping professional book cover design services affordable. Our exclusive discounts help maximize your value while maintaining the quality and creativity your project deserves.</p>
  </div>
@@ -578,7 +579,7 @@
  </div>
  </div>
  <div class="col-md-5">
- <img loading="lazy" src="assets/images/bcd-img.png" alt="affordable book cover designer online">
+ <img decoding="async" height="640" width="960" loading="lazy" src="assets/images/bcd-img.png" alt="affordable book cover designer online">
  </div>
  </div>
  </div>
@@ -594,54 +595,54 @@
  <div class="genres-tabs-nav">
  <button class="genre-tab-button active" onclick="openGenreTab(event, 'action')">
  <div class="tab-icon">
- <img src="assets/images/services-icons/action.png" alt="Action"
+ <img loading="lazy" decoding="async" height="80" width="80" src="assets/images/services-icons/action.png" alt="Action"
  onerror="this.innerHTML='??'">
  </div>
  <span class="tab-label">Action</span>
  </button>
  <button class="genre-tab-button" onclick="openGenreTab(event, 'children')">
  <div class="tab-icon">
- <img src="assets/images/services-icons/children.png" alt="Children"
+ <img loading="lazy" decoding="async" height="67" width="90" src="assets/images/services-icons/children.png" alt="Children"
  onerror="this.innerHTML='??'">
  </div>
  <span class="tab-label">Children</span>
  </button>
  <button class="genre-tab-button" onclick="openGenreTab(event, 'fantasy')">
  <div class="tab-icon">
- <img src="assets/images/services-icons/fantasy.png" alt="Fantasy"
+ <img loading="lazy" decoding="async" height="73" width="69" src="assets/images/services-icons/fantasy.png" alt="Fantasy"
  onerror="this.innerHTML='??'">
  </div>
  <span class="tab-label">Fantasy</span>
  </button>
  <button class="genre-tab-button" onclick="openGenreTab(event, 'suspense')">
  <div class="tab-icon">
- <img src="assets/images/services-icons/suspense.png" alt="Suspense"
+ <img loading="lazy" decoding="async" height="67" width="50" src="assets/images/services-icons/suspense.png" alt="Suspense"
  onerror="this.innerHTML='??'">
  </div>
  <span class="tab-label">Suspense</span>
  </button>
  <button class="genre-tab-button" onclick="openGenreTab(event, 'drama')">
  <div class="tab-icon">
- <img src="assets/images/services-icons/drama.png" alt="Drama" onerror="this.innerHTML='??'">
+ <img loading="lazy" decoding="async" height="61" width="61" src="assets/images/services-icons/drama.png" alt="Drama" onerror="this.innerHTML='??'">
  </div>
  <span class="tab-label">Drama</span>
  </button>
  <button class="genre-tab-button" onclick="openGenreTab(event, 'novel')">
  <div class="tab-icon">
- <img src="assets/images/services-icons/novel.png" alt="Novel" onerror="this.innerHTML='??'">
+ <img loading="lazy" decoding="async" height="59" width="65" src="assets/images/services-icons/novel.png" alt="Novel" onerror="this.innerHTML='??'">
  </div>
  <span class="tab-label">Novel</span>
  </button>
  <button class="genre-tab-button" onclick="openGenreTab(event, 'fiction')">
  <div class="tab-icon">
- <img src="assets/images/services-icons/fiction.png" alt="Fiction"
+ <img loading="lazy" decoding="async" height="62" width="64" src="assets/images/services-icons/fiction.png" alt="Fiction"
  onerror="this.innerHTML='??'">
  </div>
  <span class="tab-label">Fiction</span>
  </button>
  <button class="genre-tab-button" onclick="openGenreTab(event, 'romantic')">
  <div class="tab-icon">
- <img src="assets/images/services-icons/romantic.png" alt="Romantic"
+ <img loading="lazy" decoding="async" height="68" width="70" src="assets/images/services-icons/romantic.png" alt="Romantic"
  onerror="this.innerHTML='??'">
  </div>
  <span class="tab-label">Romantic</span>
@@ -671,7 +672,7 @@
  </div>
  <div class="col-md-6">
  <div class="genre-image">
- <img src="assets/images/action.png" alt="Action Genre">
+ <img loading="lazy" decoding="async" height="600" width="600" src="assets/images/action.png" alt="Action Genre">
  </div>
  </div>
  </div>
@@ -700,7 +701,7 @@
  </div>
  <div class="col-md-6">
  <div class="genre-image">
- <img src="assets/images/children.png" alt="Children Genre">
+ <img loading="lazy" decoding="async" height="600" width="600" src="assets/images/children.png" alt="Children Genre">
  </div>
  </div>
  </div>
@@ -728,7 +729,7 @@
  </div>
  <div class="col-md-6">
  <div class="genre-image">
- <img src="assets/images/fantasy.png" alt="Fantasy Genre">
+ <img loading="lazy" decoding="async" height="447" width="558" src="assets/images/fantasy.png" alt="Fantasy Genre">
  </div>
  </div>
  </div>
@@ -757,7 +758,7 @@
  </div>
  <div class="col-md-6">
  <div class="genre-image">
- <img src="assets/images/suspense.png" alt="Suspense Genre">
+ <img loading="lazy" decoding="async" height="480" width="600" src="assets/images/suspense.png" alt="Suspense Genre">
  </div>
  </div>
  </div>
@@ -785,7 +786,7 @@
  </div>
  <div class="col-md-6">
  <div class="genre-image">
- <img src="assets/images/drama.png" alt="Drama Genre">
+ <img loading="lazy" decoding="async" height="600" width="600" src="assets/images/drama.png" alt="Drama Genre">
  </div>
  </div>
  </div>
@@ -812,7 +813,7 @@
  </div>
  <div class="col-md-6">
  <div class="genre-image">
- <img src="assets/images/novel.png" alt="Novel Genre">
+ <img loading="lazy" decoding="async" height="480" width="600" src="assets/images/novel.png" alt="Novel Genre">
  </div>
  </div>
  </div>
@@ -841,7 +842,7 @@
  </div>
  <div class="col-md-6">
  <div class="genre-image">
- <img src="assets/images/fiction.png" alt="Fiction Genre">
+ <img loading="lazy" decoding="async" height="600" width="600" src="assets/images/fiction.png" alt="Fiction Genre">
  </div>
  </div>
  </div>
@@ -869,7 +870,7 @@
  </div>
  <div class="col-md-6">
  <div class="genre-image">
- <img src="assets/images/romance.png" alt="Romantic Genre">
+ <img loading="lazy" decoding="async" height="600" width="600" src="assets/images/romance.png" alt="Romantic Genre">
  </div>
  </div>
  </div>
@@ -892,53 +893,53 @@
  </div>
  <div class="testimonial-slider">
  <div class="testimonial-item">
- <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon">
+ <img decoding="async" height="100" width="100" loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon">
  <p>I was blown away by the book cover design team at FLO Book Publishers! They captured the essence
  of my novel perfectly with their creative vision. The process was seamless, and the cover has
  already helped boost my sales. I highly recommend their book cover design service!
  </p>
- <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating">
+ <img decoding="async" height="22" width="142" loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating">
  <h5>Janice Kim</h5>
  </div>
  <div class="testimonial-item">
- <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon">
+ <img decoding="async" height="100" width="100" loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon">
  <p>FLO Book Publishers' book cover designers gave my book cover a professional and polished look that
  stands out in the crowded market. Their attention to detail, from the lighting to the
  typography, was exceptional. The team understood my vision and turned it into a captivating
  design.
  </p>
- <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating">
+ <img decoding="async" height="22" width="142" loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating">
  <h5>Lam Greg
  </h5>
  </div>
  <div class="testimonial-item">
- <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon">
+ <img decoding="async" height="100" width="100" loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon">
  <p> The team of book cover designers at FLO Book Publishers transformed my ideas into a stunning
  cover! Their creativity and professionalism made the process easy, and the final design
  perfectly represents the mood and theme of my book. Truly impressive!
  </p>
- <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating">
+ <img decoding="async" height="22" width="142" loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating">
  <h5>Sophia Hernandez
  </h5>
  </div>
  <div class="testimonial-item">
- <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon">
+ <img decoding="async" height="100" width="100" loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon">
  <p>Working with FLO Book Publishers was amazing. They listened carefully to my vision and delivered a
  cover that not only looks incredible but also grabs readers' attention instantly. My book now
  stands out beautifully on shelves and online.
  </p>
- <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating">
+ <img decoding="async" height="22" width="142" loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating">
  <h5>Michael Thompson
 
  </h5>
  </div>
  <div class="testimonial-item">
- <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon">
+ <img decoding="async" height="100" width="100" loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon">
  <p> I couldn't be happier with my book cover! The designers captured the essence of my story while
  creating something visually striking. Their expertise and attention to detail made the entire
  experience smooth and enjoyable. They are the best book cover design company!
  </p>
- <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating">
+ <img decoding="async" height="22" width="142" loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating">
  <h5>Olivia Park
  </h5>
  </div>
@@ -1066,7 +1067,7 @@
  </div>
  <div class="row" style="align-items: center;">
  <div class="col-lg-4">
- <img loading="lazy" src="assets/images/yes-book.png" class="img-fluid" alt="affordable book cover designer online">
+ <img decoding="async" height="532" width="469" loading="lazy" src="assets/images/yes-book.png" class="img-fluid" alt="affordable book cover designer online">
  </div>
  <div class="col-lg-8">
  <div class="form-col">
@@ -1116,7 +1117,7 @@
  <div class="container ">
  <div class="row pad-btm-70 d-flex align-items-center">
  <div class="col-md-6 pad-top">
- <img loading="lazy" src="assets/images/book_new.png" alt="ebook cover design best practices"
+ <img decoding="async" height="640" width="960" loading="lazy" src="assets/images/book_new.png" alt="ebook cover design best practices"
  class="cheap-publishing" />
  </div>
  <div class="col-md-6">
@@ -1134,7 +1135,7 @@
  <div class="col-md-12 col-lg-5 mb-3">
  <div class="phone-icon">
  <div>
- <img loading="lazy" src="assets/images/phone.webp" alt="hire book cover designer " />
+ <img height="54" width="38" decoding="async" loading="lazy" src="assets/images/phone.webp" alt="hire book cover designer " />
  </div>
  <div>
  <h6>Call Us</h6>
@@ -1147,7 +1148,7 @@
  <div class="col-md-12 col-lg-6 mb-3">
  <div class="phone-icon">
  <div>
- <img loading="lazy" src="assets/images/envp.webp"
+ <img height="53" width="47" decoding="async" loading="lazy" src="assets/images/envp.webp"
  alt="book cover design books" />
  </div>
  <div>
@@ -1261,14 +1262,14 @@ button.close {
 
  <div class="col-md-12 footer-logos">
 <a href="https://www.reviews.io/company-reviews/store/flobookpublishers.com" target="_blank">
- <img src="assets/images/reviews-io.png" alt="Reviews.io" />
+ <img loading="lazy" decoding="async" height="60" width="376" src="assets/images/reviews-io.png" alt="Reviews.io" />
  </a><br><br>
 
  <a href="https://www.trustpilot.com/review/flobookpublishers.com" target="_blank">
- <img src="assets/images/Trustpilot-Logo.png" alt="trustpilot.com" />
+ <img loading="lazy" decoding="async" height="376" width="1533" src="assets/images/Trustpilot-Logo.png" alt="trustpilot.com" />
  </a><br>
 
- <a href="https://www.google.com/search?q=flo+book+publishers&oq=flo+&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg5MgwIAhAuGEMYgAQYigUyDAgDEC4YQxiABBiKBTIGCAQQRRg8MgYIBRBFGD0yBggGEEUYPDIGCAcQRRg90gEIMjQyMWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x88d90180dc86336b:0x2e7ff5ef5206c4a6,3,,,," target="_blank"><img src="assets/images/google2.png"
+ <a href="https://www.google.com/search?q=flo+book+publishers&oq=flo+&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg5MgwIAhAuGEMYgAQYigUyDAgDEC4YQxiABBiKBTIGCAQQRRg8MgYIBRBFGD0yBggGEEUYPDIGCAcQRRg90gEIMjQyMWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x88d90180dc86336b:0x2e7ff5ef5206c4a6,3,,,," target="_blank"><img loading="lazy" decoding="async" height="2160" width="3840" src="assets/images/google2.png"
  alt="Google Reviews" /></a>
  </div>
  </div>
@@ -1283,7 +1284,7 @@ button.close {
  <div class="row d-flex align-items-center">
  <div class="col-md-6">
  <div class="last-footer">
- <img src="assets/images/new-logo.png" style="width:20%;" alt="FLO Book Publishers" />
+ <img loading="lazy" decoding="async" height="160" width="500" src="assets/images/new-logo.png" style="width:20%;" alt="FLO Book Publishers" />
  <p>
  <a href="https://maps.google.com/?q=2630+W+Broward+Blvd+Suit+204+%231134,+Fort+Lauderdale,+FL+33312"> <b>Mailing Address:</b> <br>2630 W Broward Blvd Suit 204 #1134<br>Fort Lauderdale, FL 33312</a>
  </p>
@@ -1332,28 +1333,28 @@ button.close {
  <div class="popup-redesign-main">
  <div class="popup-redesign-left">
  <a href="#" class="modal-logo popup-redesign-logo">
- <img src="assets/images/new-logo.png" alt="FLO Book Publishers">
+ <img height="160" width="500" decoding="async" loading="lazy" data-src="assets/images/new-logo.png" alt="FLO Book Publishers">
  </a>
- <img class="popup-redesign-hero-heading" src="assets/images/popup-redesign/legacy-heading.png" alt="Your Story. Our Expertise. A Published Legacy.">
+ <img height="360" width="693" decoding="async" loading="lazy" class="popup-redesign-hero-heading" data-src="assets/images/popup-redesign/legacy-heading.png" alt="Your Story. Our Expertise. A Published Legacy.">
  <p class="popup-redesign-copy">We make publishing simple, rewarding and successful for new authors like you.</p>
 
  <div class="popup-redesign-features">
  <div class="popup-redesign-feature">
- <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/guidance-icon.png" alt="Expert Guidance">
+ <img height="500" width="500" decoding="async" loading="lazy" class="popup-redesign-feature-icon" data-src="assets/images/popup-redesign/guidance-icon.png" alt="Expert Guidance">
  <div>
  <span class="popup-redesign-feature-title">Expert Guidance</span>
  <p>From writing to publishing, we're with you at every step.</p>
  </div>
  </div>
  <div class="popup-redesign-feature">
- <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/reach-icon.png" alt="Global Reach">
+ <img height="500" width="500" decoding="async" loading="lazy" class="popup-redesign-feature-icon" data-src="assets/images/popup-redesign/reach-icon.png" alt="Global Reach">
  <div>
  <span class="popup-redesign-feature-title">Global Reach</span>
  <p>We help your book reach readers around the world.</p>
  </div>
  </div>
  <div class="popup-redesign-feature">
- <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/success-icon.png" alt="Proven Success">
+ <img height="500" width="500" decoding="async" loading="lazy" class="popup-redesign-feature-icon" data-src="assets/images/popup-redesign/success-icon.png" alt="Proven Success">
  <div>
  <span class="popup-redesign-feature-title">Proven Success</span>
  <p>Thousands of authors trust us to turn ideas into published books.</p>
@@ -1362,7 +1363,7 @@ button.close {
  </div>
 
  <div class="popup-redesign-stack">
- <img src="assets/images/popup-redesign/books-mug-plant.png" alt="Books and mug">
+ <img height="338" width="738" decoding="async" loading="lazy" data-src="assets/images/popup-redesign/books-mug-plant.png" alt="Books and mug">
  </div>
  </div>
 
@@ -1373,7 +1374,7 @@ button.close {
  <div class="popup-redesign-divider">
  <div></div>
  <div class="popup-redesign-divider-badge">
- <img src="assets/images/popup-redesign/book-icon.png" alt="Book icon">
+ <img height="256" width="256" decoding="async" loading="lazy" data-src="assets/images/popup-redesign/book-icon.png" alt="Book icon">
  </div>
  <div></div>
  </div>
@@ -1486,28 +1487,28 @@ button.close {
 
  <div class="popup-redesign-stats">
  <div class="popup-redesign-stat">
- <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/crowd-icon.png" alt="Happy authors">
+ <img height="256" width="256" decoding="async" loading="lazy" class="popup-redesign-stat-icon" data-src="assets/images/popup-redesign/crowd-icon.png" alt="Happy authors">
  <div>
  <strong>1500+</strong>
  <span>Happy Authors</span>
  </div>
  </div>
  <div class="popup-redesign-stat">
- <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/book-icon.png" alt="Books published">
+ <img height="256" width="256" decoding="async" loading="lazy" class="popup-redesign-stat-icon" data-src="assets/images/popup-redesign/book-icon.png" alt="Books published">
  <div>
  <strong>2000+</strong>
  <span>Books Published</span>
  </div>
  </div>
  <div class="popup-redesign-stat">
- <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/globe-icon.png" alt="Countries reached">
+ <img height="256" width="256" decoding="async" loading="lazy" class="popup-redesign-stat-icon" data-src="assets/images/popup-redesign/globe-icon.png" alt="Countries reached">
  <div>
  <strong>25+</strong>
  <span>Countries Reached</span>
  </div>
  </div>
  <div class="popup-redesign-stat">
- <img class="popup-redesign-stat-icon popup-redesign-stat-icon-trophy" src="assets/images/popup-redesign/trophy-icon.png" alt="Years of excellence">
+ <img height="256" width="256" decoding="async" loading="lazy" class="popup-redesign-stat-icon popup-redesign-stat-icon-trophy" data-src="assets/images/popup-redesign/trophy-icon.png" alt="Years of excellence">
  <div>
  <strong>10+</strong>
  <span>Years of Excellence</span>
@@ -1523,8 +1524,6 @@ button.close {
 <script src="assets/js/custom.js"></script>
 <script src="assets/js/swiper.min.js"></script>
 <script src="assets/js/slick-slider.min.js"></script>
-<script src="../www.google.com/recaptcha/api.js" async defer></script>
-
 <!-- Start of LiveChat (www.livechat.com) code -->
 <script>
     window.__lc = window.__lc || {};
