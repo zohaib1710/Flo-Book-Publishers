@@ -1965,3 +1965,52 @@
   .port-img img{
     height: 400px;
   }
+
+  /* Keep every portfolio row aligned, regardless of cover dimensions. */
+  .our-work .workCol {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 5px;
+    margin-bottom: 5px;
+  }
+
+  .our-work .workCol > div {
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    background: #061e38;
+    border-radius: 10px;
+    aspect-ratio: 27 / 40;
+  }
+
+  .our-work .workCol img,
+  .port-img .workCol img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    background: #061e38;
+  }
+
+  @media screen and (max-width: 768px) {
+    .our-work .workCol {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .our-work .workCol img,
+    .port-img .workCol img {
+      height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .our-work .workCol {
+      grid-template-columns: 1fr;
+    }
+
+    .our-work .workCol img,
+    .port-img .workCol img {
+      height: 100%;
+    }
+  }
