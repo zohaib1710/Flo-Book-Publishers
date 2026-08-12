@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 72" role="img" aria-labelledby="title">
+  <title id="title">The Decker Press</title>
+  <rect x="1" y="1" width="94" height="70" rx="8" fill="#f2efe6" stroke="#dcd8ca"/>
+  <path d="M34 17h20c9 0 16 8 16 19S63 55 54 55H34V17Zm9 8v22h9c5 0 9-5 9-11s-4-11-9-11h-9Z" fill="#88724a"/>
+  <path d="M25 15v42" stroke="#b9a987" stroke-width="2"/>
+</svg>
