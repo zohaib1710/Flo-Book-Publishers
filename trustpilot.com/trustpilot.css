@@ -37,6 +37,7 @@ a { color: inherit; }
 img, svg { display: block; max-width: 100%; }
 button { color: inherit; }
 .tp-snapshot { min-height: 100vh; overflow: hidden; }
+.tp-snapshot main { background: var(--tp-dark); }
 .tp-container { width: min(var(--tp-container), calc(100% - 48px)); margin-inline: auto; }
 .tp-sr-only {
   position: absolute !important;
@@ -88,7 +89,54 @@ button { color: inherit; }
 .tp-breadcrumbs a:hover { text-decoration: underline; }
 .tp-breadcrumbs span { color: #aaa; }
 
-.tp-profile-wrap { padding: 48px 0 0; background: #fff; }
+.tp-sticky-nav {
+  position: fixed;
+  z-index: 45;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 64px;
+  color: var(--tp-text);
+  background: #fff;
+  border-top: 1px solid var(--tp-border);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .18);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-105%);
+  transition: transform .2s ease, opacity .2s ease;
+}
+.tp-sticky-nav.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.tp-sticky-nav__inner { display: flex; height: 100%; align-items: center; justify-content: space-between; }
+.tp-sticky-tabs { display: flex; align-self: stretch; gap: 18px; }
+.tp-sticky-tabs a {
+  position: relative;
+  display: flex;
+  min-width: 100px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+  color: #5d5d5d;
+  font-size: 16px;
+  text-decoration: none;
+}
+.tp-sticky-tabs a::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: #2f2f2f;
+  content: "";
+  opacity: 0;
+}
+.tp-sticky-tabs a.is-active { color: #303030; font-weight: 700; }
+.tp-sticky-tabs a.is-active::after { opacity: 1; }
+.tp-sticky-actions { display: flex; align-items: center; gap: 18px; }
+.tp-sticky-actions .tp-button { min-height: 42px; padding-inline: 24px; }
+
+#tp-profile-summary, #company-details-title, #all-reviews { scroll-margin-top: 82px; }
+
+.tp-profile-wrap { position: relative; z-index: 1; margin-top: -1px; padding: 48px 0 0; background: #fff; border-radius: 22px 22px 0 0; }
 .tp-profile-grid { display: grid; grid-template-columns: minmax(0, 890px) 360px; gap: 40px; align-items: start; }
 .tp-profile-main { min-width: 0; }
 .tp-profile-summary { display: grid; grid-template-columns: 128px minmax(0, 1fr); gap: 20px; min-height: 246px; padding: 0 0 42px 10px; align-items: start; }
@@ -188,7 +236,7 @@ button { color: inherit; }
 .tp-company-mark--decker { color: #79623d; background: #f3f0e7; font-family: Georgia, serif; font-size: 24px; }
 .tp-related-rating { display: flex; align-items: center; gap: 6px; margin-top: auto; color: #555; font-size: 11px; }
 
-.tp-reviews { padding: 58px 0 72px; }
+.tp-reviews { padding: 58px 0 72px; background: #fff; }
 .tp-reviews-grid { display: grid; grid-template-columns: 390px minmax(0, 600px); gap: 60px; align-items: start; }
 .tp-score-heading { display: flex; align-items: center; gap: 9px; margin-bottom: 22px; }
 .tp-score-heading > svg { width: 36px; height: 36px; }
@@ -322,6 +370,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .tp-reviews-grid { grid-template-columns: 280px minmax(0, 1fr); gap: 30px; }
   .tp-footer-grid { grid-template-columns: repeat(3, 1fr); }
   .tp-footer-social, .tp-country { margin-top: 20px; }
+  .tp-sticky-actions .tp-button--secondary { display: none; }
 }
 
 @media (max-width: 700px) {
@@ -338,7 +387,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .tp-breadcrumbs nav { gap: 7px; font-size: 9px; overflow-x: auto; scrollbar-width: none; }
   .tp-breadcrumbs nav::-webkit-scrollbar { display: none; }
   .tp-breadcrumbs a:not(:nth-last-of-type(-n+2)), .tp-breadcrumbs span:not(:nth-last-of-type(-n+3)) { display: none; }
-  .tp-profile-wrap { padding-top: 18px; }
+  .tp-sticky-nav { height: 52px; }
+  .tp-sticky-nav__inner { width: 100%; }
+  .tp-sticky-tabs { width: 100%; gap: 0; }
+  .tp-sticky-tabs a { min-width: 0; flex: 1; padding: 0 6px; font-size: 13px; }
+  .tp-sticky-actions { display: none; }
+  #tp-profile-summary, #company-details-title, #all-reviews { scroll-margin-top: 66px; }
+  .tp-profile-wrap { padding-top: 18px; border-radius: 14px 14px 0 0; }
   .tp-profile-summary { display: flex; min-height: 0; flex-direction: column; gap: 8px; padding: 0 0 16px; }
   .tp-company-logo { width: 100%; height: 52px; justify-content: flex-start; margin: 0; }
   .tp-company-logo img { width: 105px; }

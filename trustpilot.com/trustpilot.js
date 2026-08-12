@@ -170,6 +170,23 @@
     }).join("") + '</nav></div>';
   }
 
+  function renderStickyNav() {
+    const c = trustpilotSnapshot.company;
+    return '<nav class="tp-sticky-nav" aria-label="Profile sections" aria-hidden="true">' +
+      '<div class="tp-container tp-sticky-nav__inner">' +
+        '<div class="tp-sticky-tabs">' +
+          '<a href="#tp-profile-summary" data-section="summary" class="is-active" aria-current="true">Summary</a>' +
+          '<a href="#company-details-title" data-section="about">About</a>' +
+          '<a href="#all-reviews" data-section="reviews">Reviews</a>' +
+        '</div>' +
+        '<div class="tp-sticky-actions">' +
+          '<a class="tp-button tp-button--secondary" href="' + c.websiteUrl + '">Visit website' + icon("external") + '</a>' +
+          '<a class="tp-button tp-button--primary" href="' + c.writeReviewUrl + '">' + icon("pencil") + 'Write a review</a>' +
+        '</div>' +
+      '</div>' +
+    '</nav>';
+  }
+
   function renderRatingCard(compact) {
     const rating = trustpilotSnapshot.rating;
     return '<section class="tp-rating-card ' + (compact ? "is-compact" : "") + '" aria-label="TrustScore ' + rating.score + ' out of 5">' +
@@ -189,7 +206,7 @@
       '<section class="tp-profile-wrap">' +
         '<div class="tp-container tp-profile-grid">' +
           '<div class="tp-profile-main">' +
-            '<div class="tp-profile-summary">' +
+            '<div id="tp-profile-summary" class="tp-profile-summary">' +
               '<div class="tp-company-logo"><img src="../assets/images/new-logo.png" width="154" height="49" alt="Flo Book Publishers"></div>' +
               '<div class="tp-profile-copy">' +
                 '<div class="tp-claimed">' + icon("check") + '<span>' + c.claimed + '</span></div>' +
@@ -342,6 +359,63 @@
     document.addEventListener("click", function (event) { if (!menu.hidden && !menu.contains(event.target) && !button.contains(event.target)) setOpen(false); });
   }
 
+  function initStickyNav() {
+    const nav = document.querySelector(".tp-sticky-nav");
+    const profile = document.getElementById("tp-profile-summary");
+    const about = document.getElementById("company-details-title");
+    const reviews = document.getElementById("all-reviews");
+    if (!nav || !profile || !about || !reviews) return;
+
+    const tabs = Array.prototype.slice.call(nav.querySelectorAll(".tp-sticky-tabs a"));
+    let ticking = false;
+
+    function setActive(section) {
+      tabs.forEach(function (tab) {
+        const active = tab.getAttribute("data-section") === section;
+        tab.classList.toggle("is-active", active);
+        if (active) tab.setAttribute("aria-current", "true");
+        else tab.removeAttribute("aria-current");
+      });
+    }
+
+    function update() {
+      const navHeight = nav.offsetHeight || 64;
+      const visible = window.scrollY > 180;
+      nav.classList.toggle("is-visible", visible);
+      nav.setAttribute("aria-hidden", String(!visible));
+
+      if (visible) {
+        const marker = navHeight + 90;
+        if (reviews.getBoundingClientRect().top <= marker) setActive("reviews");
+        else if (about.getBoundingClientRect().top <= marker) setActive("about");
+        else setActive("summary");
+      } else {
+        setActive("summary");
+      }
+      ticking = false;
+    }
+
+    function requestUpdate() {
+      if (!ticking) {
+        ticking = true;
+        window.requestAnimationFrame(update);
+      }
+    }
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        setActive(tab.getAttribute("data-section"));
+      });
+    });
+    window.addEventListener("scroll", requestUpdate, { passive: true });
+    window.addEventListener("resize", requestUpdate);
+    window.addEventListener("hashchange", requestUpdate);
+    window.addEventListener("pageshow", requestUpdate);
+    update();
+    window.setTimeout(requestUpdate, 0);
+    window.setTimeout(requestUpdate, 150);
+  }
+
   function initDescription() {
     const button = document.querySelector(".tp-see-more");
     const text = document.querySelector(".tp-company-description");
@@ -421,9 +495,10 @@
 
   function renderApp() {
     const app = document.getElementById("tp-app");
-    app.innerHTML = renderHeader() + renderBreadcrumbs() + renderProfile() + renderFooter();
+    app.innerHTML = renderHeader() + renderBreadcrumbs() + renderStickyNav() + renderProfile() + renderFooter();
     app.setAttribute("aria-busy", "false");
     initMenu();
+    initStickyNav();
     initDescription();
     initCarousel();
     initAccordions();
