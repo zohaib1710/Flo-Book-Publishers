@@ -474,26 +474,28 @@
  <h3>BECOME A PUBLISHED AUTHOR</h3>
  </div>
 
- <form class="flo-formspree-ajax-form" id="homeHeroForm" action="https://formspree.io/f/meewwrad" method="post">
- <!-- <input type="hidden" name="form_name" value="Hero Form"> -->
- <!-- <input type="hidden" name="client_requested_page_url" value="flobookpublishers.com/"> -->
- <!-- <input type="hidden" name="client_ip" value="116.90.113.78"> -->
- <!-- <input type="hidden" name="client_device" value="Desktop"> -->
+ <form class="flo-email-ajax-form" id="homeHeroForm" action="/send-form.php" method="post">
+ <input type="hidden" name="form_source" value="publishing_enquiry">
+ <input type="hidden" name="source_page" value="home">
+ <input type="hidden" name="form_started_at" value="">
+ <div class="flo-form-honeypot" aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">
+ <label>Leave this field empty<input type="text" name="website" value="" tabindex="-1" autocomplete="off"></label>
+ </div>
  <div class="row">
  <div class="col-md-12 col-lg-12">
  <div>
- <input type="text" placeholder="Your Name" name="name" required />
+ <input type="text" placeholder="Your Name" name="name" required autocomplete="name" maxlength="120" />
  </div>
  </div>
  <div class="col-md-12 col-lg-12">
  <div>
  <input type="tel" placeholder="Phone Number" name="phone" required
- pattern="\d{10,15}" title="Please enter between 10 and 15 numbers." />
+ pattern="\d{10,15}" title="Please enter between 10 and 15 numbers." inputmode="tel" autocomplete="tel" maxlength="30" />
  </div>
  </div>
  <div class="col-md-12 col-lg-12">
  <div>
- <input type="email" placeholder="Email" name="email" required />
+ <input type="email" placeholder="Email" name="email" required autocomplete="email" maxlength="254" />
  </div>
  </div>
  <div class="col-md-12 col-lg-12">
@@ -1316,23 +1318,25 @@
  <div class="col-lg-8">
  <div class="form-col">
  <h4>Ready To Discuss Your Story? </h4>
- <form class="flo-formspree-ajax-form" action="https://formspree.io/f/xnjyylqw" method="post" data-success-message="Thank You! We will get back to you shortly.">
- <!-- <input type="hidden" name="form_name" value="Contact Form"> -->
- <!-- <input type="hidden" name="client_requested_page_url" value="flobookpublishers.com/"> -->
- <!-- <input type="hidden" name="client_ip" value="116.90.113.78"> -->
- <!-- <input type="hidden" name="client_device" value="Desktop"> -->
- <input type="text" name="name" required="" placeholder="Enter Your Name">
+ <form class="flo-email-ajax-form" action="/send-form.php" method="post" data-success-message="Thank You! We will get back to you shortly.">
+ <input type="hidden" name="form_source" value="contact_message">
+ <input type="hidden" name="source_page" value="home">
+ <input type="hidden" name="form_started_at" value="">
+ <div class="flo-form-honeypot" aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">
+ <label>Leave this field empty<input type="text" name="website" value="" tabindex="-1" autocomplete="off"></label>
+ </div>
+ <input type="text" name="name" required="" placeholder="Enter Your Name" autocomplete="name" maxlength="120">
  <div class="row">
  <div class="col-md-6">
- <input type="email" name="email" required="" placeholder="Enter Your Email">
+ <input type="email" name="email" required="" placeholder="Enter Your Email" autocomplete="email" maxlength="254">
  </div>
  <div class="col-md-6">
- <input type="text" name="phone" pattern="[0-9]*" required=""
- placeholder="Enter Phone Number">
+ <input type="tel" name="phone" pattern="[0-9]*" required=""
+ placeholder="Enter Phone Number" inputmode="tel" autocomplete="tel" maxlength="30">
  </div>
  </div>
  <textarea name="message" id="" style="height:125px" required=""
- placeholder="Enter Message"></textarea>
+ placeholder="Enter Message" maxlength="5000"></textarea>
  <div>
  <div class="sms-consent-field">
  <label>
@@ -1574,26 +1578,26 @@ button.close {
  </div>
  </div>
 
- <form class="popup-redesign-form flo-formspree-ajax-form" method="post" action="https://formspree.io/f/meewwrad">
- <!-- <input type="hidden" name="form_name" value="Getting Started Form"> -->
- <!-- <input type="hidden" name="client_requested_page_url" value="flobookpublishers.com/"> -->
- <!-- <input type="hidden" name="client_ip" value="116.90.113.78"> -->
- <!-- <input type="hidden" name="client_device" value="Desktop"> -->
- <!-- <input type="hidden" name="published_before" value="Not Provided"> -->
- <!-- <input type="hidden" name="book_type" value="Not Provided"> -->
+ <form class="popup-redesign-form flo-email-ajax-form" method="post" action="/send-form.php">
+ <input type="hidden" name="form_source" value="publishing_popup">
+ <input type="hidden" name="source_page" value="home">
+ <input type="hidden" name="form_started_at" value="">
+ <div class="flo-form-honeypot" aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">
+ <label>Leave this field empty<input type="text" name="website" value="" tabindex="-1" autocomplete="off"></label>
+ </div>
 
  <div class="popup-redesign-field">
  <i class="fa-regular fa-user"></i>
- <input type="text" placeholder="Your Name" name="name" required>
+ <input type="text" placeholder="Your Name" name="name" required autocomplete="name" maxlength="120">
  </div>
 
  <div class="popup-redesign-field">
  <i class="fa-solid fa-phone"></i>
- <input type="tel" placeholder="Phone Number" name="phone" pattern="\d{10,15}" title="Please enter between 10 and 15 numbers." required>
+ <input type="tel" placeholder="Phone Number" name="phone" pattern="\d{10,15}" title="Please enter between 10 and 15 numbers." required inputmode="tel" autocomplete="tel" maxlength="30">
  </div>
  <div class="popup-redesign-field">
  <i class="fa-regular fa-envelope"></i>
- <input type="email" placeholder="Email" name="email" required>
+ <input type="email" placeholder="Email" name="email" required autocomplete="email" maxlength="254">
  </div>
 
  <div class="popup-redesign-field">

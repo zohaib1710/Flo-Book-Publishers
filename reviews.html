@@ -1060,26 +1060,26 @@ button.close {
  </div>
  </div>
 
- <form class="popup-redesign-form flo-formspree-ajax-form" method="post" action="https://formspree.io/f/meewwrad">
- <!-- <input type="hidden" name="form_name" value="Getting Started Form"> -->
- <!-- <input type="hidden" name="client_requested_page_url" value="flobookpublishers.com/reviews"> -->
- <!-- <input type="hidden" name="client_ip" value="116.90.113.78"> -->
- <!-- <input type="hidden" name="client_device" value="Desktop"> -->
- <!-- <input type="hidden" name="published_before" value="Not Provided"> -->
- <!-- <input type="hidden" name="book_type" value="Not Provided"> -->
+ <form class="popup-redesign-form flo-email-ajax-form" method="post" action="/send-form.php">
+ <input type="hidden" name="form_source" value="publishing_popup">
+ <input type="hidden" name="source_page" value="reviews">
+ <input type="hidden" name="form_started_at" value="">
+ <div class="flo-form-honeypot" aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">
+ <label>Leave this field empty<input type="text" name="website" value="" tabindex="-1" autocomplete="off"></label>
+ </div>
 
  <div class="popup-redesign-field">
  <i class="fa-regular fa-user"></i>
- <input type="text" placeholder="Your Name" name="name" required>
+ <input type="text" placeholder="Your Name" name="name" required autocomplete="name" maxlength="120">
  </div>
 
  <div class="popup-redesign-field">
  <i class="fa-solid fa-phone"></i>
- <input type="tel" placeholder="Phone Number" name="phone" pattern="\d{10,15}" title="Please enter between 10 and 15 numbers." required>
+ <input type="tel" placeholder="Phone Number" name="phone" pattern="\d{10,15}" title="Please enter between 10 and 15 numbers." required inputmode="tel" autocomplete="tel" maxlength="30">
  </div>
  <div class="popup-redesign-field">
  <i class="fa-regular fa-envelope"></i>
- <input type="email" placeholder="Email" name="email" required>
+ <input type="email" placeholder="Email" name="email" required autocomplete="email" maxlength="254">
  </div>
 
  <div class="popup-redesign-field">

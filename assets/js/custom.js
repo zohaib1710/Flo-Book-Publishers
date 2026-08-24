@@ -8,6 +8,17 @@ $(document).ready(function () {
 
   window.setButtonURL = window.openFloLiveChat;
 
+  function refreshFormStartedAt(form) {
+    var startedAt = form && form.elements ? form.elements.form_started_at : null;
+    if (startedAt) {
+      startedAt.value = String(Math.floor(Date.now() / 1000));
+    }
+  }
+
+  document.querySelectorAll(".flo-email-ajax-form").forEach(function (form) {
+    refreshFormStartedAt(form);
+  });
+
   document.addEventListener("click", function (event) {
     var trigger = event.target.closest && event.target.closest("a, button, [role='button']");
     if (!trigger) return;
@@ -32,7 +43,7 @@ $(document).ready(function () {
 
   document.addEventListener("submit", function (event) {
     var form = event.target;
-    if (!form || !form.classList || !form.classList.contains("flo-formspree-ajax-form")) return;
+    if (!form || !form.classList || !form.classList.contains("flo-email-ajax-form")) return;
 
     event.preventDefault();
     event.stopPropagation();
@@ -40,14 +51,17 @@ $(document).ready(function () {
       event.stopImmediatePropagation();
     }
 
-    var submitButton = form.querySelector('[type="submit"], button:not([type]), button[type="button"]');
+    if (form.dataset.submitting === "true" || !form.reportValidity()) return;
+    form.dataset.submitting = "true";
+
+    var submitButton = form.querySelector('[type="submit"], button:not([type])');
     var originalText = submitButton ? submitButton.textContent : "";
     var successMessage = form.getAttribute("data-success-message") || "Thank You! Your submission has been received";
-    var message = form.querySelector(".flo-formspree-message");
+    var message = form.querySelector(".flo-email-message");
 
     if (!message) {
       message = document.createElement("div");
-      message.className = "flo-formspree-message";
+      message.className = "flo-email-message";
       form.appendChild(message);
     }
 
@@ -56,8 +70,9 @@ $(document).ready(function () {
 
     if (submitButton) {
       submitButton.disabled = true;
+      submitButton.setAttribute("aria-busy", "true");
       submitButton.textContent = "Submitting...";
-      submitButton.classList.remove("flo-formspree-success-button");
+      submitButton.classList.remove("flo-email-success-button");
       submitButton.style.removeProperty("background");
       submitButton.style.removeProperty("background-color");
       submitButton.style.removeProperty("border-color");
@@ -69,8 +84,10 @@ $(document).ready(function () {
       message.classList.add("is-error");
       if (submitButton) {
         submitButton.disabled = false;
+        submitButton.removeAttribute("aria-busy");
         submitButton.textContent = originalText;
       }
+      delete form.dataset.submitting;
       return;
     }
 
@@ -79,17 +96,28 @@ $(document).ready(function () {
       body: new FormData(form),
       headers: {
         Accept: "application/json"
-      }
+      },
+      credentials: "same-origin"
     })
       .then(function (response) {
-        if (!response.ok) {
-          throw new Error("Form submission failed");
-        }
+        return response.json().catch(function () { return {}; }).then(function (payload) {
+          if (!response.ok || payload.success !== true) {
+            var error = new Error(
+              typeof payload.message === "string" && payload.message
+                ? payload.message
+                : "Sorry, something went wrong. Please try again."
+            );
+            throw error;
+          }
+          return payload;
+        });
+      })
+      .then(function (payload) {
 
         message.textContent = "";
         if (submitButton) {
           submitButton.textContent = successMessage;
-          submitButton.classList.add("flo-formspree-success-button");
+          submitButton.classList.add("flo-email-success-button");
           submitButton.style.setProperty("background", "#28a745", "important");
           submitButton.style.setProperty("background-color", "#28a745", "important");
           submitButton.style.setProperty("border-color", "#28a745", "important");
@@ -97,16 +125,19 @@ $(document).ready(function () {
         }
 
         form.reset();
+        refreshFormStartedAt(form);
         if (window.grecaptcha && typeof window.grecaptcha.reset === "function") {
           window.grecaptcha.reset();
         }
       })
-      .catch(function () {
-        message.textContent = "Sorry, something went wrong. Please try again.";
+      .catch(function (error) {
+        message.textContent = error && error.message
+          ? error.message
+          : "Sorry, something went wrong. Please try again.";
         message.classList.add("is-error");
         if (submitButton) {
           submitButton.textContent = originalText;
-          submitButton.classList.remove("flo-formspree-success-button");
+          submitButton.classList.remove("flo-email-success-button");
           submitButton.style.removeProperty("background");
           submitButton.style.removeProperty("background-color");
           submitButton.style.removeProperty("border-color");
@@ -114,8 +145,10 @@ $(document).ready(function () {
         }
       })
       .finally(function () {
+        delete form.dataset.submitting;
         if (submitButton) {
           submitButton.disabled = false;
+          submitButton.removeAttribute("aria-busy");
         }
       });
   }, true);

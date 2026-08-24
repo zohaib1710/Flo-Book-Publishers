@@ -6195,21 +6195,21 @@ ul.subMenu li.active a {
   opacity: 1;
 }
 
-.flo-formspree-ajax-form .flo-formspree-success-button,
-.flo-formspree-ajax-form .flo-formspree-success-button:hover,
-.flo-formspree-ajax-form .flo-formspree-success-button:focus {
+.flo-email-ajax-form .flo-email-success-button,
+.flo-email-ajax-form .flo-email-success-button:hover,
+.flo-email-ajax-form .flo-email-success-button:focus {
   background: #28a745 !important;
   border-color: #28a745 !important;
   color: #fff !important;
 }
 
-.flo-formspree-message {
+.flo-email-message {
   margin-top: 10px;
   font-size: 14px;
   font-weight: 600;
 }
 
-.flo-formspree-message.is-error {
+.flo-email-message.is-error {
   color: #b00020;
 }
 
