@@ -15,8 +15,69 @@ $(document).ready(function () {
     }
   }
 
+  var phonePickers = new WeakMap();
+
+  function clearPhoneError(phoneInput) {
+    if (phoneInput) {
+      phoneInput.setCustomValidity("");
+    }
+  }
+
+  function initializePhonePicker(phoneInput) {
+    if (!phoneInput || typeof window.intlTelInput !== "function") return;
+
+    var picker = window.intlTelInput(phoneInput, {
+      initialCountry: "us",
+      countrySearch: true,
+      countryOrder: null,
+      dropdownParent: document.body,
+      formatAsYouType: true,
+      separateDialCode: true,
+      strictMode: true
+    });
+
+    phonePickers.set(phoneInput, picker);
+    phoneInput.addEventListener("input", function () {
+      clearPhoneError(phoneInput);
+    });
+    phoneInput.addEventListener("countrychange", function () {
+      clearPhoneError(phoneInput);
+    });
+  }
+
+  function getValidatedPhone(form) {
+    var phoneInput = form.querySelector('input[name="phone"]');
+    if (!phoneInput) return "";
+
+    clearPhoneError(phoneInput);
+    var picker = phonePickers.get(phoneInput);
+    if (!picker) {
+      phoneInput.setCustomValidity("The phone country selector could not load. Please refresh the page and try again.");
+      return "";
+    }
+
+    var normalizedPhone = picker.getNumber();
+    if (!picker.isValidNumber() || !/^\+[1-9][0-9]{6,14}$/.test(normalizedPhone)) {
+      phoneInput.setCustomValidity("Please enter a valid phone number for the selected country.");
+      return "";
+    }
+
+    return normalizedPhone;
+  }
+
+  function resetPhonePicker(form) {
+    var phoneInput = form.querySelector('input[name="phone"]');
+    var picker = phoneInput ? phonePickers.get(phoneInput) : null;
+    if (!picker) return;
+
+    picker.setNumber("");
+    picker.setSelectedCountry("us");
+    clearPhoneError(phoneInput);
+  }
+
   document.querySelectorAll(".flo-email-ajax-form").forEach(function (form) {
     refreshFormStartedAt(form);
+    initializePhonePicker(form.querySelector('input[name="phone"]'));
   });
 
   document.addEventListener("click", function (event) {
@@ -51,7 +112,10 @@ $(document).ready(function () {
       event.stopImmediatePropagation();
     }
 
-    if (form.dataset.submitting === "true" || !form.reportValidity()) return;
+    if (form.dataset.submitting === "true") return;
+
+    var normalizedPhone = getValidatedPhone(form);
+    if (!form.reportValidity()) return;
     form.dataset.submitting = "true";
 
     var submitButton = form.querySelector('[type="submit"], button:not([type])');
@@ -91,9 +155,12 @@ $(document).ready(function () {
       return;
     }
 
+    var formData = new FormData(form);
+    formData.set("phone", normalizedPhone);
+
     fetch(form.action, {
       method: "POST",
-      body: new FormData(form),
+      body: formData,
       headers: {
         Accept: "application/json"
       },
@@ -125,6 +192,7 @@ $(document).ready(function () {
         }
 
         form.reset();
+        resetPhonePicker(form);
         refreshFormStartedAt(form);
         if (window.grecaptcha && typeof window.grecaptcha.reset === "function") {
           window.grecaptcha.reset();
