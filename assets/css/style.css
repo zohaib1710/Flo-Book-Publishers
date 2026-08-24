@@ -6262,22 +6262,3 @@ ul.subMenu li.active a {
 .home-hero-sec .banner-form .sms-consent-field input[type="checkbox"] {
   background: #fff;
 }
-
-/* Country-aware phone fields used by every enquiry form. */
-.flo-email-ajax-form .iti {
-  display: block;
-  width: 100%;
-}
-
-.flo-email-ajax-form .iti .iti__tel-input {
-  width: 100%;
-}
-
-.iti--detached-country-selector,
-.iti--fullscreen-popup {
-  z-index: 1100;
-}
-
-.iti__country-list {
-  max-width: min(360px, calc(100vw - 24px));
-}

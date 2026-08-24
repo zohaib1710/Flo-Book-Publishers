@@ -47,7 +47,6 @@
 <link rel="stylesheet" href="assets/css/slick-slider.css">
 
 <link rel="stylesheet" href="assets/css/layout.css" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="assets/vendor/intl-tel-input-29.1.2/css/intlTelInput.min.css?v=29.1.2">
 <link rel="stylesheet" href="assets/css/style.css" >
 <link rel="stylesheet" href="assets/css/header.css" >
 <link rel="stylesheet" href="assets/css/buttons.css" >
@@ -857,7 +856,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  <div class="col-md-12 col-lg-12">
  <div>
- <input type="tel" placeholder="Phone Number" name="phone" required inputmode="tel" autocomplete="tel" maxlength="30" />
+ <input type="tel" placeholder="e.g. +14075551234" name="phone" pattern="\+?\d{10,15}" title="Please enter 10 to 15 digits, optionally starting with +." required inputmode="tel" autocomplete="tel" maxlength="30" />
  </div>
  </div>
  <div class="col-md-12 col-lg-12">
@@ -1620,8 +1619,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  <input type="email" name="email" required="" placeholder="Enter Your Email" autocomplete="email" maxlength="254">
  </div>
  <div class="col-md-6">
- <input type="tel" name="phone" required=""
- placeholder="Enter Phone Number" inputmode="tel" autocomplete="tel" maxlength="30">
+ <input type="tel" placeholder="e.g. +14075551234" name="phone" pattern="\+?\d{10,15}" title="Please enter 10 to 15 digits, optionally starting with +." required="" inputmode="tel" autocomplete="tel" maxlength="30">
  </div>
  </div>
  <textarea name="message" id="" style="height:150px" required=""
@@ -1951,7 +1949,7 @@ button.close {
 
  <div class="popup-redesign-field">
  <i class="fa-solid fa-phone"></i>
- <input type="tel" placeholder="Phone Number" name="phone" required inputmode="tel" autocomplete="tel" maxlength="30">
+ <input type="tel" placeholder="e.g. +14075551234" name="phone" pattern="\+?\d{10,15}" title="Please enter 10 to 15 digits, optionally starting with +." required inputmode="tel" autocomplete="tel" maxlength="30">
  </div>
  <div class="popup-redesign-field">
  <i class="fa-regular fa-envelope"></i>
@@ -2059,8 +2057,7 @@ button.close {
 </div> 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/vendor/intl-tel-input-29.1.2/js/intlTelInputWithUtils.min.js?v=29.1.2"></script>
-<script src="assets/js/custom.js?v=form-delivery-20260824-2"></script>
+<script src="assets/js/custom.js?v=form-delivery-20260824-1"></script>
 <script src="assets/js/swiper.min.js"></script>
 <script src="assets/js/slick-slider.min.js"></script>
 <script src="../www.google.com/recaptcha/api.js" async defer></script>

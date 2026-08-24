@@ -300,7 +300,9 @@ if (!is_string($name) || string_length($name) < 2 || string_length($name) > 120 
     respond(422, false, 'Please enter a valid name.');
 }
 
-if (preg_match('/^\+[1-9][0-9]{6,14}$/', $phone) !== 1) {
+$phoneDigits = preg_replace('/\D+/', '', $phone);
+if (!is_string($phoneDigits) || strlen($phoneDigits) < 10 || strlen($phoneDigits) > 15 ||
+    preg_match('/^\+?[0-9().\s-]{10,30}$/', $phone) !== 1) {
     respond(422, false, 'Please enter a valid phone number.');
 }
 if (string_length($email) > 254 || filter_var($email, FILTER_VALIDATE_EMAIL) === false || preg_match('/[\r\n]/', $email) === 1) {
