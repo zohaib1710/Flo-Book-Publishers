@@ -1963,14 +1963,15 @@
   }
 
   /* Keep every portfolio row aligned, regardless of cover dimensions. */
-  .our-work .workCol {
+  .portfolio-page .our-work .workCol {
     display: grid !important;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 5px;
     margin-bottom: 5px;
   }
 
-  .our-work .workCol > div {
+  .portfolio-page .our-work .workCol > div {
+    width: 100%;
     min-width: 0;
     margin: 0;
     overflow: hidden;
@@ -1979,8 +1980,8 @@
     aspect-ratio: 27 / 40;
   }
 
-  .our-work .workCol img,
-  .port-img .workCol img {
+  .portfolio-page .our-work .workCol img,
+  .portfolio-page .port-img .workCol img {
     display: block;
     width: 100%;
     height: 100%;
@@ -1990,23 +1991,22 @@
   }
 
   @media screen and (max-width: 768px) {
-    .our-work .workCol {
+    /* The full gallery is too tall to meet the shared section reveal threshold on
+       mobile. Keep the parent visible and let each cover reveal independently. */
+    .portfolio-page .port-sec.port-img.scroll-reveal {
+      opacity: 1;
+      transform: none;
+      filter: none;
+      transition: none;
+      will-change: auto;
+    }
+
+    .portfolio-page .our-work .workCol {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .our-work .workCol img,
-    .port-img .workCol img {
-      height: 100%;
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    .our-work .workCol {
-      grid-template-columns: 1fr;
-    }
-
-    .our-work .workCol img,
-    .port-img .workCol img {
+    .portfolio-page .our-work .workCol img,
+    .portfolio-page .port-img .workCol img {
       height: 100%;
     }
   }
