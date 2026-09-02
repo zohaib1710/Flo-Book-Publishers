@@ -81,46 +81,9 @@
     });
   }
 
-  function setupDeferredSwiper() {
-    var carousel = document.querySelector("section.portfolio .mySwiper");
-    if (!carousel) return;
-
-    var started = false;
-    function loadSwiper() {
-      if (started) return;
-      started = true;
-
-      var stylesheet = document.createElement("link");
-      stylesheet.rel = "stylesheet";
-      stylesheet.href = "assets/css/swiper.min.css?v=performance-20260902-1";
-      document.head.appendChild(stylesheet);
-
-      var script = document.createElement("script");
-      script.src = "assets/js/swiper.min.js?v=performance-20260902-1";
-      script.onload = function () {
-        document.dispatchEvent(new CustomEvent("flo:swiper-ready"));
-      };
-      document.head.appendChild(script);
-    }
-
-    if (!("IntersectionObserver" in window)) {
-      afterCriticalRender(loadSwiper);
-      return;
-    }
-
-    var observer = new IntersectionObserver(function (entries) {
-      if (entries.some(function (entry) { return entry.isIntersecting; })) {
-        observer.disconnect();
-        loadSwiper();
-      }
-    }, { rootMargin: "600px 0px", threshold: 0.01 });
-    observer.observe(carousel);
-  }
-
   document.addEventListener("DOMContentLoaded", function () {
     afterCriticalRender(loadDesktopHeroes);
     setupDeferredMotion();
-    setupDeferredSwiper();
   });
 
   if (typeof desktopMedia.addEventListener === "function") {

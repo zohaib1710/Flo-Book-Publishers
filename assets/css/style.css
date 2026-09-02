@@ -3,6 +3,59 @@ body {
   background: #e9fdff;
 }
 
+:root {
+  --loader-duration: 0.35s;
+}
+
+.page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity var(--loader-duration) ease, visibility var(--loader-duration) ease;
+}
+
+.page-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-logo {
+  display: block;
+  width: 240px;
+  height: 240px;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.06)) drop-shadow(0 0 18px rgba(0, 0, 0, 0.05));
+  animation: logoSpin 2.8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+  will-change: transform;
+}
+
+@keyframes logoSpin {
+  0% { transform: rotate(-12deg) scale(1); }
+  10% { transform: rotate(-24deg) scale(0.96); }
+  55% { transform: rotate(348deg) scale(1.03); }
+  68% { transform: rotate(368deg) scale(1.06); }
+  78% { transform: rotate(342deg) scale(0.99); }
+  88%, 100% { transform: rotate(348deg) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loader-logo {
+    animation: none;
+  }
+}
+
 @font-face {
   font-family: "FontAwesome";
   src: url("../fonts/fontawesome-webfont3e6e.woff2") format("woff2");
@@ -17,17 +70,6 @@ body {
   }
 }
 
-section.portfolio .mySwiper:not(.swiper-initialized) {
-  overflow: hidden;
-}
-
-section.portfolio .mySwiper:not(.swiper-initialized) .swiper-wrapper {
-  display: flex;
-}
-
-section.portfolio .mySwiper:not(.swiper-initialized) .swiper-slide {
-  flex: 0 0 240px;
-}
 
 .btn-a,
 .btn-a1,
