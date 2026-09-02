@@ -7,7 +7,7 @@
 <head>
  <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
 
@@ -23,7 +23,7 @@
  dl = l != 'dataLayer' ? '&l=' + l : '';
  j.async = true;
  j.src =
- '../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+ 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
  f.parentNode.insertBefore(j, f);
  })(window, document, 'script', 'dataLayer', 'GTM-55Z5TZWK');
 </script>
@@ -70,7 +70,7 @@
  "@type": "Organization",
  "name": "FLO Book Publishers",
  "url": "https://flobookpublishers.com/",
- "logo": "https://flobookpublishers.com/assets/images/new-logo.png",
+ "logo": "https://flobookpublishers.com/assets/images/new-logo-display.webp",
  "email": "info@flobookpublishers.com",
  "description": "FLO Book Publishers offers professional book publishing, ghostwriting, editing, and marketing services for authors across the US.",
  "address": {
@@ -90,7 +90,7 @@
  },
  "sameAs": [
  "https://www.facebook.com/share/1CySjmcm8G/",
- "https://www.instagram.com/flobookpublishers?igsh=MWlpZmJuNTVudnVsOA==",
+ "https://www.instagram.com/flobookpublishers?igsh=MWlpZmJuNTVudnVsOA=="
  ]
  }
  </script>
@@ -100,15 +100,15 @@
 
 
 
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/swiper.min.css">
-<link rel="stylesheet" href="assets/css/slick-slider.css">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css?v=performance-20260902-1">
+<link rel="stylesheet" href="assets/css/slick-slider.css?v=performance-20260902-1">
 
-<link rel="stylesheet" href="assets/css/layout.css" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="assets/css/style.css" >
-<link rel="stylesheet" href="assets/css/header.css" >
-<link rel="stylesheet" href="assets/css/buttons.css" >
-<link rel="icon" href="assets/images/favicon.png">
+<link rel="stylesheet" href="assets/css/layout.css?v=performance-20260902-1" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="assets/css/style.css?v=performance-20260902-1" >
+<link rel="stylesheet" href="assets/css/header.css?v=performance-20260902-1" >
+<link rel="stylesheet" href="assets/css/buttons.css?v=performance-20260902-1" >
+<link rel="icon" href="assets/images/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="assets/images/favicon-64.png" type="image/png" sizes="64x64">
 <style>
  /* =========================
  HERO SECTION + VIDEO (home page only)
@@ -216,21 +216,11 @@
  border: none !important;
  }
 </style>
-<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/responsive.css?v=performance-20260902-1">
+<link rel="preload" href="assets/fonts/fontawesome-webfont3e6e.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="home-page">
-
- <div id="page-loader" class="page-loader" aria-hidden="true">
- <div class="loader-content">
- <img
- src="/assets/images/favicon.png"
- alt="Loading"reinfo
- class="loader-logo"
- />
- </div>
-</div> 
-
 <div class="sidebar">
  <button class="item" type="button" onclick="if(window.LiveChatWidget&&window.LiveChatWidget.call){LiveChatWidget.call('maximize')}">
  <span class="icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
@@ -285,7 +275,7 @@
  <div class="row align-items-center">
  <div class="col-md-2 text-center ">
  <a href="index.html" class="logo">
- <img src="assets/images/new-logo.png" alt="FLO Book Publishers">
+ <img src="assets/images/new-logo-display.webp" alt="FLO Book Publishers" width="400" height="128" decoding="async" loading="eager" fetchpriority="high">
  </a>
  </div>
  <div class="col-md-5 text-center">
@@ -424,9 +414,7 @@
 
  <section class="banner-color home-hero-sec">
  <div class="hero-video-wrap" aria-hidden="true">
- <video autoplay muted loop playsinline preload="auto">
- <source src="assets/home_hero_video.mp4" type="video/mp4">
- </video>
+ <video autoplay muted loop playsinline preload="none" data-desktop-src="assets/home_hero_video-optimized.mp4" aria-hidden="true" role="presentation"></video>
  </div>
  <div class="overlay"></div>
  <div class="container">
@@ -435,7 +423,7 @@
  <div class="banner-content">
 
  <div class="arrow-wrap">
- <img loading="lazy" src="assets/images/book-arrow-1.png" alt="FLO Book Publishers">
+ <img loading="eager" src="assets/images/book-arrow-1.png" alt="FLO Book Publishers" width="152" height="95" decoding="async">
  </div>
  <h1>TURN YOUR BOOK INTO A
  <p>Best <span>Seller</span></p>
@@ -443,7 +431,7 @@
  </h1>
 
  <div class="before-after-image book-img-wrap">
- <img loading="lazy" src="assets/images/laptop.png" alt="Before and After Books" style="rotate: -15deg;"/>
+ <img loading="eager" src="assets/images/laptop-optimized.webp" alt="Before and After Books" style="rotate: -15deg;" width="500" height="500" decoding="async"/>
  </div>
 
  </div>
@@ -466,8 +454,8 @@
  <div class="banner-form ">
 
  <div class="form-logo">
- <img loading="lazy" src="assets/images/new-logo.png"
- alt="book publishing companies new york">
+ <img loading="lazy" src="assets/images/new-logo-display.webp"
+ alt="book publishing companies new york" width="400" height="128" decoding="async">
  </div>
 
  <div class="form-heading">
@@ -499,7 +487,7 @@
  </div>
  <div class="col-md-12 col-lg-12">
  <div>
- <select name="manuscript_ready" required>
+ <select name="manuscript_ready" required aria-label="Manuscript Ready">
  <option value="" selected disabled>Do you have a manuscript ready?</option>
  <option value="Yes">Yes</option>
  <option value="No">No</option>
@@ -509,7 +497,7 @@
  </div>
  <div class="col-md-12 col-lg-12">
  <div>
- <select name="published_before" required>
+ <select name="published_before" required aria-label="Published Before">
  <option value="" selected disabled>Have you published before?</option>
  <option value="Yes">Yes</option>
  <option value="No">No</option>
@@ -519,7 +507,7 @@
  </div>
  <div class="col-md-12 col-lg-12">
  <div>
- <select name="book_type" required>
+ <select name="book_type" required aria-label="Book Type">
  <option value="" selected disabled>What type of book do you plan on publishing?</option>
  <option value="Fiction">Fiction</option>
  <option value="Non-Fiction">Non-Fiction</option>
@@ -530,7 +518,7 @@
  </div>
  <div class="col-md-12 col-lg-12">
  <div>
- <select name="service" required>
+ <select name="service" required aria-label="Service">
  <option value="" selected disabled>Pick Services For Your Book</option>
  <option value="Self Publishing">Self Publishing</option>
  <option value="Proofreading">Proofreading</option>
@@ -569,10 +557,10 @@
  </div>
 
  <div class="btm-arrow-wrap">
- <img loading="lazy" src="assets/images/book-arrow-2.png" alt="publisher near me">
+ <img loading="lazy" src="assets/images/book-arrow-2.png" alt="publisher near me" width="219" height="251" decoding="async">
  </div>
  <div class="before-after-image right-img">
- <img loading="lazy" src="assets/images/tablet.png" alt="Before and After Books" style="rotate: 20deg;"/>
+ <img loading="lazy" src="assets/images/tablet-optimized.webp" alt="Before and After Books" style="rotate: 20deg;" width="500" height="500" decoding="async"/>
  </div>
 
  </div>
@@ -587,34 +575,34 @@
  <div class="col-md-12">
  <div class="hero-logos hero-logo-slider">
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/abe.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/abe-optimized.webp" alt="Publishing partner logo"  width="400" height="267" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/bark.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/bark-optimized.webp" alt="Publishing partner logo"  width="400" height="267" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/barnes.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/barnes-optimized.webp" alt="Publishing partner logo"  width="400" height="267" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/ibook.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/ibook.png" alt="Publishing partner logo"  width="860" height="348" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/ingram.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/ingram-optimized.webp" alt="Publishing partner logo"  width="400" height="117" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/kindle.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/kindle.png" alt="Publishing partner logo"  width="1061" height="235" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/macmillan.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/macmillan.png" alt="Publishing partner logo"  width="500" height="281" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/prh.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/prh-optimized.webp" alt="Publishing partner logo"  width="400" height="165" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/scribd.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/scribd.png" alt="Publishing partner logo"  width="600" height="133" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/smash.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/smash-optimized.webp" alt="Publishing partner logo"  width="400" height="300" decoding="async"/>
  </div>
  </div>
  </div>
@@ -640,7 +628,7 @@
  <div class="container">
  <div class="row">
  <div class="col-md-6">
- <img loading="lazy" src="assets/images/book-mock-1.png" alt="book publishing companies " style="padding: 10px 10px 10px 0; width: 118%; max-width: 860px; margin-left: -70px;">
+ <img loading="lazy" src="assets/images/book-mock-1-1402.webp" alt="book publishing companies " style="padding: 10px 10px 10px 0; width: 118%; max-width: 860px; margin-left: -70px;" srcset="assets/images/book-mock-1-480.webp 480w, assets/images/book-mock-1-960.webp 960w, assets/images/book-mock-1-1402.webp 1402w" sizes="(max-width: 768px) 100vw, 50vw" width="1402" height="1122" decoding="async">
  </div>
  <div class="col-md-6 banner-contents" style="color: #061e38;"> 
  <p class="mt-2" style="color: #061e38 !important;">
@@ -706,7 +694,7 @@
  <div class="row">
  <div class="col-lg-3 col-md-3 icon-box">
  <div>
- <div><video width="100" height="100" autoplay muted loop playsinline><source src="assets/service-animations/gw.mp4" type="video/mp4"></video></div>
+ <div><video width="100" height="100" autoplay muted loop playsinline preload="none" data-motion-src="assets/service-animations/gw.mp4" aria-hidden="true" role="presentation"></video></div>
  <div>
  <h6><a href="ghostwriting-services.html">Ghostwriting Services</a></h6>
  </div>
@@ -718,7 +706,7 @@
  </div>
  <div class="col-lg-3 col-md-3 icon-box-odd">
  <div>
- <video width="100" height="100" autoplay muted loop playsinline><source src="assets/service-animations/be.mp4" type="video/mp4"></video>
+ <video width="100" height="100" autoplay muted loop playsinline preload="none" data-motion-src="assets/service-animations/be.mp4" aria-hidden="true" role="presentation"></video>
  <h6><a href="book-editing-services/index.html">Book Editing Services</a></h6>
  <p>A great story needs a sharp editor. Our skilled editors will fine-tune your manuscript,
  honing the plot, strengthening characters, and smoothing the flow. With careful attention to
@@ -728,7 +716,7 @@
  </div>
  <div class="col-lg-3 col-md-3 icon-box">
  <div>
- <video width="100" height="100" autoplay muted loop playsinline><source src="assets/service-animations/bcd.mp4" type="video/mp4"></video>
+ <video width="100" height="100" autoplay muted loop playsinline preload="none" data-motion-src="assets/service-animations/bcd.mp4" aria-hidden="true" role="presentation"></video>
  <h6><a href="book-cover-design-services.html">Book Cover Design Services</a></h6>
  <p>First impressions matter, especially when it comes to books. Our expert designers will create
  a cover that not only stands out but also reflects the heart of your story. At a glance,
@@ -738,7 +726,7 @@
  </div>
  <div class="col-lg-3 col-md-3 icon-box-odd">
  <div>
- <video width="100" height="100" autoplay muted loop playsinline><source src="assets/service-animations/ebp.mp4" type="video/mp4"></video>
+ <video width="100" height="100" autoplay muted loop playsinline preload="none" data-motion-src="assets/service-animations/ebp.mp4" aria-hidden="true" role="presentation"></video>
  <h6><a href="ebook-publishing-services.html">Book Publishing Services</a></h6>
  <p>Let us handle the complexities of publishing. From formatting to distribution, we'll manage
  the entire process to ensure your book lands in the right places and reaches the right
@@ -749,7 +737,7 @@
  </div>
  <div class="col-lg-3 col-md-3 icon-box-odd resp-box">
  <div>
- <div><video width="100" height="100" autoplay muted loop playsinline><source src="assets/service-animations/ab.mp4" type="video/mp4"></video></div>
+ <div><video width="100" height="100" autoplay muted loop playsinline preload="none" data-motion-src="assets/service-animations/ab.mp4" aria-hidden="true" role="presentation"></video></div>
  <div>
  <h6><a href="audio-book-services.html">Audiobook Services</a></h6>
  </div>
@@ -761,7 +749,7 @@
  </div>
  <div class="col-lg-3 col-md-3 icon-box resp-boxs">
  <div>
- <video width="100" height="100" autoplay muted loop playsinline><source src="assets/service-animations/marketing.mp4" type="video/mp4"></video><h6><a href="book-marketing-services.html">Book Marketing Services</a></h6>
+ <video width="100" height="100" autoplay muted loop playsinline preload="none" data-motion-src="assets/service-animations/marketing.mp4" aria-hidden="true" role="presentation"></video><h6><a href="book-marketing-services.html">Book Marketing Services</a></h6>
  <p>In a crowded book market, standing out is key. Our strategic marketing services will create
  buzz around your book, reaching your target audience through personalized campaigns designed
  to boost visibility and engagement. Watch your readership grow with our expert marketing
@@ -772,7 +760,7 @@
  </div>
  <div class="col-lg-3 col-md-3 icon-box-odd resp-box">
  <div>
- <video width="100" height="100" autoplay muted loop playsinline><source src="assets/service-animations/illustration.mp4" type="video/mp4"></video>
+ <video width="100" height="100" autoplay muted loop playsinline preload="none" data-motion-src="assets/service-animations/illustration.mp4" aria-hidden="true" role="presentation"></video>
  <h6><a href="illustration-design-services.html">Illustration Design Services</a></h6>
  <p>Let your book's visuals match its story. Our talented illustrators will bring your words to
  life with stunning artwork that enhances your narrative and appeals to readers of all ages.
@@ -782,7 +770,7 @@
  </div>
  <div class="col-lg-3 col-md-3 icon-box resp-boxs">
  <div>
- <video width="100" height="100" autoplay muted loop playsinline><source src="assets/service-animations/aw.mp4" type="video/mp4"></video>
+ <video width="100" height="100" autoplay muted loop playsinline preload="none" data-motion-src="assets/service-animations/aw.mp4" aria-hidden="true" role="presentation"></video>
  <h6><a href="author-website-services.html">Author Website Services</a></h6>
  <p>Build a professional author website that showcases your books, connects with readers, and strengthens your online presence. We create user-friendly, visually engaging sites that grow your audience and support your author brand.</p>
  <a href="author-website-services.html" class="serve-button light">Explore Now</a>
@@ -792,7 +780,7 @@
  <div class="row">
  <div class="col-md-4">
  <div class="teblet lazy loaded">
- <img loading="lazy" src="assets/images/tablet.png" alt="Self Book Publishers " />
+ <img loading="lazy" src="assets/images/tablet-optimized.webp" alt="Self Book Publishers "  width="500" height="500" decoding="async"/>
  </div>
  </div>
  </div>
@@ -832,58 +820,58 @@
  <div class="swiper mySwiper">
  <div class="swiper-wrapper">
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/01.avif"/>
+ <img loading="lazy" src="assets/images/portfolio/01.avif" width="539" height="724" decoding="async" alt="A Bommer's Story"/>
  </div>
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/02.webp"/>
+ <img loading="lazy" src="assets/images/portfolio/02.webp" width="505" height="677" decoding="async" alt="A Dance Of Black And White"/>
  </div>
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/03.webp"/>
+ <img loading="lazy" src="assets/images/portfolio/03.webp" width="505" height="677" decoding="async" alt="Black And Blue"/>
  </div>
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/04.webp"/>
+ <img loading="lazy" src="assets/images/portfolio/04.webp" width="505" height="677" decoding="async" alt="Boundless"/>
  </div>
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/05.avif"/>
+ <img loading="lazy" src="assets/images/portfolio/05.avif" width="800" height="1074" decoding="async" alt="CANDEXESE END OF EMPIRE"/>
  </div>
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/06.avif"/>
+ <img loading="lazy" src="assets/images/portfolio/06.avif" width="800" height="1072" decoding="async" alt="Christian Civics 101 An Evangelical call to Revival"/>
  </div>
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/07.webp"/>
+ <img loading="lazy" src="assets/images/portfolio/07.webp" width="505" height="677" decoding="async" alt="CORRECTING DISTORTIONS OF THE BIBLE"/>
  </div>
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/08.avif"/>
+ <img loading="lazy" src="assets/images/portfolio/08.avif" width="800" height="1072" decoding="async" alt="DANCING NAKED THROUGH THE SQUARE Poems from the wandering mind of a miller"/>
  </div>
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/09.webp"/>
+ <img loading="lazy" src="assets/images/portfolio/09.webp" width="505" height="677" decoding="async" alt="DEEP INTO THE FIRE A THRILLER BEYOND TIME"/>
  </div>
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/10.avif"/>
+ <img loading="lazy" src="assets/images/portfolio/10.avif" width="800" height="1074" decoding="async" alt="IMMACULATE MEDICI DESIRE AND WISDOM TO BE FINANCIALLY RICH"/>
  </div>
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/11.webp"/>
+ <img loading="lazy" src="assets/images/portfolio/11.webp" width="505" height="677" decoding="async" alt="DNAlien a novel by Jim West"/>
  </div>
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/12.avif"/>
+ <img loading="lazy" src="assets/images/portfolio/12.avif" width="502" height="674" decoding="async" alt="VOLUME I OF A TRILOGY DYSTOPIA ?? DERAILMENTS GRINGO POLITICS IN THE BUILDING OF AZTLAN"/>
  </div>
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/13.webp"/>
+ <img loading="lazy" src="assets/images/portfolio/13.webp" width="505" height="677" decoding="async" alt="ENGRAVED THE UPBRINGING OF A CAREGIVER AMAZON"/>
  </div>
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/14.webp"/>
+ <img loading="lazy" src="assets/images/portfolio/14.webp" width="505" height="677" decoding="async" alt="CHRISTIANS WOLVES IN SHEEP'S CLOTHING WHO ARE IMPERILING AMERICAN DEMOCRACY"/>
  </div>
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/15.avif"/>
+ <img loading="lazy" src="assets/images/portfolio/15.avif" width="788" height="1058" decoding="async" alt="GROOWTOWN KOS"/>
  </div>
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/16.webp"/>
+ <img loading="lazy" src="assets/images/portfolio/16.webp" width="505" height="677" decoding="async" alt="I AM STRONGER THAN STRONG MAN We are Undefeatable Army and I am stronger than strongman"/>
  </div>
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/17.webp"/>
+ <img loading="lazy" src="assets/images/portfolio/17.webp" width="505" height="677" decoding="async" alt="IN OUR TRUCK and CAMPER WE TRAVELED THE STATES"/>
  </div>
  <div class="swiper-slide">
- <img loading="lazy" src="assets/images/portfolio/18.avif"/>
+ <img loading="lazy" src="assets/images/portfolio/18.avif" width="800" height="1072" decoding="async" alt="Letters I Never Sent Home from Vietnam"/>
  </div>
  </div>
  <div class="swiper-pagination"></div>
@@ -916,7 +904,7 @@
  </div>
  </div>
  <div class="col-md-12 col-lg-5">
- <img loading="lazy" src="assets/images/yes-book.png" style="height: 300px; width: 300px;" alt="book publishers for new authors" />
+ <img loading="lazy" src="assets/images/yes-book-optimized.webp" style="height: 300px; width: 300px;" alt="book publishers for new authors"  width="469" height="532" decoding="async"/>
  </div>
  </div>
  </div>
@@ -934,8 +922,8 @@
  </div>
  <div class="row pad-top d-flex align-items-center">
  <div class="col-md-12 col-lg-6">
- <img loading="lazy" src="assets/images/man-laptop.png" alt="expert Book publishers "
- class="display-none" />
+ <img loading="lazy" src="assets/images/man-laptop-optimized.webp" alt="expert Book publishers "
+ class="display-none"  width="432" height="578" decoding="async"/>
  </div>
  <div class="col-md-12 col-lg-6 bestseller-frame-list bestseller-frame-list-right">
  <div class="frame-bg covered-frame covered-frame-right" style="background-image: url('assets/images/frame1.png');">
@@ -990,8 +978,8 @@
  </div>
  </div>
  <div class="col-md-12 col-lg-6">
- <img loading="lazy" src="assets/images/laptop2.png" alt="book publishers for new authors "
- class="laptop-boy display-none" />
+ <img loading="lazy" src="assets/images/laptop2-optimized.webp" alt="book publishers for new authors "
+ class="laptop-boy display-none"  width="432" height="578" decoding="async"/>
  </div>
  </div>
  </div>
@@ -1001,8 +989,8 @@
  <div class="container ">
  <div class="row">
  <div class="col-md-6">
- <img loading="lazy" src="assets/images/book-3.png" alt="cheap publishing companies"
- class="cheap-publishing" />
+ <img loading="lazy" src="assets/images/book-3-optimized.webp" alt="cheap publishing companies"
+ class="cheap-publishing"  width="467" height="534" decoding="async"/>
  </div>
  <div class="col-md-6">
  <div class="banner-contents banner-text-new">
@@ -1043,7 +1031,7 @@
  </div>
  <div class="testimonial-slider">
  <div class="testimonial-item">
- <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="new york book publishers">
+ <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="new york book publishers" width="100" height="100" decoding="async">
  <p>
  Don Rhodes is a treat to work with. I thought I had written a great manuscript and was just
  about to self publish my book when an acquaintance suggested that I seek professional help at
@@ -1052,11 +1040,11 @@
  of my manuscript and elevated the quality of my book. Their white glove services are
  exceptional.
  </p>
- <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="book publishing companies">
+ <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="book publishing companies" width="142" height="22" decoding="async">
  <h5>Carmen Alvina</h5>
  </div>
  <div class="testimonial-item">
- <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="Self Book Publishers">
+ <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="Self Book Publishers" width="100" height="100" decoding="async">
  <p>
  To date, FLO Book Publishers has generally been extremely helpful and receptive to my questions and needs. To
  get what I wanted, in an effort to garner national attention for my writing, it cost a lot of
@@ -1074,34 +1062,34 @@
  sales are in a year from now. I'm also excited to see and give input into the proposed
  screenplay for one of my novels.
  </p>
- <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="book publishing companies">
+ <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="book publishing companies" width="142" height="22" decoding="async">
  <h5>Queen</h5>
  </div>
  <div class="testimonial-item">
  <img loading="lazy" src="assets/images/quote.png" class="quote-icon"
- alt="book publishers for new authors">
+ alt="book publishers for new authors" width="100" height="100" decoding="async">
  <p>
  Very professional and excellent illustration, editing, and publication. There is a pleasant
  helpful, and professional relationship, communication, and interaction right away. Keep it up,
  please!
  </p>
- <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="cheap publishing companies">
+ <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="cheap publishing companies" width="142" height="22" decoding="async">
  <h5>K. Scott Wells</h5>
  </div>
  <div class="testimonial-item">
- <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="book publishers near me">
+ <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="book publishers near me" width="100" height="100" decoding="async">
  <p>
  I am astonished! They religiously guided us through the intericacies of the publishing world,
  unraveling the complexities and helping us at every step. Collaborating with them was a
  life-changing experience that will remain forever in our memories. Anyone in need of
  high-quality articles should definitely check out their website.
  </p>
- <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="publishers service near me">
+ <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="publishers service near me" width="142" height="22" decoding="async">
  <h5>Donald Hobson</h5>
  </div>
  <div class="testimonial-item">
  <img loading="lazy" src="assets/images/quote.png" class="quote-icon"
- alt="self publishing platforms">
+ alt="self publishing platforms" width="100" height="100" decoding="async">
  <p>
  To date, FLO Book Publishers has generally been extremely helpful and receptive to my questions and needs. To
  get what I wanted, in an effort to garner national attention for my writing, it cost a lot of
@@ -1119,12 +1107,12 @@
  sales are in a year from now. I'm also excited to see and give input into the proposed
  screenplay for one of my novels.
  </p>
- <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="expert Book publish services">
+ <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="expert Book publish services" width="142" height="22" decoding="async">
  <h5>Scott L. Miller</h5>
  </div>
  <div class="testimonial-item">
  <img loading="lazy" src="assets/images/quote.png" class="quote-icon"
- alt="find publisher for my book">
+ alt="find publisher for my book" width="100" height="100" decoding="async">
  <p>
  Book Publishing is not everyone's cup of tea. So, I decided to use FLO Book Publishers
  services. They are professionals in book publishing and possess a strong grip on the publishing
@@ -1132,7 +1120,7 @@
  illustrations and covers, and converting manuscripts into books. Kudos to Jim Bannister.
  </p>
  <img loading="lazy" src="assets/images/stars2.png" class="stars"
- alt="self publishing book companies">
+ alt="self publishing book companies" width="142" height="22" decoding="async">
  <h5>Stacy Kaye</h5>
  </div>
 
@@ -1145,8 +1133,8 @@
  <div class="container ">
  <div class="row pad-btm-70 d-flex align-items-center">
  <div class="col-md-6 pad-top">
- <img loading="lazy" src="assets/images/book-2.png" alt="book publishing companies new york"
- class="cheap-publishing" />
+ <img loading="lazy" src="assets/images/book-2-1203.webp" alt="book publishing companies new york"
+ class="cheap-publishing"  srcset="assets/images/book-2-480.webp 480w, assets/images/book-2-960.webp 960w, assets/images/book-2-1203.webp 1203w" sizes="(max-width: 768px) 100vw, 50vw" width="1203" height="1307" decoding="async"/>
  </div>
  <div class="col-md-6">
  <div class="banner-contents home-dream-banner">
@@ -1290,7 +1278,7 @@
  <div class="row">
  <div class="col-md-4">
  <div class="read-book-img lazy loaded">
- <img loading="lazy" src="assets/images/read-book.png" alt="best book publishing companies">
+ <img loading="lazy" src="assets/images/read-book-optimized.webp" alt="best book publishing companies" width="500" height="500" decoding="async">
  </div>
  </div>
  </div>
@@ -1311,8 +1299,8 @@
  </div>
  <div class="row" style="align-items: center;">
  <div class="col-lg-4">
- <img loading="lazy" src="assets/images/yes-book.png" class="img-fluid"
- alt="expert Book publish services">
+ <img loading="lazy" src="assets/images/yes-book-optimized.webp" class="img-fluid"
+ alt="expert Book publish services" width="469" height="532" decoding="async">
  </div>
  <div class="col-lg-8">
  <div class="form-col">
@@ -1440,15 +1428,15 @@ button.close {
 
  <div class="col-md-12 footer-logos">
  <a>
- <img src="assets/images/reviews-io.png" alt="Reviews.io" />
+ <img src="assets/images/reviews-io.png" alt="Reviews.io"  width="376" height="60" decoding="async" loading="lazy"/>
  </a><br><br>
 
  <a>
- <img src="assets/images/Trustpilot-Logo.png" alt="trustpilot.com" />
+ <img src="assets/images/Trustpilot-Logo.png" alt="trustpilot.com"  width="1533" height="376" decoding="async" loading="lazy"/>
  </a><br>
 
  <a><img src="assets/images/google2.png"
- alt="Google Reviews" /></a>
+ alt="Google Reviews"  width="3840" height="2160" decoding="async" loading="lazy"/></a>
  </div>
  </div>
  </div>
@@ -1462,7 +1450,7 @@ button.close {
  <div class="row d-flex align-items-center">
  <div class="col-md-6">
  <div class="last-footer">
- <img src="assets/images/new-logo.png" style="width:20%;" alt="FLO Book Publishers" />
+ <img src="assets/images/new-logo-display.webp" style="width:20%;" alt="FLO Book Publishers"  width="400" height="128" decoding="async" loading="lazy"/>
  <p>
  <a href="https://maps.google.com/?q=2630+W+Broward+Blvd+Suit+204+%231134,+Fort+Lauderdale,+FL+33312"> <b>Mailing Address:</b> <br>2630 W Broward Blvd Suit 204 #1134<br>Fort Lauderdale, FL 33312</a>
  </p>
@@ -1475,10 +1463,10 @@ button.close {
  <p><a href="tel:+14077892593">+1 (407) 789-2593</a></p>
  </div>
  <div class="">
- <a href="https://www.facebook.com/share/1CySjmcm8G/" target="_blank"><i
+ <a href="https://www.facebook.com/share/1CySjmcm8G/" target="_blank" aria-label="Facebook"><i
  class="fa-brands fa-facebook-f"></i></a>
 
- <a href="https://www.instagram.com/flobookpublishers?igsh=MWlpZmJuNTVudnVsOA==" target="_blank"><i
+ <a href="https://www.instagram.com/flobookpublishers?igsh=MWlpZmJuNTVudnVsOA==" target="_blank" aria-label="Instagram"><i
  class="fa-brands fa-instagram"></i></a>
 
  </div>
@@ -1511,28 +1499,28 @@ button.close {
  <div class="popup-redesign-main">
  <div class="popup-redesign-left">
  <a href="#" class="modal-logo popup-redesign-logo">
- <img src="assets/images/new-logo.png" alt="FLO Book Publishers">
+ <img src="assets/images/new-logo-display.webp" alt="FLO Book Publishers" width="400" height="128" decoding="async" loading="lazy">
  </a>
- <img class="popup-redesign-hero-heading" src="assets/images/popup-redesign/legacy-heading.png" alt="Your Story. Our Expertise. A Published Legacy.">
+ <img class="popup-redesign-hero-heading" src="assets/images/popup-redesign/legacy-heading-optimized.webp" alt="Your Story. Our Expertise. A Published Legacy." width="192" height="100" decoding="async" loading="lazy">
  <p class="popup-redesign-copy">We make publishing simple, rewarding and successful for new authors like you.</p>
 
  <div class="popup-redesign-features">
  <div class="popup-redesign-feature">
- <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/guidance-icon.png" alt="Expert Guidance">
+ <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/guidance-icon.png" alt="Expert Guidance" width="500" height="500" decoding="async" loading="lazy">
  <div>
  <span class="popup-redesign-feature-title">Expert Guidance</span>
  <p>From writing to publishing, we're with you at every step.</p>
  </div>
  </div>
  <div class="popup-redesign-feature">
- <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/reach-icon.png" alt="Global Reach">
+ <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/reach-icon.png" alt="Global Reach" width="500" height="500" decoding="async" loading="lazy">
  <div>
  <span class="popup-redesign-feature-title">Global Reach</span>
  <p>We help your book reach readers around the world.</p>
  </div>
  </div>
  <div class="popup-redesign-feature">
- <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/success-icon.png" alt="Proven Success">
+ <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/success-icon.png" alt="Proven Success" width="500" height="500" decoding="async" loading="lazy">
  <div>
  <span class="popup-redesign-feature-title">Proven Success</span>
  <p>Thousands of authors trust us to turn ideas into published books.</p>
@@ -1541,7 +1529,7 @@ button.close {
  </div>
 
  <div class="popup-redesign-stack">
- <img src="assets/images/popup-redesign/books-mug-plant.png" alt="Books and mug">
+ <img src="assets/images/popup-redesign/books-mug-plant-738.webp" alt="Books and mug" srcset="assets/images/popup-redesign/books-mug-plant-480.webp 480w, assets/images/popup-redesign/books-mug-plant-738.webp 738w" sizes="(max-width: 768px) 100vw, 50vw" width="738" height="338" decoding="async" loading="lazy">
  </div>
  </div>
 
@@ -1552,7 +1540,7 @@ button.close {
  <div class="popup-redesign-divider">
  <div></div>
  <div class="popup-redesign-divider-badge">
- <img src="assets/images/popup-redesign/book-icon.png" alt="Book icon">
+ <img src="assets/images/popup-redesign/book-icon.png" alt="Book icon" width="256" height="256" decoding="async" loading="lazy">
  </div>
  <div></div>
  </div>
@@ -1600,7 +1588,7 @@ button.close {
 
  <div class="popup-redesign-field">
  <i class="fa-solid fa-book-open"></i>
- <select name="manuscript_ready" required>
+ <select name="manuscript_ready" required aria-label="Manuscript Ready">
  <option value="" selected disabled>Do you have a manuscript ready?</option>
  <option value="Yes">Yes</option>
  <option value="No">No</option>
@@ -1610,7 +1598,7 @@ button.close {
 
  <div class="popup-redesign-field">
  <i class="fa-regular fa-file-lines"></i>
- <select name="published_before" required>
+ <select name="published_before" required aria-label="Published Before">
  <option value="" selected disabled>Have you published before?</option>
  <option value="Yes">Yes</option>
  <option value="No">No</option>
@@ -1620,7 +1608,7 @@ button.close {
 
  <div class="popup-redesign-field">
  <i class="fa-solid fa-layer-group"></i>
- <select name="book_type" required>
+ <select name="book_type" required aria-label="Book Type">
  <option value="" selected disabled>What type of book do you plan on publishing?</option>
  <option value="Fiction">Fiction</option>
  <option value="Non-Fiction">Non-Fiction</option>
@@ -1630,7 +1618,7 @@ button.close {
  </div>
  <div class="popup-redesign-field">
  <i class="fa-solid fa-briefcase"></i>
- <select name="service" required>
+ <select name="service" required aria-label="Service">
  <option value="" selected disabled>Pick Services For Your Book</option>
  <option value="Self Publishing">Self Publishing</option>
  <option value="Proofreading">Proofreading</option>
@@ -1665,28 +1653,28 @@ button.close {
 
  <div class="popup-redesign-stats">
  <div class="popup-redesign-stat">
- <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/crowd-icon.png" alt="Happy authors">
+ <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/crowd-icon.png" alt="Happy authors" width="256" height="256" decoding="async" loading="lazy">
  <div>
  <strong>1500+</strong>
  <span>Happy Authors</span>
  </div>
  </div>
  <div class="popup-redesign-stat">
- <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/book-icon.png" alt="Books published">
+ <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/book-icon.png" alt="Books published" width="256" height="256" decoding="async" loading="lazy">
  <div>
  <strong>2000+</strong>
  <span>Books Published</span>
  </div>
  </div>
  <div class="popup-redesign-stat">
- <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/globe-icon.png" alt="Countries reached">
+ <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/globe-icon.png" alt="Countries reached" width="256" height="256" decoding="async" loading="lazy">
  <div>
  <strong>25+</strong>
  <span>Countries Reached</span>
  </div>
  </div>
  <div class="popup-redesign-stat">
- <img class="popup-redesign-stat-icon popup-redesign-stat-icon-trophy" src="assets/images/popup-redesign/trophy-icon.png" alt="Years of excellence">
+ <img class="popup-redesign-stat-icon popup-redesign-stat-icon-trophy" src="assets/images/popup-redesign/trophy-icon.png" alt="Years of excellence" width="256" height="256" decoding="async" loading="lazy">
  <div>
  <strong>10+</strong>
  <span>Years of Excellence</span>
@@ -1697,21 +1685,14 @@ button.close {
  </div>
  </div>
 </div> 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/custom.js?v=form-delivery-20260824-1"></script>
-<script src="assets/js/swiper.min.js"></script>
-<script src="assets/js/slick-slider.min.js"></script>
-<script src="../www.google.com/recaptcha/api.js" async defer></script>
+<script src="assets/js/jquery.min.js?v=performance-20260902-1"></script>
+<script src="assets/js/bootstrap.min.js?v=performance-20260902-1"></script>
+<script src="assets/js/custom.js?v=performance-20260902-1"></script>
+<script src="assets/js/slick-slider.min.js?v=performance-20260902-1"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <!-- Start of LiveChat (www.livechat.com) code -->
-<script>
-    window.__lc = window.__lc || {};
-    window.__lc.license = 19778423;
-    window.__lc.integration_name = "manual_onboarding";
-    window.__lc.product_name = "livechat";
-    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
-</script>
+<script src="assets/js/livechat-lazy.js?v=performance-20260902-1" defer></script>
 <noscript><a href="https://www.livechat.com/chat-with/19778423/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
 <!-- End of LiveChat code -->
 
@@ -1728,7 +1709,7 @@ button.close {
  if (!modalShown && shouldShowModal) {
  modalShown = true;
  $(modal).modal('show');
- console.log("Modal displayed after 20 seconds");
+
  }
  }
 
@@ -1802,8 +1783,10 @@ button.close {
  mobileMq.addEventListener('change', stop);
  }
 
+ function initializePortfolioSwiper() {
  var portfolioSwiperEl = document.querySelector('section.portfolio .mySwiper');
- var swiper = new Swiper(".mySwiper", {
+ if (!portfolioSwiperEl || typeof window.Swiper !== 'function' || portfolioSwiperEl.swiper) return;
+ var swiper = new Swiper(portfolioSwiperEl, {
  effect: "coverflow",
  grabCursor: true,
  centeredSlides: true,
@@ -1845,6 +1828,10 @@ button.close {
  if (direction === 'next') swiper.slideNext();
  else swiper.slidePrev();
  }, 500);
+ }
+
+ if (typeof window.Swiper === 'function') initializePortfolioSwiper();
+ document.addEventListener('flo:swiper-ready', initializePortfolioSwiper, { once: true });
 
  
 
@@ -2000,14 +1987,12 @@ button.close {
 
  items.forEach(item => item.addEventListener('click', toggleAccordion));
  </script>
- <script src="/assets/js/loader.js" defer></script>
+<script src="assets/js/performance.js?v=performance-20260902-1" defer></script>
 </body>
 
 
 <!-- Mirrored from flobookpublishers.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 May 2026 19:57:38 GMT -->
 </html>
-
-
 
 
 

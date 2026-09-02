@@ -3,88 +3,30 @@ body {
   background: #e9fdff;
 }
 
-/* ==========================================
-   FULL SCREEN LOADER
-   ========================================== */
-
-:root {
-  --loader-bg: #ffffff;
-  --loader-duration: 0.7s;
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont3e6e.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-.page-loader {
-  position: fixed;
-  inset: 0;
-  z-index: 999999;
+@media screen and (max-width: 768px), (prefers-reduced-motion: reduce) {
+  .hero-video-wrap {
+    display: none !important;
+  }
+}
+
+section.portfolio .mySwiper:not(.swiper-initialized) {
+  overflow: hidden;
+}
+
+section.portfolio .mySwiper:not(.swiper-initialized) .swiper-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background: white;
-  opacity: 1;
-  visibility: visible;
-  transition:
-    opacity var(--loader-duration) ease,
-    visibility var(--loader-duration) ease;
-  animation: loaderFadeIn 0.4s ease forwards;
-  will-change: opacity;
-  loading: lazy;
 }
 
-.page-loader.hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.loader-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.loader-logo {
-  height: 240px;
-  width: 240px;
-  display: block;
-  loading: lazy;
-
-  filter:
-    drop-shadow(0 0 8px rgba(0, 0, 0, 0.06))
-    drop-shadow(0 0 18px rgba(0, 0, 0, 0.05));
-
-  animation: logoSpin 2.8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
-
-  will-change: transform;
-}
-
-@keyframes logoSpin {
-  0% {
-    transform: rotate(-12deg) scale(1);
-  }
-
-  10% {
-    transform: rotate(-24deg) scale(0.96);
-  }
-
-  55% {
-    transform: rotate(348deg) scale(1.03);
-  }
-
-  68% {
-    transform: rotate(368deg) scale(1.06);
-  }
-
-  78% {
-    transform: rotate(342deg) scale(0.99);
-  }
-
-  88% {
-    transform: rotate(348deg) scale(1);
-  }
-
-  100% {
-    transform: rotate(348deg) scale(1);
-  }
+section.portfolio .mySwiper:not(.swiper-initialized) .swiper-slide {
+  flex: 0 0 240px;
 }
 
 .btn-a,
@@ -3320,7 +3262,7 @@ section.banner-color img.display-none {
   gap: 10px;
 } */
 .banner-color.home-hero-sec {
-  background: url(../images/home-books.png);
+  background: url(../images/home-books-optimized.webp);
   background-size: 100% 42%;
   background-repeat: no-repeat;
   position: relative;
@@ -3602,9 +3544,9 @@ body.ghostwriting-page .hero-logo-sec .hero-logos.slick-initialized .slick-slide
 
 .scroll-reveal {
   opacity: 0;
-  transition: opacity 0.75s ease, transform 0.75s ease, filter 0.75s ease;
+  transition: opacity 0.75s ease, transform 0.75s ease;
   transition-delay: var(--reveal-delay, 0s);
-  will-change: opacity, transform, filter;
+  will-change: opacity, transform;
 }
 
 .reveal-fade-up {
@@ -3629,7 +3571,6 @@ body.ghostwriting-page .hero-logo-sec .hero-logos.slick-initialized .slick-slide
 
 .reveal-pop {
   transform: translateY(26px) scale(0.92);
-  filter: blur(3px);
 }
 
 .reveal-soft-rotate {
@@ -3647,13 +3588,11 @@ body.ghostwriting-page .hero-logo-sec .hero-logos.slick-initialized .slick-slide
 
 .reveal-blur-in {
   transform: scale(0.98) translateY(24px);
-  filter: blur(8px);
 }
 
 .scroll-reveal.reveal-visible {
   opacity: 1;
   transform: translate(0, 0) scale(1) rotate(0);
-  filter: blur(0);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -3700,7 +3639,7 @@ body.ghostwriting-page .hero-logo-sec .hero-logos.slick-initialized .slick-slide
 }
 
 .home-discover-section .overlay {
-  background: url(../images/backgrounds/bg-1.png);
+  background: url(../images/backgrounds/bg-1-optimized.webp);
   background-repeat: no-repeat;
   position: absolute;
   width: 100%;
@@ -3729,7 +3668,7 @@ body.ghostwriting-page .hero-logo-sec .hero-logos.slick-initialized .slick-slide
 }
 
 .ready-section {
-  background-image: url(../images/backgrounds/bg-5.png);
+  background-image: url(../images/backgrounds/bg-5-optimized.webp);
   padding: 60px 0px 30px 0px;
   position: relative;
 }
@@ -3775,7 +3714,7 @@ body.ghostwriting-page .hero-logo-sec .hero-logos.slick-initialized .slick-slide
 }
 
 .publish-section .overlay {
-  background: url(../images/testimonial-overlay.png);
+  background: url(../images/testimonial-overlay-optimized.webp);
   background-repeat: no-repeat;
   position: absolute;
   width: 100%;
@@ -3888,7 +3827,7 @@ section.portfolio .swiper {
 }
 
 section.testimonial-sec {
-  /* background-image: url(../images/backgrounds/bg-3.png); */
+  /* background-image: url(../images/backgrounds/bg-3-optimized.webp); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -4641,7 +4580,7 @@ button.popupsubmit-button {
 } */
 
 section.colorado-section {
-  background-image: url(../images/location-bannner.png);
+  background-image: url(../images/location-bannner-optimized.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -7,7 +7,7 @@
 <head>
  <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
 
@@ -23,7 +23,7 @@
  dl = l != 'dataLayer' ? '&l=' + l : '';
  j.async = true;
  j.src =
- '../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+ 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
  f.parentNode.insertBefore(j, f);
  })(window, document, 'script', 'dataLayer', 'GTM-55Z5TZWK');
 </script>
@@ -42,17 +42,16 @@
 
 
 
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/swiper.min.css">
-<link rel="stylesheet" href="assets/css/slick-slider.css">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css?v=performance-20260902-1">
+<link rel="stylesheet" href="assets/css/slick-slider.css?v=performance-20260902-1">
 
-<link rel="stylesheet" href="assets/css/layout.css" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="assets/css/style.css" >
-<link rel="stylesheet" href="assets/css/header.css" >
-<link rel="stylesheet" href="assets/css/buttons.css" >
+<link rel="stylesheet" href="assets/css/layout.css?v=performance-20260902-1" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="assets/css/style.css?v=performance-20260902-1" >
+<link rel="stylesheet" href="assets/css/header.css?v=performance-20260902-1" >
+<link rel="stylesheet" href="assets/css/buttons.css?v=performance-20260902-1" >
 
-<link rel="icon" href="assets/images/favicon.png" type="image/png">
-<link rel="shortcut icon" href="assets/images/favicon.png" type="image/png"> <link rel="stylesheet" href="assets/css/new-service.css">
+<link rel="icon" href="assets/images/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="assets/images/favicon-64.png" type="image/png" sizes="64x64"> <link rel="stylesheet" href="assets/css/new-service.css?v=performance-20260902-1">
 
 
 <style>
@@ -534,6 +533,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  }
 }
 </style>
+<link rel="preload" href="assets/fonts/fontawesome-webfont3e6e.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <style>
@@ -579,17 +579,8 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  }
 </style>
 
-<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/responsive.css?v=performance-20260902-1">
 <body class="ghostwriting-page">
-  <div id="page-loader" class="page-loader" aria-hidden="true">
- <div class="loader-content">
- <img
- src="/assets/images/favicon.png"
- alt="Loading"
- class="loader-logo"
- />
- </div>
-</div>
 <div class="sidebar">
  <button class="item" type="button" onclick="if(window.LiveChatWidget&&window.LiveChatWidget.call){LiveChatWidget.call('maximize')}">
  <span class="icon"><i class="fa fa-comments" aria-hidden="true"></i></span>
@@ -640,7 +631,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  <div class="row align-items-center">
  <div class="col-md-2 text-center ">
  <a href="index.html" class="logo" style="margin-top: 10px; margin-bottom: 10px;">
- <img src="assets/images/new-logo.png" alt="FLO Book Publishers">
+ <img src="assets/images/new-logo-display.webp" alt="FLO Book Publishers" width="400" height="128" decoding="async" loading="eager" fetchpriority="high">
  </a>
  </div>
  <div class="col-md-5 text-center">
@@ -779,9 +770,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
 
 <section class="banner-color home-hero-sec">
  <div class="hero-video-wrap" aria-hidden="true">
- <video autoplay muted loop playsinline preload="auto">
- <source src="assets/ghostwriting_hero_video.mp4" type="video/mp4">
- </video>
+ <video autoplay muted loop playsinline preload="none" data-desktop-src="assets/ghostwriting_hero_video-optimized.mp4" aria-hidden="true" role="presentation"></video>
  </div>
  <div class="overlay"></div>
  <div class="container">
@@ -789,12 +778,12 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  <div class="col-lg-6 col-md-12">
  <div class="banner-content">
  <!-- <div class="arrow-wrap">
- <img loading="lazy" src="assets/images/book-arrow-1.png" alt="FLO Book Publishers">
+ <img loading="eager" src="assets/images/book-arrow-1.png" alt="FLO Book Publishers" width="152" height="95" decoding="async">
  </div> -->
  <h1>Professional<span style="color:#061e38">Ghostwriting</span>Services
  </h1>
  <!-- <div class="before-after-image book-img-wrap">
- <img loading="lazy" src="assets/images/laptop.png" alt="Before and After Books" style="rotate: -15deg;"/>
+ <img loading="eager" src="assets/images/laptop-optimized.webp" alt="Before and After Books" style="rotate: -15deg;" width="500" height="500" decoding="async"/>
  </div> -->
  </div>
  <div class="banner-contents">
@@ -834,7 +823,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  <div class="banner-form ">
 
  <div class="form-logo">
- <img loading="lazy" src="assets/images/new-logo.png" alt="Ghostwriting Services">
+ <img loading="lazy" src="assets/images/new-logo-display.webp" alt="Ghostwriting Services" width="400" height="128" decoding="async">
  </div>
 
  <div class="form-heading">
@@ -866,7 +855,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  <div class="col-md-12 col-lg-12">
  <div>
- <select name="manuscript_ready" required>
+ <select name="manuscript_ready" required aria-label="Manuscript Ready">
  <option value="" selected disabled>Do you have a manuscript ready?</option>
  <option value="Yes">Yes</option>
  <option value="No">No</option>
@@ -876,7 +865,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  <div class="col-md-12 col-lg-12">
  <div>
- <select name="published_before" required>
+ <select name="published_before" required aria-label="Published Before">
  <option value="" selected disabled>Have you published before?</option>
  <option value="Yes">Yes</option>
  <option value="No">No</option>
@@ -886,7 +875,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  <div class="col-md-12 col-lg-12">
  <div>
- <select name="book_type" required>
+ <select name="book_type" required aria-label="Book Type">
  <option value="" selected disabled>What type of book do you plan on publishing?</option>
  <option value="Fiction">Fiction</option>
  <option value="Non-Fiction">Non-Fiction</option>
@@ -897,7 +886,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  <div class="col-md-12 col-lg-12">
  <div>
- <select name="service" required>
+ <select name="service" required aria-label="Service">
  <option value="" selected disabled>Pick Services For Your Book</option>
  <option value="Self Publishing">Self Publishing</option>
  <option value="Proofreading">Proofreading</option>
@@ -935,10 +924,10 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
 
  <div class="btm-arrow-wrap">
- <img loading="lazy" src="assets/images/book-arrow-2.png" alt="publisher near me">
+ <img loading="lazy" src="assets/images/book-arrow-2.png" alt="publisher near me" width="219" height="251" decoding="async">
  </div>
  <div class="before-after-image right-img">
- <img loading="lazy" src="assets/images/tablet.png" alt="Before and After Books" style="rotate: 20deg;"/>
+ <img loading="lazy" src="assets/images/tablet-optimized.webp" alt="Before and After Books" style="rotate: 20deg;" width="500" height="500" decoding="async"/>
  </div>
  </div>
  </div>
@@ -947,34 +936,34 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  <div class="col-md-12">
  <div class="hero-logos hero-logo-slider">
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/abe.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/abe-optimized.webp" alt="Publishing partner logo"  width="400" height="267" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/bark.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/bark-optimized.webp" alt="Publishing partner logo"  width="400" height="267" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/barnes.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/barnes-optimized.webp" alt="Publishing partner logo"  width="400" height="267" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/ibook.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/ibook.png" alt="Publishing partner logo"  width="860" height="348" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/ingram.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/ingram-optimized.webp" alt="Publishing partner logo"  width="400" height="117" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/kindle.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/kindle.png" alt="Publishing partner logo"  width="1061" height="235" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/macmillan.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/macmillan.png" alt="Publishing partner logo"  width="500" height="281" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/prh.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/prh-optimized.webp" alt="Publishing partner logo"  width="400" height="165" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/scribd.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/scribd.png" alt="Publishing partner logo"  width="600" height="133" decoding="async"/>
  </div>
  <div class="hero-logo-item">
- <img loading="lazy" src="assets/images/brand-logos/smash.png" alt="Publishing partner logo" />
+ <img loading="lazy" src="assets/images/brand-logos/smash-optimized.webp" alt="Publishing partner logo"  width="400" height="300" decoding="async"/>
  </div>
  </div>
  </div>
@@ -1013,7 +1002,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  </div>
  <div class="col-md-6">
- <img loading="lazy" src="assets/images/services-images/gw-1.png" alt="Premium Ghostwriting Services">
+ <img loading="lazy" src="assets/images/services-images/gw-1-optimized.webp" alt="Premium Ghostwriting Services" width="500" height="500" decoding="async">
  </div>
  </div>
  </div>
@@ -1022,7 +1011,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  <div class="container-fluid">
  <div class="row" style="align-items: end;">
  <div class="col-md-6">
- <img loading="lazy" src="assets/images/services-images/gw-2.png" alt="book ghostwriting services">
+ <img loading="lazy" src="assets/images/services-images/gw-2-optimized.webp" alt="book ghostwriting services" width="500" height="500" decoding="async">
  </div>
  <div class="col-md-6">
  <div class="comprehensive-content">
@@ -1062,22 +1051,22 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  <div class="writers-box">
  <div class="writers-item">
- <img loading="lazy" src="../assets/images/book-writing-icons.png" style="width: 100px; height: 100px; border-radius: 15px; object-fit: cover;" alt="Free Expert Consultation">
+ <img loading="lazy" src="assets/images/book-writing-icons-1440.webp" style="width: 100px; height: 100px; border-radius: 15px; object-fit: cover;" alt="Free Expert Consultation" srcset="assets/images/book-writing-icons-480.webp 480w, assets/images/book-writing-icons-960.webp 960w, assets/images/book-writing-icons-1440.webp 1440w" sizes="(max-width: 768px) 100vw, 50vw" width="1440" height="960" decoding="async">
  <h4>Free Expert<span> Consultation </span></h4>
  <p>Enjoy a complimentary consultation with our experienced team to discuss your book, vision and goals. This no obligation session allows us to understand your needs and recommend solutions that align with your expectations from the very beginning. </p>
  </div>
  <div class="writers-item">
- <img loading="lazy" src="../assets/images/book-writing-icons.png" style="width: 100px; height: 100px; border-radius: 15px; object-fit: cover;" alt="Free from AI">
+ <img loading="lazy" src="assets/images/book-writing-icons-1440.webp" style="width: 100px; height: 100px; border-radius: 15px; object-fit: cover;" alt="Free from AI" srcset="assets/images/book-writing-icons-480.webp 480w, assets/images/book-writing-icons-960.webp 960w, assets/images/book-writing-icons-1440.webp 1440w" sizes="(max-width: 768px) 100vw, 50vw" width="1440" height="960" decoding="async">
  <h4>100% <span>HUMAN WRITTEN </span></h4>
  <p>Our ghostwriting services are entirely human powered. We never rely on AI generated content, ensuring your manuscript is written with originality, creativity and expertise. Every project is carefully crafted by skilled writers who understand storytelling and audience engagement. </p>
  </div>
  <div class="writers-item">
- <img loading="lazy" src="../assets/images/book-writing-icons.png" style="width: 100px; height: 100px; border-radius: 15px; object-fit: cover;" alt="24/7 Customer Help">
+ <img loading="lazy" src="assets/images/book-writing-icons-1440.webp" style="width: 100px; height: 100px; border-radius: 15px; object-fit: cover;" alt="24/7 Customer Help" srcset="assets/images/book-writing-icons-480.webp 480w, assets/images/book-writing-icons-960.webp 960w, assets/images/book-writing-icons-1440.webp 1440w" sizes="(max-width: 768px) 100vw, 50vw" width="1440" height="960" decoding="async">
  <h4>24/7 Customer <span>SUPPORT </span></h4>
  <p>Our dedicated support team remains available around the clock to help with questions, project updates and general inquiries. Whether you need assistance or clarification, we're committed to providing reliable communication throughout your publishing journey. </p>
  </div>
  <div class="writers-item">
- <img loading="lazy" src="../assets/images/book-writing-icons.png" style="width: 100px; height: 100px; border-radius: 15px; object-fit: cover;" alt="Exclusive Discounts">
+ <img loading="lazy" src="assets/images/book-writing-icons-1440.webp" style="width: 100px; height: 100px; border-radius: 15px; object-fit: cover;" alt="Exclusive Discounts" srcset="assets/images/book-writing-icons-480.webp 480w, assets/images/book-writing-icons-960.webp 960w, assets/images/book-writing-icons-1440.webp 1440w" sizes="(max-width: 768px) 100vw, 50vw" width="1440" height="960" decoding="async">
  <h4>Exclusive <span>Discounts </span> </h4>
  <p>We provide exclusive discounts for first time and returning clients, making professional ghostwriting services more accessible. Our goal is to deliver exceptional value without sacrificing quality, helping you achieve your publishing objectives at a competitive price.</p>
  </div>
@@ -1107,7 +1096,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  </div>
  <div class="col-md-5">
- <img loading="lazy" src="assets/images/gw-img.png" alt="professional ghostwriting services">
+ <img loading="lazy" src="assets/images/gw-img-1440.webp" alt="professional ghostwriting services" srcset="assets/images/gw-img-480.webp 480w, assets/images/gw-img-960.webp 960w, assets/images/gw-img-1440.webp 1440w" sizes="(max-width: 768px) 100vw, 50vw" width="1440" height="960" decoding="async">
  </div>
  </div>
  </div>
@@ -1135,7 +1124,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  </div>
  <div class="col-md-5">
- <img src="assets/images/step-into.png" alt="ghostwriting services for authors">
+ <img src="assets/images/step-into.png" alt="ghostwriting services for authors" width="582" height="625" decoding="async" loading="lazy">
  </div>
  </div>
  </div>
@@ -1151,54 +1140,54 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  <button class="genre-tab-button active" onclick="openGenreTab(event, 'action')">
  <div class="tab-icon">
  <img src="assets/images/services-icons/action.png" alt="Action"
- onerror="this.innerHTML='??'">
+ onerror="this.innerHTML='??'" width="80" height="80" decoding="async" loading="lazy">
  </div>
  <span class="tab-label">Action</span>
  </button>
  <button class="genre-tab-button" onclick="openGenreTab(event, 'children')">
  <div class="tab-icon">
  <img src="assets/images/services-icons/children.png" alt="Children"
- onerror="this.innerHTML='??'">
+ onerror="this.innerHTML='??'" width="90" height="67" decoding="async" loading="lazy">
  </div>
  <span class="tab-label">Children</span>
  </button>
  <button class="genre-tab-button" onclick="openGenreTab(event, 'fantasy')">
  <div class="tab-icon">
  <img src="assets/images/services-icons/fantasy.png" alt="Fantasy"
- onerror="this.innerHTML='??'">
+ onerror="this.innerHTML='??'" width="69" height="73" decoding="async" loading="lazy">
  </div>
  <span class="tab-label">Fantasy</span>
  </button>
  <button class="genre-tab-button" onclick="openGenreTab(event, 'suspense')">
  <div class="tab-icon">
  <img src="assets/images/services-icons/suspense.png" alt="Suspense"
- onerror="this.innerHTML='??'">
+ onerror="this.innerHTML='??'" width="50" height="67" decoding="async" loading="lazy">
  </div>
  <span class="tab-label">Suspense</span>
  </button>
  <button class="genre-tab-button" onclick="openGenreTab(event, 'drama')">
  <div class="tab-icon">
- <img src="assets/images/services-icons/drama.png" alt="Drama" onerror="this.innerHTML='??'">
+ <img src="assets/images/services-icons/drama.png" alt="Drama" onerror="this.innerHTML='??'" width="61" height="61" decoding="async" loading="lazy">
  </div>
  <span class="tab-label">Drama</span>
  </button>
  <button class="genre-tab-button" onclick="openGenreTab(event, 'novel')">
  <div class="tab-icon">
- <img src="assets/images/services-icons/novel.png" alt="Novel" onerror="this.innerHTML='??'">
+ <img src="assets/images/services-icons/novel.png" alt="Novel" onerror="this.innerHTML='??'" width="65" height="59" decoding="async" loading="lazy">
  </div>
  <span class="tab-label">Novel</span>
  </button>
  <button class="genre-tab-button" onclick="openGenreTab(event, 'fiction')">
  <div class="tab-icon">
  <img src="assets/images/services-icons/fiction.png" alt="Fiction"
- onerror="this.innerHTML='??'">
+ onerror="this.innerHTML='??'" width="64" height="62" decoding="async" loading="lazy">
  </div>
  <span class="tab-label">Fiction</span>
  </button>
  <button class="genre-tab-button" onclick="openGenreTab(event, 'romantic')">
  <div class="tab-icon">
  <img src="assets/images/services-icons/romantic.png" alt="Romantic"
- onerror="this.innerHTML='??'">
+ onerror="this.innerHTML='??'" width="70" height="68" decoding="async" loading="lazy">
  </div>
  <span class="tab-label">Romantic</span>
  </button>
@@ -1228,7 +1217,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  <div class="col-md-6">
  <div class="genre-image">
- <img src="assets/images/action.png" alt="Action Genre">
+ <img src="assets/images/action-1080.webp" alt="Action Genre" srcset="assets/images/action-480.webp 480w, assets/images/action-960.webp 960w, assets/images/action-1080.webp 1080w" sizes="(max-width: 768px) 100vw, 50vw" width="1080" height="1080" decoding="async" loading="lazy">
  </div>
  </div>
  </div>
@@ -1257,7 +1246,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  <div class="col-md-6">
  <div class="genre-image">
- <img src="assets/images/children.png" alt="Children Genre">
+ <img src="assets/images/children-960.webp" alt="Children Genre" srcset="assets/images/children-480.webp 480w, assets/images/children-960.webp 960w" sizes="(max-width: 768px) 100vw, 50vw" decoding="async" loading="lazy" width="960" height="960">
  </div>
  </div>
  </div>
@@ -1285,7 +1274,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  <div class="col-md-6">
  <div class="genre-image">
- <img src="assets/images/fantasy.png" alt="Fantasy Genre">
+ <img src="assets/images/fantasy-optimized.webp" alt="Fantasy Genre" width="558" height="447" decoding="async" loading="lazy">
  </div>
  </div>
  </div>
@@ -1313,7 +1302,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  <div class="col-md-6">
  <div class="genre-image">
- <img src="assets/images/suspense.png" alt="Suspense Genre">
+ <img src="assets/images/suspense-1402.webp" alt="Suspense Genre" srcset="assets/images/suspense-480.webp 480w, assets/images/suspense-960.webp 960w, assets/images/suspense-1402.webp 1402w" sizes="(max-width: 768px) 100vw, 50vw" width="1402" height="1122" decoding="async" loading="lazy">
  </div>
  </div>
  </div>
@@ -1341,7 +1330,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  <div class="col-md-6">
  <div class="genre-image">
- <img src="assets/images/drama.png" alt="Drama Genre">
+ <img src="assets/images/drama-1080.webp" alt="Drama Genre" srcset="assets/images/drama-480.webp 480w, assets/images/drama-960.webp 960w, assets/images/drama-1080.webp 1080w" sizes="(max-width: 768px) 100vw, 50vw" width="1080" height="1080" decoding="async" loading="lazy">
  </div>
  </div>
  </div>
@@ -1369,7 +1358,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  <div class="col-md-6">
  <div class="genre-image">
- <img src="assets/images/novel.png" alt="Novel Genre">
+ <img src="assets/images/novel-1402.webp" alt="Novel Genre" srcset="assets/images/novel-480.webp 480w, assets/images/novel-960.webp 960w, assets/images/novel-1402.webp 1402w" sizes="(max-width: 768px) 100vw, 50vw" width="1402" height="1122" decoding="async" loading="lazy">
  </div>
  </div>
  </div>
@@ -1397,7 +1386,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  <div class="col-md-6">
  <div class="genre-image">
- <img src="assets/images/fiction.png" alt="Fiction Genre">
+ <img src="assets/images/fiction-1080.webp" alt="Fiction Genre" srcset="assets/images/fiction-480.webp 480w, assets/images/fiction-960.webp 960w, assets/images/fiction-1080.webp 1080w" sizes="(max-width: 768px) 100vw, 50vw" width="1080" height="1080" decoding="async" loading="lazy">
  </div>
  </div>
  </div>
@@ -1425,7 +1414,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  <div class="col-md-6">
  <div class="genre-image">
- <img src="assets/images/romance.png" alt="Romantic Genre">
+ <img src="assets/images/romance-1080.webp" alt="Romantic Genre" srcset="assets/images/romance-480.webp 480w, assets/images/romance-960.webp 960w, assets/images/romance-1080.webp 1080w" sizes="(max-width: 768px) 100vw, 50vw" width="1080" height="1080" decoding="async" loading="lazy">
  </div>
  </div>
  </div>
@@ -1443,43 +1432,43 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  <div class="testimonial-slider">
  <div class="testimonial-item">
- <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon">
+ <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon" width="100" height="100" decoding="async">
  <p>Working with FLO Book Publishers was an incredible experience. They captured my voice perfectly
  and turned my ideas into a compelling book. Their attention to detail and collaborative approach
  made the process seamless. Highly recommend their best ghostwriting services!</p>
- <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating">
+ <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating" width="142" height="22" decoding="async">
  <h5>Emily Watson</h5>
  </div>
  <div class="testimonial-item">
- <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon">
+ <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon" width="100" height="100" decoding="async">
  <p>I couldn't be happier with the book FLO Book Publishers wrote for me. They took my rough concepts
  and transformed them into a story that exceeded my expectations. The team's professionalism,
  communication, and creativity made all the difference!</p>
- <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating">
+ <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating" width="142" height="22" decoding="async">
  <h5>Robert Jameson</h5>
  </div>
  <div class="testimonial-item">
- <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon">
+ <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon" width="100" height="100" decoding="async">
  <p> FLO Book Publishers brought my story to life in ways I never imagined. Their ghostwriting team
  was attentive, professional, and truly understood my vision. The final manuscript exceeded all
  my expectations I couldn't be happier! </p>
- <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating">
+ <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating" width="142" height="22" decoding="async">
  <h5>Sophia Martinez</h5>
  </div>
  <div class="testimonial-item">
- <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon">
+ <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon" width="100" height="100" decoding="async">
  <p> From concept to final draft, FLO Book Publishers made the ghostwriting process effortless and
  enjoyable. Their writers captured my ideas perfectly and created a book that I'm proud to share
  with readers everywhere. They offer the best ghostwriting services.</p>
- <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating">
+ <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating" width="142" height="22" decoding="async">
  <h5>Liam Patel</h5>
  </div>
  <div class="testimonial-item">
- <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon">
+ <img loading="lazy" src="assets/images/quote.png" class="quote-icon" alt="testimonial quote icon" width="100" height="100" decoding="async">
  <p>The team at FLO Book Publishers is phenomenal! They not only write with skill but also understand
  the heart of your story. My book turned out polished, engaging, and exactly what I envisioned.
  </p>
- <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating">
+ <img loading="lazy" src="assets/images/stars2.png" class="stars" alt="5 star rating" width="142" height="22" decoding="async">
  <h5>Olivia Chen</h5>
  </div>
 
@@ -1600,8 +1589,8 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  </div>
  <div class="row" style="align-items: center;">
  <div class="col-lg-4">
- <img loading="lazy" src="assets/images/yes-book.png" class="img-fluid"
- alt="ghostwriting company">
+ <img loading="lazy" src="assets/images/yes-book-optimized.webp" class="img-fluid"
+ alt="ghostwriting company" width="469" height="532" decoding="async">
  </div>
  <div class="col-lg-8">
  <div class="form-col">
@@ -1652,8 +1641,8 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  <div class="container ">
  <div class="row pad-btm-70 d-flex align-items-center">
  <div class="col-md-6 pad-top">
- <img loading="lazy" src="assets/images/book-2.png" alt="best ghostwriting services"
- class="cheap-publishing" />
+ <img loading="lazy" src="assets/images/book-2-1203.webp" alt="best ghostwriting services"
+ class="cheap-publishing"  srcset="assets/images/book-2-480.webp 480w, assets/images/book-2-960.webp 960w, assets/images/book-2-1203.webp 1203w" sizes="(max-width: 768px) 100vw, 50vw" width="1203" height="1307" decoding="async"/>
  </div>
  <div class="col-md-6">
  <div class="banner-contents">
@@ -1673,7 +1662,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  <div class="col-md-12 col-lg-5 mb-3">
  <div class="phone-icon">
  <div>
- <img loading="lazy" src="assets/images/phone.webp" alt="ghostwriting company " />
+ <img loading="lazy" src="assets/images/phone.webp" alt="ghostwriting company "  width="38" height="54" decoding="async"/>
  </div>
  <div>
  <h6>Call Us</h6>
@@ -1687,7 +1676,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  <div class="phone-icon">
  <div>
  <img loading="lazy" src="assets/images/envp.webp"
- alt="best ghostwriting services" />
+ alt="best ghostwriting services"  width="47" height="53" decoding="async"/>
  </div>
  <div>
  <h6>Discuss Your Ideas</h6>
@@ -1800,15 +1789,15 @@ button.close {
 
  <div class="col-md-12 footer-logos">
 <a>
- <img src="assets/images/reviews-io.png" alt="Reviews.io" />
+ <img src="assets/images/reviews-io.png" alt="Reviews.io"  width="376" height="60" decoding="async" loading="lazy"/>
  </a><br><br>
 
  <a>
- <img src="assets/images/Trustpilot-Logo.png" alt="trustpilot.com" />
+ <img src="assets/images/Trustpilot-Logo.png" alt="trustpilot.com"  width="1533" height="376" decoding="async" loading="lazy"/>
  </a><br>
 
  <a><img src="assets/images/google2.png"
- alt="Google Reviews" /></a>
+ alt="Google Reviews"  width="3840" height="2160" decoding="async" loading="lazy"/></a>
  </div>
  </div>
  </div>
@@ -1822,7 +1811,7 @@ button.close {
  <div class="row d-flex align-items-center">
  <div class="col-md-6">
  <div class="last-footer">
- <img src="assets/images/new-logo.png" style="width:20%;" alt="FLO Book Publishers" />
+ <img src="assets/images/new-logo-display.webp" style="width:20%;" alt="FLO Book Publishers"  width="400" height="128" decoding="async" loading="lazy"/>
  <p>
  <a href="https://maps.google.com/?q=2630+W+Broward+Blvd+Suit+204+%231134,+Fort+Lauderdale,+FL+33312"> <b>Mailing Address:</b> <br>2630 W Broward Blvd Suit 204 #1134<br>Fort Lauderdale, FL 33312</a>
  </p>
@@ -1835,10 +1824,10 @@ button.close {
  <p><a href="tel:+14077892593">+1 (407) 789-2593</a></p>
  </div>
  <div class="">
- <a href="https://www.facebook.com/share/1CySjmcm8G/" target="_blank"><i
+ <a href="https://www.facebook.com/share/1CySjmcm8G/" target="_blank" aria-label="Facebook"><i
  class="fa-brands fa-facebook-f"></i></a>
 
- <a href="https://www.instagram.com/flobookpublishers?igsh=MWlpZmJuNTVudnVsOA==" target="_blank"><i
+ <a href="https://www.instagram.com/flobookpublishers?igsh=MWlpZmJuNTVudnVsOA==" target="_blank" aria-label="Instagram"><i
  class="fa-brands fa-instagram"></i></a>
 
  </div>
@@ -1871,28 +1860,28 @@ button.close {
  <div class="popup-redesign-main">
  <div class="popup-redesign-left">
  <a href="#" class="modal-logo popup-redesign-logo">
- <img src="assets/images/new-logo.png" alt="FLO Book Publishers">
+ <img src="assets/images/new-logo-display.webp" alt="FLO Book Publishers" width="400" height="128" decoding="async" loading="lazy">
  </a>
- <img class="popup-redesign-hero-heading" src="assets/images/popup-redesign/legacy-heading.png" alt="Your Story. Our Expertise. A Published Legacy.">
+ <img class="popup-redesign-hero-heading" src="assets/images/popup-redesign/legacy-heading-optimized.webp" alt="Your Story. Our Expertise. A Published Legacy." width="192" height="100" decoding="async" loading="lazy">
  <p class="popup-redesign-copy">We make publishing simple, rewarding and successful for new authors like you.</p>
 
  <div class="popup-redesign-features">
  <div class="popup-redesign-feature">
- <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/guidance-icon.png" alt="Expert Guidance">
+ <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/guidance-icon.png" alt="Expert Guidance" width="500" height="500" decoding="async" loading="lazy">
  <div>
  <span class="popup-redesign-feature-title">Expert Guidance</span>
  <p>From writing to publishing, we're with you at every step.</p>
  </div>
  </div>
  <div class="popup-redesign-feature">
- <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/reach-icon.png" alt="Global Reach">
+ <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/reach-icon.png" alt="Global Reach" width="500" height="500" decoding="async" loading="lazy">
  <div>
  <span class="popup-redesign-feature-title">Global Reach</span>
  <p>We help your book reach readers around the world.</p>
  </div>
  </div>
  <div class="popup-redesign-feature">
- <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/success-icon.png" alt="Proven Success">
+ <img class="popup-redesign-feature-icon" src="assets/images/popup-redesign/success-icon.png" alt="Proven Success" width="500" height="500" decoding="async" loading="lazy">
  <div>
  <span class="popup-redesign-feature-title">Proven Success</span>
  <p>Thousands of authors trust us to turn ideas into published books.</p>
@@ -1901,7 +1890,7 @@ button.close {
  </div>
 
  <div class="popup-redesign-stack">
- <img src="assets/images/popup-redesign/books-mug-plant.png" alt="Books and mug">
+ <img src="assets/images/popup-redesign/books-mug-plant-738.webp" alt="Books and mug" srcset="assets/images/popup-redesign/books-mug-plant-480.webp 480w, assets/images/popup-redesign/books-mug-plant-738.webp 738w" sizes="(max-width: 768px) 100vw, 50vw" width="738" height="338" decoding="async" loading="lazy">
  </div>
  </div>
 
@@ -1912,7 +1901,7 @@ button.close {
  <div class="popup-redesign-divider">
  <div></div>
  <div class="popup-redesign-divider-badge">
- <img src="assets/images/popup-redesign/book-icon.png" alt="Book icon">
+ <img src="assets/images/popup-redesign/book-icon.png" alt="Book icon" width="256" height="256" decoding="async" loading="lazy">
  </div>
  <div></div>
  </div>
@@ -1960,7 +1949,7 @@ button.close {
 
  <div class="popup-redesign-field">
  <i class="fa-solid fa-book-open"></i>
- <select name="manuscript_ready" required>
+ <select name="manuscript_ready" required aria-label="Manuscript Ready">
  <option value="" selected disabled>Do you have a manuscript ready?</option>
  <option value="Yes">Yes</option>
  <option value="No">No</option>
@@ -1970,7 +1959,7 @@ button.close {
 
  <div class="popup-redesign-field">
  <i class="fa-regular fa-file-lines"></i>
- <select name="published_before" required>
+ <select name="published_before" required aria-label="Published Before">
  <option value="" selected disabled>Have you published before?</option>
  <option value="Yes">Yes</option>
  <option value="No">No</option>
@@ -1980,7 +1969,7 @@ button.close {
 
  <div class="popup-redesign-field">
  <i class="fa-solid fa-layer-group"></i>
- <select name="book_type" required>
+ <select name="book_type" required aria-label="Book Type">
  <option value="" selected disabled>What type of book do you plan on publishing?</option>
  <option value="Fiction">Fiction</option>
  <option value="Non-Fiction">Non-Fiction</option>
@@ -1990,7 +1979,7 @@ button.close {
  </div>
  <div class="popup-redesign-field">
  <i class="fa-solid fa-briefcase"></i>
- <select name="service" required>
+ <select name="service" required aria-label="Service">
  <option value="" selected disabled>Pick Services For Your Book</option>
  <option value="Self Publishing">Self Publishing</option>
  <option value="Proofreading">Proofreading</option>
@@ -2025,28 +2014,28 @@ button.close {
 
  <div class="popup-redesign-stats">
  <div class="popup-redesign-stat">
- <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/crowd-icon.png" alt="Happy authors">
+ <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/crowd-icon.png" alt="Happy authors" width="256" height="256" decoding="async" loading="lazy">
  <div>
  <strong>1500+</strong>
  <span>Happy Authors</span>
  </div>
  </div>
  <div class="popup-redesign-stat">
- <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/book-icon.png" alt="Books published">
+ <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/book-icon.png" alt="Books published" width="256" height="256" decoding="async" loading="lazy">
  <div>
  <strong>2000+</strong>
  <span>Books Published</span>
  </div>
  </div>
  <div class="popup-redesign-stat">
- <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/globe-icon.png" alt="Countries reached">
+ <img class="popup-redesign-stat-icon" src="assets/images/popup-redesign/globe-icon.png" alt="Countries reached" width="256" height="256" decoding="async" loading="lazy">
  <div>
  <strong>25+</strong>
  <span>Countries Reached</span>
  </div>
  </div>
  <div class="popup-redesign-stat">
- <img class="popup-redesign-stat-icon popup-redesign-stat-icon-trophy" src="assets/images/popup-redesign/trophy-icon.png" alt="Years of excellence">
+ <img class="popup-redesign-stat-icon popup-redesign-stat-icon-trophy" src="assets/images/popup-redesign/trophy-icon.png" alt="Years of excellence" width="256" height="256" decoding="async" loading="lazy">
  <div>
  <strong>10+</strong>
  <span>Years of Excellence</span>
@@ -2057,21 +2046,14 @@ button.close {
  </div>
  </div>
 </div> 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/custom.js?v=form-delivery-20260824-1"></script>
-<script src="assets/js/swiper.min.js"></script>
-<script src="assets/js/slick-slider.min.js"></script>
-<script src="../www.google.com/recaptcha/api.js" async defer></script>
+<script src="assets/js/jquery.min.js?v=performance-20260902-1"></script>
+<script src="assets/js/bootstrap.min.js?v=performance-20260902-1"></script>
+<script src="assets/js/custom.js?v=performance-20260902-1"></script>
+<script src="assets/js/slick-slider.min.js?v=performance-20260902-1"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <!-- Start of LiveChat (www.livechat.com) code -->
-<script>
-    window.__lc = window.__lc || {};
-    window.__lc.license = 19778423;
-    window.__lc.integration_name = "manual_onboarding";
-    window.__lc.product_name = "livechat";
-    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
-</script>
+<script src="assets/js/livechat-lazy.js?v=performance-20260902-1" defer></script>
 <noscript><a href="https://www.livechat.com/chat-with/19778423/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
 <!-- End of LiveChat code -->
 
@@ -2088,7 +2070,7 @@ button.close {
  if (!modalShown && shouldShowModal) {
  modalShown = true;
  $(modal).modal('show');
- console.log("Modal displayed after 20 seconds");
+
  }
  }
 
@@ -2178,7 +2160,7 @@ button.close {
  evt.currentTarget.classList.add("active");
  }
  </script>
- <script src="/assets/js/loader.js" defer></script>
+<script src="assets/js/performance.js?v=performance-20260902-1" defer></script>
 </body>
 
 
