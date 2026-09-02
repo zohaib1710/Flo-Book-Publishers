@@ -119,7 +119,7 @@ if ($contentLength > MAX_REQUEST_BYTES) {
 $scalarFields = [
     'name', 'phone', 'email', 'message', 'manuscript_ready', 'published_before',
     'book_type', 'service', 'sms_consent', 'form_source', 'source_page',
-    'form_started_at', 'website', 'g-recaptcha-response',
+    'form_started_at', 'website',
 ];
 foreach ($scalarFields as $field) {
     if (isset($_POST[$field]) && !is_string($_POST[$field])) {
@@ -280,7 +280,7 @@ try {
 
 $baseAllowedFields = [
     'name', 'phone', 'email', 'sms_consent', 'form_source', 'source_page',
-    'form_started_at', 'website', 'g-recaptcha-response',
+    'form_started_at', 'website',
 ];
 $schemaFields = $formSource === 'contact_message'
     ? array_merge($baseAllowedFields, ['message'])

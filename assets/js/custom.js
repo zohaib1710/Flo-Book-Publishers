@@ -78,19 +78,6 @@ $(document).ready(function () {
       submitButton.style.removeProperty("border-color");
     }
 
-    var recaptcha = form.querySelector(".g-recaptcha-response");
-    if (recaptcha && recaptcha.value === "") {
-      message.textContent = "Please check the reCAPTCHA and try again.";
-      message.classList.add("is-error");
-      if (submitButton) {
-        submitButton.disabled = false;
-        submitButton.removeAttribute("aria-busy");
-        submitButton.textContent = originalText;
-      }
-      delete form.dataset.submitting;
-      return;
-    }
-
     fetch(form.action, {
       method: "POST",
       body: new FormData(form),
@@ -126,9 +113,6 @@ $(document).ready(function () {
 
         form.reset();
         refreshFormStartedAt(form);
-        if (window.grecaptcha && typeof window.grecaptcha.reset === "function") {
-          window.grecaptcha.reset();
-        }
       })
       .catch(function (error) {
         message.textContent = error && error.message

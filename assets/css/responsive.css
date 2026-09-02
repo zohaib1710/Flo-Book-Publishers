@@ -146,10 +146,6 @@
     z-index: 10001;
   }
 
-  .popup-redesign-recaptcha {
-   display: none !important; 
-  }
-
   body.home-page header .menuWrap:not(.btn-resp) {
     margin-top: 0;
   }
@@ -447,12 +443,6 @@
   body.home-page .banner-form button {
     width: 100%;
     min-height: 52px;
-  }
-
-  body.home-page .banner-form .g-recaptcha,
-  body.home-page .form-col .g-recaptcha,
-  body.home-page #exampleModalCenter .popup-redesign-recaptcha .g-recaptcha {
-    transform-origin: left top;
   }
 
   body.home-page .hero-logo-sec {
@@ -1573,11 +1563,6 @@
     font-size: 19px !important;
   }
 
-  body.home-page #exampleModalCenter .popup-redesign-recaptcha .g-recaptcha,
-  body.home-page .banner-form .g-recaptcha,
-  body.home-page .form-col .g-recaptcha {
-    transform: scale(0.84);
-  }
 }
 
 @media screen and (max-width: 360px) {
@@ -1662,11 +1647,6 @@
     margin: 0 auto;
   }
 
-  body.home-page #exampleModalCenter .popup-redesign-recaptcha .g-recaptcha,
-  body.home-page .banner-form .g-recaptcha,
-  body.home-page .form-col .g-recaptcha {
-    transform: scale(0.75);
-  }
 }
 
 @media screen and (max-width: 768px) {

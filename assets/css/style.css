@@ -5169,18 +5169,6 @@ section.locations-sec {
   font-size: 14px;
 }
 
-#exampleModalCenter .popup-redesign-recaptcha {
-  display: flex;
-  justify-content: flex-start;
-  overflow: hidden;
-  min-height: 56px;
-}
-
-#exampleModalCenter .popup-redesign-recaptcha .g-recaptcha {
-  transform-origin: left top;
-  transform: scale(0.86);
-}
-
 #exampleModalCenter .popup-redesign-submit {
   width: 100%;
   border: 0;
@@ -5363,15 +5351,6 @@ section.locations-sec {
     bottom: 8px;
   }
 
-  #exampleModalCenter .popup-redesign-recaptcha {
-    min-height: 42px;
-    display: none;
-  }
-
-  #exampleModalCenter .popup-redesign-recaptcha .g-recaptcha {
-    transform: scale(0.62);
-  }
-
   #exampleModalCenter .popup-redesign-submit {
     font-size: 15px;
     padding: 11px 16px;
@@ -5547,15 +5526,6 @@ section.locations-sec {
     font-size: 11px;
   }
 
-  #exampleModalCenter .popup-redesign-recaptcha {
-    min-height: 46px;
-    display: none;
-  }
-
-  #exampleModalCenter .popup-redesign-recaptcha .g-recaptcha {
-    transform: scale(0.66);
-  }
-
   #exampleModalCenter .popup-redesign-submit {
     font-size: 15px;
     padding: 12px 18px;
@@ -5709,10 +5679,6 @@ section.locations-sec {
 
   #exampleModalCenter .popup-redesign-submit {
     font-size: 18px;
-  }
-
-  #exampleModalCenter .popup-redesign-recaptcha .g-recaptcha {
-    transform: scale(0.78);
   }
 
   #exampleModalCenter .popup-redesign-stats {

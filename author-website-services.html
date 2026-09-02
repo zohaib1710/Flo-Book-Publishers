@@ -46,7 +46,7 @@
 <link rel="stylesheet" href="assets/css/slick-slider.css?v=performance-20260902-2">
 
 <link rel="stylesheet" href="assets/css/layout.css?v=performance-20260902-2" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="assets/css/style.css?v=performance-20260902-2" >
+<link rel="stylesheet" href="assets/css/style.css?v=performance-20260902-3" >
 <link rel="stylesheet" href="assets/css/header.css?v=performance-20260902-2" >
 <link rel="stylesheet" href="assets/css/buttons.css?v=performance-20260902-2" >
 
@@ -579,7 +579,7 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  }
 </style>
 
-<link rel="stylesheet" href="assets/css/responsive.css?v=performance-20260902-2">
+<link rel="stylesheet" href="assets/css/responsive.css?v=performance-20260902-3">
 <body class="ghostwriting-page">
 <div id="page-loader" class="page-loader" aria-hidden="true">
  <div class="loader-content">
@@ -913,8 +913,6 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  <span>By providing a telephone number and submitting this form, you consent to receive SMS text messages from FLO Book Publishers. Message frequency may vary. Message and data rates may apply. You can reply STOP to opt out of further messaging and HELP for assistance or call <a href="tel:+14077892593">+1 (407) 789-2593</a>. Please see our <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-and-conditions.html">Terms and Conditions</a>.</span>
  </label>
  </div>
- <div class="g-recaptcha"
- data-sitekey="6LcFs88pAAAAAKEmnNDQYaYlN3LIdIjPS-n4lym-"></div>
  </div>
  </div>
  </div>
@@ -1625,8 +1623,6 @@ body.ghostwriting-page .about-split-section:not(.alt) .about-image-frame img {
  <span>By providing a telephone number and submitting this form, you consent to receive SMS text messages from FLO Book Publishers. Message frequency may vary. Message and data rates may apply. You can reply STOP to opt out of further messaging and HELP for assistance or call <a href="tel:+14077892593">+1 (407) 789-2593</a>. Please see our <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-and-conditions.html">Terms and Conditions</a>.</span>
  </label>
  </div>
- <div class="g-recaptcha mb-3" data-sitekey="6LcFs88pAAAAAKEmnNDQYaYlN3LIdIjPS-n4lym-">
- </div>
  </div>
  <div class="row">
  <div class="col-md-4">
@@ -2002,10 +1998,6 @@ button.close {
  </label>
  </div>
 
- <div class="popup-redesign-recaptcha">
- <div class="g-recaptcha" data-sitekey="6LcFs88pAAAAAKEmnNDQYaYlN3LIdIjPS-n4lym-"></div>
- </div>
-
  <button class="popup-redesign-submit" type="submit">
  <span>Submit Your Form</span>
  <span class="popup-redesign-submit-arrow"><i class="fa-solid fa-arrow-right"></i></span>
@@ -2051,9 +2043,8 @@ button.close {
 </div> 
 <script src="assets/js/jquery.min.js?v=performance-20260902-2"></script>
 <script src="assets/js/bootstrap.min.js?v=performance-20260902-2"></script>
-<script src="assets/js/custom.js?v=performance-20260902-2"></script>
+<script src="assets/js/custom.js?v=performance-20260902-3"></script>
 <script src="assets/js/slick-slider.min.js?v=performance-20260902-2"></script>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <!-- Start of LiveChat (www.livechat.com) code -->
 <script src="assets/js/livechat-lazy.js?v=performance-20260902-2" defer></script>
@@ -2113,16 +2104,6 @@ button.close {
  nextEl: ".swiper-button-next",
  prevEl: ".swiper-button-prev",
  },
- });
-
- $("form").submit(function(event) {
- $(this).find('[type="submit"]').attr('disabled', true);
- var recaptcha = $(this).find(".g-recaptcha-response").val();
- if (recaptcha === "") {
- $(this).find('[type="submit"]').removeAttr('disabled', true);
- event.preventDefault();
- alert("Please check the recaptcha");
- }
  });
 
  const items = document.querySelectorAll(".accordion button");
