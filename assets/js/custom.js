@@ -8,6 +8,53 @@ $(document).ready(function () {
 
   window.setButtonURL = window.openFloLiveChat;
 
+  function registerLiveChatAgentAutoExpand() {
+    // This shared script can be evaluated again, so register the widget callbacks only once.
+    if (window.__floLiveChatAgentAutoExpandRegistered) return true;
+
+    var widget = window.LiveChatWidget;
+    if (!widget || typeof widget.on !== "function" || typeof widget.call !== "function") {
+      return false;
+    }
+
+    window.__floLiveChatAgentAutoExpandRegistered = true;
+    var visibility = "minimized";
+    var supportedEventTypes = ["message", "rich_message", "file"];
+
+    function updateVisibility(data) {
+      if (data && typeof data.visibility === "string") {
+        visibility = data.visibility;
+      }
+    }
+
+    widget.on("ready", function (data) {
+      updateVisibility(data && data.state);
+    });
+
+    widget.on("visibility_changed", updateVisibility);
+
+    widget.on("new_event", function (event) {
+      // Only user-visible agent replies should interrupt the visitor; customer events and greetings must not.
+      var isAgentReply =
+        event &&
+        event.author &&
+        event.author.type === "agent" &&
+        !event.greeting &&
+        supportedEventTypes.indexOf(event.type) !== -1;
+
+      if (isAgentReply && visibility !== "maximized") {
+        visibility = "maximized";
+        widget.call("maximize");
+      }
+    });
+
+    return true;
+  }
+
+  if (!registerLiveChatAgentAutoExpand()) {
+    window.addEventListener("load", registerLiveChatAgentAutoExpand, { once: true });
+  }
+
   function refreshFormStartedAt(form) {
     var startedAt = form && form.elements ? form.elements.form_started_at : null;
     if (startedAt) {
